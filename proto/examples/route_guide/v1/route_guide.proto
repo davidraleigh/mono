@@ -15,29 +15,29 @@
 syntax = "proto3";
 
 // TODO UPDATED to have a version number and csharp
-option csharp_namespace = "io.grpc.examples.routeguide.v1";
+option csharp_namespace = "io.grpc.examples.route_guide.v1";
 
 // TODO UPDATED to have a version number
 option java_multiple_files = true;
-option java_package = "io.grpc.examples.routeguide.v1";
+option java_package = "io.grpc.examples.route_guide.v1";
 option java_outer_classname = "RouteGuideProto";
 option objc_class_prefix = "RTG";
 
 // TODO UPDATED to have a version number and golang
-option go_package = "github.com/davidraleigh/mono-message/golang/examples/route_guide/routeguide/v1";
+option go_package = "github.com/davidraleigh/mono/golang/examples/route_guide/v1";
 
 // TODO UPDATED to have a version number
-package routeguide.v1;
+package examples.route_guide.v1;
 
 // Interface exported by the server.
-service RouteGuide {
+service RouteGuideService {
   // A simple RPC.
   //
   // Obtains the feature at a given position.
   //
   // A feature with an empty name is returned if there's no feature at the given
   // position.
-  rpc GetFeature(Point) returns (Feature) {}
+  rpc GetFeature(GetFeatureRequest) returns (GetFeatureResponse) {}
 
   // A server-to-client streaming RPC.
   //
@@ -45,19 +45,19 @@ service RouteGuide {
   // streamed rather than returned at once (e.g. in a response message with a
   // repeated field), as the rectangle may cover a large area and contain a
   // huge number of features.
-  rpc ListFeatures(Rectangle) returns (stream Feature) {}
+  rpc ListFeatures(ListFeaturesRequest) returns (stream ListFeaturesResponse) {}
 
   // A client-to-server streaming RPC.
   //
   // Accepts a stream of Points on a route being traversed, returning a
   // RouteSummary when traversal is completed.
-  rpc RecordRoute(stream Point) returns (RouteSummary) {}
+  rpc RecordRoute(stream RecordRouteRequest) returns (RecordRouteResponse) {}
 
   // A Bidirectional streaming RPC.
   //
   // Accepts a stream of RouteNotes sent while a route is being traversed,
   // while receiving other RouteNotes (e.g. from other users).
-  rpc RouteChat(stream RouteNote) returns (stream RouteNote) {}
+  rpc RouteChat(stream RouteChatRequest) returns (stream RouteChatResponse) {}
 }
 
 // Points are represented as latitude-longitude pairs in the E7 representation
@@ -71,12 +71,36 @@ message Point {
 
 // A latitude-longitude rectangle, represented as two diagonally opposite
 // points "lo" and "hi".
-message Rectangle {
+message ListFeaturesRequest {
   // One corner of the rectangle.
   Point lo = 1;
 
   // The other corner of the rectangle.
   Point hi = 2;
+}
+
+message GetFeatureResponse {
+  Feature feature = 1;
+}
+
+message GetFeatureRequest {
+  Point point = 1;
+}
+
+message ListFeaturesResponse {
+  Feature feature = 1;
+}
+
+message RecordRouteRequest {
+  Point point = 1;
+}
+
+message RouteChatRequest {
+  RouteNote route_note = 1;
+}
+
+message RouteChatResponse {
+  RouteNote route_note = 1;
 }
 
 // A feature names something at a given point.
@@ -109,7 +133,7 @@ message RouteNote {
 // It contains the number of individual points received, the number of
 // detected features, and the total distance covered as the cumulative sum of
 // the distance between each point.
-message RouteSummary {
+message RecordRouteResponse {
   // The number of points received.
   int32 point_count = 1;
 
