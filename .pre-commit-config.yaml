@@ -1,0 +1,17 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v2.3.0
+  hooks:
+  -   id: check-yaml
+  -   id: end-of-file-fixer
+      exclude: \.pb\.cc|\.pb\.h|java\/io\/grpc\/route_guide\/v1\/[\w]+\.java
+  -   id: trailing-whitespace
+      exclude: \.pb\.cc|\.pb\.h|java\/io\/grpc\/route_guide\/v1\/[\w]+\.java
+- repo: local
+  hooks:
+    - id: custom-script-file
+      name: custom-script-file
+      entry: scripts/lint.sh
+      language: script
+      types: [proto]
+      pass_filenames: false

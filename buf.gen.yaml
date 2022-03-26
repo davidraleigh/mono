@@ -1,0 +1,8 @@
+version: v1
+plugins:
+  - name: cpp
+    out: cpp
+  - name: java
+    out: java
+  - name: python
+    out: python
