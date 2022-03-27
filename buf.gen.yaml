@@ -6,3 +6,5 @@ plugins:
     out: java
   - name: python
     out: python
+  - name: csharp
+    out: net
