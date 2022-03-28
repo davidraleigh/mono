@@ -20,8 +20,8 @@ Tests the proto files for any errors.
 ./scripts/lint.sh
 ```
 
-### Build
+### Generate
 Generate code from proto files
 ```
-./scripts/build.sh
+./scripts/generate.sh
 ```
