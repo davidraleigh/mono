@@ -175,7 +175,7 @@ static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_proto_2froute_5fgui
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_proto_2froute_5fguide_2fv1_2froute_5fguide_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_proto_2froute_5fguide_2fv1_2froute_5fguide_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_proto_2froute_5fguide_2fv1_2froute_5fguide_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_proto_2froute_5fguide_2fv1_2froute_5fguide_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::route_guide::v1::Point, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -380,7 +380,7 @@ Point::Point(const Point& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.Point)
 }
 
-void Point::SharedCtor() {
+inline void Point::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&latitude_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&longitude_) -
@@ -410,7 +410,7 @@ void Point::SetCachedSize(int size) const {
 
 void Point::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.Point)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -423,21 +423,21 @@ void Point::Clear() {
 const char* Point::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int32 latitude = 1 [json_name = "latitude"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          latitude_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          latitude_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // int32 longitude = 2 [json_name = "longitude"];
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          longitude_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          longitude_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -465,10 +465,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Point::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Point::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.Point)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 latitude = 1 [json_name = "latitude"];
@@ -495,7 +495,7 @@ size_t Point::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.Point)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -528,7 +528,7 @@ void Point::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 void Point::MergeFrom(const Point& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.Point)
   GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_latitude() != 0) {
@@ -609,7 +609,7 @@ ListFeaturesRequest::ListFeaturesRequest(const ListFeaturesRequest& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.ListFeaturesRequest)
 }
 
-void ListFeaturesRequest::SharedCtor() {
+inline void ListFeaturesRequest::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&lo_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&hi_) -
@@ -641,7 +641,7 @@ void ListFeaturesRequest::SetCachedSize(int size) const {
 
 void ListFeaturesRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.ListFeaturesRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -659,12 +659,12 @@ void ListFeaturesRequest::Clear() {
 const char* ListFeaturesRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.Point lo = 1 [json_name = "lo"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_lo(), ptr);
           CHK_(ptr);
         } else
@@ -672,7 +672,7 @@ const char* ListFeaturesRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAME
         continue;
       // .route_guide.v1.Point hi = 2 [json_name = "hi"];
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_hi(), ptr);
           CHK_(ptr);
         } else
@@ -701,10 +701,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ListFeaturesRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ListFeaturesRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.ListFeaturesRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.Point lo = 1 [json_name = "lo"];
@@ -735,7 +735,7 @@ size_t ListFeaturesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.ListFeaturesRequest)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -772,7 +772,7 @@ void ListFeaturesRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 void ListFeaturesRequest::MergeFrom(const ListFeaturesRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.ListFeaturesRequest)
   GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_lo()) {
@@ -843,7 +843,7 @@ GetFeatureResponse::GetFeatureResponse(const GetFeatureResponse& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.GetFeatureResponse)
 }
 
-void GetFeatureResponse::SharedCtor() {
+inline void GetFeatureResponse::SharedCtor() {
 feature_ = nullptr;
 }
 
@@ -871,7 +871,7 @@ void GetFeatureResponse::SetCachedSize(int size) const {
 
 void GetFeatureResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.GetFeatureResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -885,12 +885,12 @@ void GetFeatureResponse::Clear() {
 const char* GetFeatureResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.Feature feature = 1 [json_name = "feature"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_feature(), ptr);
           CHK_(ptr);
         } else
@@ -919,10 +919,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GetFeatureResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GetFeatureResponse::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.GetFeatureResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.Feature feature = 1 [json_name = "feature"];
@@ -945,7 +945,7 @@ size_t GetFeatureResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.GetFeatureResponse)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -975,7 +975,7 @@ void GetFeatureResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 void GetFeatureResponse::MergeFrom(const GetFeatureResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.GetFeatureResponse)
   GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_feature()) {
@@ -1038,7 +1038,7 @@ GetFeatureRequest::GetFeatureRequest(const GetFeatureRequest& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.GetFeatureRequest)
 }
 
-void GetFeatureRequest::SharedCtor() {
+inline void GetFeatureRequest::SharedCtor() {
 point_ = nullptr;
 }
 
@@ -1066,7 +1066,7 @@ void GetFeatureRequest::SetCachedSize(int size) const {
 
 void GetFeatureRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.GetFeatureRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1080,12 +1080,12 @@ void GetFeatureRequest::Clear() {
 const char* GetFeatureRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.Point point = 1 [json_name = "point"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_point(), ptr);
           CHK_(ptr);
         } else
@@ -1114,10 +1114,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GetFeatureRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GetFeatureRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.GetFeatureRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.Point point = 1 [json_name = "point"];
@@ -1140,7 +1140,7 @@ size_t GetFeatureRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.GetFeatureRequest)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1170,7 +1170,7 @@ void GetFeatureRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 void GetFeatureRequest::MergeFrom(const GetFeatureRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.GetFeatureRequest)
   GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_point()) {
@@ -1233,7 +1233,7 @@ ListFeaturesResponse::ListFeaturesResponse(const ListFeaturesResponse& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.ListFeaturesResponse)
 }
 
-void ListFeaturesResponse::SharedCtor() {
+inline void ListFeaturesResponse::SharedCtor() {
 feature_ = nullptr;
 }
 
@@ -1261,7 +1261,7 @@ void ListFeaturesResponse::SetCachedSize(int size) const {
 
 void ListFeaturesResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.ListFeaturesResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1275,12 +1275,12 @@ void ListFeaturesResponse::Clear() {
 const char* ListFeaturesResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.Feature feature = 1 [json_name = "feature"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_feature(), ptr);
           CHK_(ptr);
         } else
@@ -1309,10 +1309,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ListFeaturesResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ListFeaturesResponse::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.ListFeaturesResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.Feature feature = 1 [json_name = "feature"];
@@ -1335,7 +1335,7 @@ size_t ListFeaturesResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.ListFeaturesResponse)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1365,7 +1365,7 @@ void ListFeaturesResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 void ListFeaturesResponse::MergeFrom(const ListFeaturesResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.ListFeaturesResponse)
   GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_feature()) {
@@ -1428,7 +1428,7 @@ RecordRouteRequest::RecordRouteRequest(const RecordRouteRequest& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.RecordRouteRequest)
 }
 
-void RecordRouteRequest::SharedCtor() {
+inline void RecordRouteRequest::SharedCtor() {
 point_ = nullptr;
 }
 
@@ -1456,7 +1456,7 @@ void RecordRouteRequest::SetCachedSize(int size) const {
 
 void RecordRouteRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.RecordRouteRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1470,12 +1470,12 @@ void RecordRouteRequest::Clear() {
 const char* RecordRouteRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.Point point = 1 [json_name = "point"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_point(), ptr);
           CHK_(ptr);
         } else
@@ -1504,10 +1504,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RecordRouteRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* RecordRouteRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.RecordRouteRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.Point point = 1 [json_name = "point"];
@@ -1530,7 +1530,7 @@ size_t RecordRouteRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.RecordRouteRequest)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1560,7 +1560,7 @@ void RecordRouteRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 void RecordRouteRequest::MergeFrom(const RecordRouteRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.RecordRouteRequest)
   GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_point()) {
@@ -1623,7 +1623,7 @@ RouteChatRequest::RouteChatRequest(const RouteChatRequest& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.RouteChatRequest)
 }
 
-void RouteChatRequest::SharedCtor() {
+inline void RouteChatRequest::SharedCtor() {
 route_note_ = nullptr;
 }
 
@@ -1651,7 +1651,7 @@ void RouteChatRequest::SetCachedSize(int size) const {
 
 void RouteChatRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.RouteChatRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1665,12 +1665,12 @@ void RouteChatRequest::Clear() {
 const char* RouteChatRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.RouteNote route_note = 1 [json_name = "routeNote"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_route_note(), ptr);
           CHK_(ptr);
         } else
@@ -1699,10 +1699,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RouteChatRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* RouteChatRequest::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.RouteChatRequest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.RouteNote route_note = 1 [json_name = "routeNote"];
@@ -1725,7 +1725,7 @@ size_t RouteChatRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.RouteChatRequest)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1755,7 +1755,7 @@ void RouteChatRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 void RouteChatRequest::MergeFrom(const RouteChatRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.RouteChatRequest)
   GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_route_note()) {
@@ -1818,7 +1818,7 @@ RouteChatResponse::RouteChatResponse(const RouteChatResponse& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.RouteChatResponse)
 }
 
-void RouteChatResponse::SharedCtor() {
+inline void RouteChatResponse::SharedCtor() {
 route_note_ = nullptr;
 }
 
@@ -1846,7 +1846,7 @@ void RouteChatResponse::SetCachedSize(int size) const {
 
 void RouteChatResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.RouteChatResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1860,12 +1860,12 @@ void RouteChatResponse::Clear() {
 const char* RouteChatResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.RouteNote route_note = 1 [json_name = "routeNote"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_route_note(), ptr);
           CHK_(ptr);
         } else
@@ -1894,10 +1894,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RouteChatResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* RouteChatResponse::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.RouteChatResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.RouteNote route_note = 1 [json_name = "routeNote"];
@@ -1920,7 +1920,7 @@ size_t RouteChatResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.RouteChatResponse)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1950,7 +1950,7 @@ void RouteChatResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 void RouteChatResponse::MergeFrom(const RouteChatResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.RouteChatResponse)
   GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_route_note()) {
@@ -2006,6 +2006,9 @@ Feature::Feature(const Feature& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_name().empty()) {
     name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
       GetArenaForAllocation());
@@ -2018,8 +2021,11 @@ Feature::Feature(const Feature& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.Feature)
 }
 
-void Feature::SharedCtor() {
+inline void Feature::SharedCtor() {
 name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 location_ = nullptr;
 }
 
@@ -2048,7 +2054,7 @@ void Feature::SetCachedSize(int size) const {
 
 void Feature::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.Feature)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2063,12 +2069,12 @@ void Feature::Clear() {
 const char* Feature::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // string name = 1 [json_name = "name"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_name();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "route_guide.v1.Feature.name"));
@@ -2078,7 +2084,7 @@ const char* Feature::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::in
         continue;
       // .route_guide.v1.Point location = 2 [json_name = "location"];
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_location(), ptr);
           CHK_(ptr);
         } else
@@ -2107,10 +2113,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Feature::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Feature::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.Feature)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string name = 1 [json_name = "name"];
@@ -2143,7 +2149,7 @@ size_t Feature::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.Feature)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2180,7 +2186,7 @@ void Feature::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 void Feature::MergeFrom(const Feature& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.Feature)
   GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_name().empty()) {
@@ -2245,7 +2251,7 @@ FeatureDatabase::FeatureDatabase(const FeatureDatabase& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.FeatureDatabase)
 }
 
-void FeatureDatabase::SharedCtor() {
+inline void FeatureDatabase::SharedCtor() {
 }
 
 FeatureDatabase::~FeatureDatabase() {
@@ -2271,7 +2277,7 @@ void FeatureDatabase::SetCachedSize(int size) const {
 
 void FeatureDatabase::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.FeatureDatabase)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2282,12 +2288,12 @@ void FeatureDatabase::Clear() {
 const char* FeatureDatabase::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated .route_guide.v1.Feature feature = 1 [json_name = "feature"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2321,10 +2327,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* FeatureDatabase::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* FeatureDatabase::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.FeatureDatabase)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .route_guide.v1.Feature feature = 1 [json_name = "feature"];
@@ -2347,7 +2353,7 @@ size_t FeatureDatabase::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.FeatureDatabase)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2377,7 +2383,7 @@ void FeatureDatabase::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 void FeatureDatabase::MergeFrom(const FeatureDatabase& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.FeatureDatabase)
   GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   feature_.MergeFrom(from.feature_);
@@ -2431,6 +2437,9 @@ RouteNote::RouteNote(const RouteNote& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   message_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    message_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_message().empty()) {
     message_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_message(), 
       GetArenaForAllocation());
@@ -2443,8 +2452,11 @@ RouteNote::RouteNote(const RouteNote& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.RouteNote)
 }
 
-void RouteNote::SharedCtor() {
+inline void RouteNote::SharedCtor() {
 message_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  message_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 location_ = nullptr;
 }
 
@@ -2473,7 +2485,7 @@ void RouteNote::SetCachedSize(int size) const {
 
 void RouteNote::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.RouteNote)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2488,12 +2500,12 @@ void RouteNote::Clear() {
 const char* RouteNote::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.Point location = 1 [json_name = "location"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_location(), ptr);
           CHK_(ptr);
         } else
@@ -2501,7 +2513,7 @@ const char* RouteNote::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
         continue;
       // string message = 2 [json_name = "message"];
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_message();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "route_guide.v1.RouteNote.message"));
@@ -2532,10 +2544,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RouteNote::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* RouteNote::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.RouteNote)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.Point location = 1 [json_name = "location"];
@@ -2568,7 +2580,7 @@ size_t RouteNote::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.RouteNote)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2605,7 +2617,7 @@ void RouteNote::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 void RouteNote::MergeFrom(const RouteNote& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.RouteNote)
   GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_message().empty()) {
@@ -2671,7 +2683,7 @@ RecordRouteResponse::RecordRouteResponse(const RecordRouteResponse& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.RecordRouteResponse)
 }
 
-void RecordRouteResponse::SharedCtor() {
+inline void RecordRouteResponse::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&point_count_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&elapsed_time_) -
@@ -2701,7 +2713,7 @@ void RecordRouteResponse::SetCachedSize(int size) const {
 
 void RecordRouteResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.RecordRouteResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2714,37 +2726,37 @@ void RecordRouteResponse::Clear() {
 const char* RecordRouteResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int32 point_count = 1 [json_name = "pointCount"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          point_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          point_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // int32 feature_count = 2 [json_name = "featureCount"];
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          feature_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          feature_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // int32 distance = 3 [json_name = "distance"];
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          distance_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          distance_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
       // int32 elapsed_time = 4 [json_name = "elapsedTime"];
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          elapsed_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          elapsed_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -2772,10 +2784,10 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RecordRouteResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* RecordRouteResponse::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.RecordRouteResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 point_count = 1 [json_name = "pointCount"];
@@ -2814,7 +2826,7 @@ size_t RecordRouteResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.RecordRouteResponse)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2857,7 +2869,7 @@ void RecordRouteResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 void RecordRouteResponse::MergeFrom(const RecordRouteResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.RecordRouteResponse)
   GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_point_count() != 0) {
