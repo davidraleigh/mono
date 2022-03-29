@@ -1,6 +1,10 @@
+#!/bin/zsh
+
 set -e
 
 ./scripts/lint.sh
+
+set +e
 
 rm -rf cpp/proto/**/*.pb.cc
 rm -rf cpp/proto/**/*.pb.h
