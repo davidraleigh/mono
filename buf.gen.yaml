@@ -3,7 +3,7 @@ plugins:
   - name: cpp
     out: cpp
   - name: java
-    out: java/proto
+    out: java/proto/src/main/java
   - name: python
     out: python
   - name: csharp
