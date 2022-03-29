@@ -8,3 +8,13 @@ plugins:
     out: gen/proto/python
   - name: csharp
     out: gen/proto/net
+  - remote: buf.build/protocolbuffers/plugins/ruby:v3.19.1-1
+    out: gen/proto/ruby
+  - remote: buf.build/protocolbuffers/plugins/js:v3.19.1-1
+    out: gen/proto/js
+    opt:
+      - import_style=commonjs
+      - binary
+  - remote: buf.build/protocolbuffers/plugins/go:v1.27.1-1
+    out: gen/proto/go
+    opt: paths=source_relative
