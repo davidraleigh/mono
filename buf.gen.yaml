@@ -2,40 +2,40 @@ version: v1
 plugins:
 #  protobuf
   - remote: buf.build/protocolbuffers/plugins/cpp:v3.19.3-1
-    out: gen/proto/cpp
+    out: cpp
   - remote: buf.build/protocolbuffers/plugins/java:v3.19.3-1
-    out: gen/proto/java
+    out: java/proto
   - remote: buf.build/protocolbuffers/plugins/python:v3.19.3-1
-    out: gen/proto/python
+    out: python
   - remote: buf.build/protocolbuffers/plugins/csharp:v3.19.3-1
-    out: gen/proto/csharp
+    out: net/proto
   - remote: buf.build/protocolbuffers/plugins/ruby:v3.19.3-1
-    out: gen/proto/ruby
+    out: ruby
   - remote: buf.build/protocolbuffers/plugins/js:v3.19.3-1
-    out: gen/proto/js
+    out: js
     opt:
       - import_style=commonjs
       - binary
   - remote: buf.build/protocolbuffers/plugins/go:v1.28.0-1
-    out: gen/proto/go
+    out: go
     opt: paths=source_relative
 # grpc
   - remote: buf.build/grpc/plugins/cpp:v1.45.0-1
-    out: gen/proto/cpp
+    out: cpp
   - remote: buf.build/grpc/plugins/java:v1.45.0-1
-    out: gen/proto/java
+    out: java/proto
   - remote: buf.build/grpc/plugins/python:v1.45.0-1
-    out: gen/proto/python
+    out: python
   - remote: buf.build/grpc/plugins/csharp:v1.45.0-1
-    out: gen/proto/csharp
+    out: net/proto
   - remote: buf.build/grpc/plugins/ruby:v1.45.0-1
-    out: gen/proto/ruby
+    out: ruby
   - remote: buf.build/grpc/plugins/node:v1.11.2-1
-    out: gen/proto/js
+    out: js
     opt:
       - import_style=commonjs
   - remote: buf.build/grpc/plugins/go:v1.2.0-1
-    out: gen/proto/go
+    out: go
     opt:
       - paths=source_relative
       - require_unimplemented_servers=false
