@@ -4,9 +4,9 @@ repos:
   hooks:
   -   id: check-yaml
   -   id: end-of-file-fixer
-#      exclude: [\w]+\/proto\/
+      exclude: cpp\/proto\/|java\/proto\/
   -   id: trailing-whitespace
-#      exclude: [\w]+\/proto\/
+      exclude: cpp\/proto\/|java\/proto\/
 - repo: local
   hooks:
     - id: custom-script-file
