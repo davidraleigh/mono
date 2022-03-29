@@ -521,7 +521,7 @@ private static final long serialVersionUID = 0L;
      * <code>.route_guide.v1.RouteNote route_note = 1 [json_name = "routeNote"];</code>
      */
     public io.grpc.route_guide.v1.RouteNote.Builder getRouteNoteBuilder() {
-
+      
       onChanged();
       return getRouteNoteFieldBuilder().getBuilder();
     }
@@ -540,7 +540,7 @@ private static final long serialVersionUID = 0L;
      * <code>.route_guide.v1.RouteNote route_note = 1 [json_name = "routeNote"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        io.grpc.route_guide.v1.RouteNote, io.grpc.route_guide.v1.RouteNote.Builder, io.grpc.route_guide.v1.RouteNoteOrBuilder>
+        io.grpc.route_guide.v1.RouteNote, io.grpc.route_guide.v1.RouteNote.Builder, io.grpc.route_guide.v1.RouteNoteOrBuilder> 
         getRouteNoteFieldBuilder() {
       if (routeNoteBuilder_ == null) {
         routeNoteBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -604,3 +604,4 @@ private static final long serialVersionUID = 0L;
   }
 
 }
+

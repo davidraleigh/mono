@@ -342,7 +342,7 @@ const char descriptor_table_protodef_proto_2froute_5fguide_2fv1_2froute_5fguide_
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_proto_2froute_5fguide_2fv1_2froute_5fguide_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_proto_2froute_5fguide_2fv1_2froute_5fguide_2eproto = {
-  false, false, 1581, descriptor_table_protodef_proto_2froute_5fguide_2fv1_2froute_5fguide_2eproto, "proto/route_guide/v1/route_guide.proto",
+  false, false, 1581, descriptor_table_protodef_proto_2froute_5fguide_2fv1_2froute_5fguide_2eproto, "proto/route_guide/v1/route_guide.proto", 
   &descriptor_table_proto_2froute_5fguide_2fv1_2froute_5fguide_2eproto_once, nullptr, 0, 12,
   schemas, file_default_instances, TableStruct_proto_2froute_5fguide_2fv1_2froute_5fguide_2eproto::offsets,
   file_level_metadata_proto_2froute_5fguide_2fv1_2froute_5fguide_2eproto, file_level_enum_descriptors_proto_2froute_5fguide_2fv1_2froute_5fguide_2eproto, file_level_service_descriptors_proto_2froute_5fguide_2fv1_2froute_5fguide_2eproto,
@@ -2007,7 +2007,7 @@ Feature::Feature(const Feature& from)
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_name().empty()) {
-    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(),
+    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
       GetArenaForAllocation());
   }
   if (from._internal_has_location()) {
@@ -2432,7 +2432,7 @@ RouteNote::RouteNote(const RouteNote& from)
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   message_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_message().empty()) {
-    message_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_message(),
+    message_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_message(), 
       GetArenaForAllocation());
   }
   if (from._internal_has_location()) {

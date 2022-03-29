@@ -16,62 +16,62 @@ public final class RouteGuideProto {
   }
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_route_guide_v1_Point_descriptor;
-  static final
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_route_guide_v1_Point_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_route_guide_v1_ListFeaturesRequest_descriptor;
-  static final
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_route_guide_v1_ListFeaturesRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_route_guide_v1_GetFeatureResponse_descriptor;
-  static final
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_route_guide_v1_GetFeatureResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_route_guide_v1_GetFeatureRequest_descriptor;
-  static final
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_route_guide_v1_GetFeatureRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_route_guide_v1_ListFeaturesResponse_descriptor;
-  static final
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_route_guide_v1_ListFeaturesResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_route_guide_v1_RecordRouteRequest_descriptor;
-  static final
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_route_guide_v1_RecordRouteRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_route_guide_v1_RouteChatRequest_descriptor;
-  static final
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_route_guide_v1_RouteChatRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_route_guide_v1_RouteChatResponse_descriptor;
-  static final
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_route_guide_v1_RouteChatResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_route_guide_v1_Feature_descriptor;
-  static final
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_route_guide_v1_Feature_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_route_guide_v1_FeatureDatabase_descriptor;
-  static final
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_route_guide_v1_FeatureDatabase_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_route_guide_v1_RouteNote_descriptor;
-  static final
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_route_guide_v1_RouteNote_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_route_guide_v1_RecordRouteResponse_descriptor;
-  static final
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_route_guide_v1_RecordRouteResponse_fieldAccessorTable;
 

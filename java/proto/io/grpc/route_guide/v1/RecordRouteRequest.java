@@ -521,7 +521,7 @@ private static final long serialVersionUID = 0L;
      * <code>.route_guide.v1.Point point = 1 [json_name = "point"];</code>
      */
     public io.grpc.route_guide.v1.Point.Builder getPointBuilder() {
-
+      
       onChanged();
       return getPointFieldBuilder().getBuilder();
     }
@@ -540,7 +540,7 @@ private static final long serialVersionUID = 0L;
      * <code>.route_guide.v1.Point point = 1 [json_name = "point"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        io.grpc.route_guide.v1.Point, io.grpc.route_guide.v1.Point.Builder, io.grpc.route_guide.v1.PointOrBuilder>
+        io.grpc.route_guide.v1.Point, io.grpc.route_guide.v1.Point.Builder, io.grpc.route_guide.v1.PointOrBuilder> 
         getPointFieldBuilder() {
       if (pointBuilder_ == null) {
         pointBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -604,3 +604,4 @@ private static final long serialVersionUID = 0L;
   }
 
 }
+

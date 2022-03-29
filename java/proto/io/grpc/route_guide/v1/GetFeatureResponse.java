@@ -521,7 +521,7 @@ private static final long serialVersionUID = 0L;
      * <code>.route_guide.v1.Feature feature = 1 [json_name = "feature"];</code>
      */
     public io.grpc.route_guide.v1.Feature.Builder getFeatureBuilder() {
-
+      
       onChanged();
       return getFeatureFieldBuilder().getBuilder();
     }
@@ -540,7 +540,7 @@ private static final long serialVersionUID = 0L;
      * <code>.route_guide.v1.Feature feature = 1 [json_name = "feature"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        io.grpc.route_guide.v1.Feature, io.grpc.route_guide.v1.Feature.Builder, io.grpc.route_guide.v1.FeatureOrBuilder>
+        io.grpc.route_guide.v1.Feature, io.grpc.route_guide.v1.Feature.Builder, io.grpc.route_guide.v1.FeatureOrBuilder> 
         getFeatureFieldBuilder() {
       if (featureBuilder_ == null) {
         featureBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -604,3 +604,4 @@ private static final long serialVersionUID = 0L;
   }
 
 }
+

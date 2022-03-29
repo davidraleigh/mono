@@ -460,7 +460,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setLatitude(int value) {
-
+      
       latitude_ = value;
       onChanged();
       return this;
@@ -470,7 +470,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearLatitude() {
-
+      
       latitude_ = 0;
       onChanged();
       return this;
@@ -491,7 +491,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setLongitude(int value) {
-
+      
       longitude_ = value;
       onChanged();
       return this;
@@ -501,7 +501,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearLongitude() {
-
+      
       longitude_ = 0;
       onChanged();
       return this;
@@ -558,3 +558,4 @@ private static final long serialVersionUID = 0L;
   }
 
 }
+

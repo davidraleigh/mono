@@ -111,7 +111,7 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .route_guide.v1.Feature feature = 1 [json_name = "feature"];</code>
    */
   @java.lang.Override
-  public java.util.List<? extends io.grpc.route_guide.v1.FeatureOrBuilder>
+  public java.util.List<? extends io.grpc.route_guide.v1.FeatureOrBuilder> 
       getFeatureOrBuilderList() {
     return feature_;
   }
@@ -446,7 +446,7 @@ private static final long serialVersionUID = 0L;
             featureBuilder_ = null;
             feature_ = other.feature_;
             bitField0_ = (bitField0_ & ~0x00000001);
-            featureBuilder_ =
+            featureBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getFeatureFieldBuilder() : null;
           } else {
@@ -679,7 +679,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .route_guide.v1.Feature feature = 1 [json_name = "feature"];</code>
      */
-    public java.util.List<? extends io.grpc.route_guide.v1.FeatureOrBuilder>
+    public java.util.List<? extends io.grpc.route_guide.v1.FeatureOrBuilder> 
          getFeatureOrBuilderList() {
       if (featureBuilder_ != null) {
         return featureBuilder_.getMessageOrBuilderList();
@@ -705,12 +705,12 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .route_guide.v1.Feature feature = 1 [json_name = "feature"];</code>
      */
-    public java.util.List<io.grpc.route_guide.v1.Feature.Builder>
+    public java.util.List<io.grpc.route_guide.v1.Feature.Builder> 
          getFeatureBuilderList() {
       return getFeatureFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        io.grpc.route_guide.v1.Feature, io.grpc.route_guide.v1.Feature.Builder, io.grpc.route_guide.v1.FeatureOrBuilder>
+        io.grpc.route_guide.v1.Feature, io.grpc.route_guide.v1.Feature.Builder, io.grpc.route_guide.v1.FeatureOrBuilder> 
         getFeatureFieldBuilder() {
       if (featureBuilder_ == null) {
         featureBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
@@ -775,3 +775,4 @@ private static final long serialVersionUID = 0L;
   }
 
 }
+
