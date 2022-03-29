@@ -1,20 +1,20 @@
 version: v1
 plugins:
   - name: cpp
-    out: gen/proto/cpp
+    out: cpp
   - name: java
-    out: gen/proto/java
+    out: java/proto
   - name: python
-    out: gen/proto/python
+    out: python
   - name: csharp
-    out: gen/proto/net
+    out: net/proto
   - remote: buf.build/protocolbuffers/plugins/ruby:v3.19.1-1
-    out: gen/proto/ruby
+    out: ruby
   - remote: buf.build/protocolbuffers/plugins/js:v3.19.1-1
-    out: gen/proto/js
+    out: js
     opt:
       - import_style=commonjs
       - binary
   - remote: buf.build/protocolbuffers/plugins/go:v1.27.1-1
-    out: gen/proto/go
+    out: go
     opt: paths=source_relative

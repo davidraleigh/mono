@@ -10,7 +10,7 @@ public interface FeatureDatabaseOrBuilder extends
   /**
    * <code>repeated .route_guide.v1.Feature feature = 1 [json_name = "feature"];</code>
    */
-  java.util.List<io.grpc.route_guide.v1.Feature> 
+  java.util.List<io.grpc.route_guide.v1.Feature>
       getFeatureList();
   /**
    * <code>repeated .route_guide.v1.Feature feature = 1 [json_name = "feature"];</code>
@@ -23,7 +23,7 @@ public interface FeatureDatabaseOrBuilder extends
   /**
    * <code>repeated .route_guide.v1.Feature feature = 1 [json_name = "feature"];</code>
    */
-  java.util.List<? extends io.grpc.route_guide.v1.FeatureOrBuilder> 
+  java.util.List<? extends io.grpc.route_guide.v1.FeatureOrBuilder>
       getFeatureOrBuilderList();
   /**
    * <code>repeated .route_guide.v1.Feature feature = 1 [json_name = "feature"];</code>

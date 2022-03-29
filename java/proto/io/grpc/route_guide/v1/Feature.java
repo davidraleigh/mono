@@ -5,29 +5,30 @@ package io.grpc.route_guide.v1;
 
 /**
  * <pre>
- * A RouteNote is a message sent while at a given point.
+ * A feature names something at a given point.
+ * If a feature could not be named, the name is empty.
  * </pre>
  *
- * Protobuf type {@code route_guide.v1.RouteNote}
+ * Protobuf type {@code route_guide.v1.Feature}
  */
-public final class RouteNote extends
+public final class Feature extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:route_guide.v1.RouteNote)
-    RouteNoteOrBuilder {
+    // @@protoc_insertion_point(message_implements:route_guide.v1.Feature)
+    FeatureOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use RouteNote.newBuilder() to construct.
-  private RouteNote(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use Feature.newBuilder() to construct.
+  private Feature(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private RouteNote() {
-    message_ = "";
+  private Feature() {
+    name_ = "";
   }
 
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new RouteNote();
+    return new Feature();
   }
 
   @java.lang.Override
@@ -35,7 +36,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private RouteNote(
+  private Feature(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -54,6 +55,12 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            name_ = s;
+            break;
+          }
+          case 18: {
             io.grpc.route_guide.v1.Point.Builder subBuilder = null;
             if (location_ != null) {
               subBuilder = location_.toBuilder();
@@ -64,12 +71,6 @@ private static final long serialVersionUID = 0L;
               location_ = subBuilder.buildPartial();
             }
 
-            break;
-          }
-          case 18: {
-            java.lang.String s = input.readStringRequireUtf8();
-
-            message_ = s;
             break;
           }
           default: {
@@ -93,25 +94,71 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_RouteNote_descriptor;
+    return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_Feature_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_RouteNote_fieldAccessorTable
+    return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_Feature_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            io.grpc.route_guide.v1.RouteNote.class, io.grpc.route_guide.v1.RouteNote.Builder.class);
+            io.grpc.route_guide.v1.Feature.class, io.grpc.route_guide.v1.Feature.Builder.class);
   }
 
-  public static final int LOCATION_FIELD_NUMBER = 1;
+  public static final int NAME_FIELD_NUMBER = 1;
+  private volatile java.lang.Object name_;
+  /**
+   * <pre>
+   * The name of the feature.
+   * </pre>
+   *
+   * <code>string name = 1 [json_name = "name"];</code>
+   * @return The name.
+   */
+  @java.lang.Override
+  public java.lang.String getName() {
+    java.lang.Object ref = name_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs =
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      name_ = s;
+      return s;
+    }
+  }
+  /**
+   * <pre>
+   * The name of the feature.
+   * </pre>
+   *
+   * <code>string name = 1 [json_name = "name"];</code>
+   * @return The bytes for name.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getNameBytes() {
+    java.lang.Object ref = name_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      name_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int LOCATION_FIELD_NUMBER = 2;
   private io.grpc.route_guide.v1.Point location_;
   /**
    * <pre>
-   * The location from which the message is sent.
+   * The point where the feature is detected.
    * </pre>
    *
-   * <code>.route_guide.v1.Point location = 1 [json_name = "location"];</code>
+   * <code>.route_guide.v1.Point location = 2 [json_name = "location"];</code>
    * @return Whether the location field is set.
    */
   @java.lang.Override
@@ -120,10 +167,10 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * The location from which the message is sent.
+   * The point where the feature is detected.
    * </pre>
    *
-   * <code>.route_guide.v1.Point location = 1 [json_name = "location"];</code>
+   * <code>.route_guide.v1.Point location = 2 [json_name = "location"];</code>
    * @return The location.
    */
   @java.lang.Override
@@ -132,60 +179,14 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * The location from which the message is sent.
+   * The point where the feature is detected.
    * </pre>
    *
-   * <code>.route_guide.v1.Point location = 1 [json_name = "location"];</code>
+   * <code>.route_guide.v1.Point location = 2 [json_name = "location"];</code>
    */
   @java.lang.Override
   public io.grpc.route_guide.v1.PointOrBuilder getLocationOrBuilder() {
     return getLocation();
-  }
-
-  public static final int MESSAGE_FIELD_NUMBER = 2;
-  private volatile java.lang.Object message_;
-  /**
-   * <pre>
-   * The message to be sent.
-   * </pre>
-   *
-   * <code>string message = 2 [json_name = "message"];</code>
-   * @return The message.
-   */
-  @java.lang.Override
-  public java.lang.String getMessage() {
-    java.lang.Object ref = message_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      message_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * The message to be sent.
-   * </pre>
-   *
-   * <code>string message = 2 [json_name = "message"];</code>
-   * @return The bytes for message.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getMessageBytes() {
-    java.lang.Object ref = message_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      message_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
   }
 
   private byte memoizedIsInitialized = -1;
@@ -202,11 +203,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (location_ != null) {
-      output.writeMessage(1, getLocation());
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
     }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, message_);
+    if (location_ != null) {
+      output.writeMessage(2, getLocation());
     }
     unknownFields.writeTo(output);
   }
@@ -217,12 +218,12 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+    }
     if (location_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getLocation());
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, message_);
+        .computeMessageSize(2, getLocation());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -234,18 +235,18 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof io.grpc.route_guide.v1.RouteNote)) {
+    if (!(obj instanceof io.grpc.route_guide.v1.Feature)) {
       return super.equals(obj);
     }
-    io.grpc.route_guide.v1.RouteNote other = (io.grpc.route_guide.v1.RouteNote) obj;
+    io.grpc.route_guide.v1.Feature other = (io.grpc.route_guide.v1.Feature) obj;
 
+    if (!getName()
+        .equals(other.getName())) return false;
     if (hasLocation() != other.hasLocation()) return false;
     if (hasLocation()) {
       if (!getLocation()
           .equals(other.getLocation())) return false;
     }
-    if (!getMessage()
-        .equals(other.getMessage())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -257,80 +258,80 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + NAME_FIELD_NUMBER;
+    hash = (53 * hash) + getName().hashCode();
     if (hasLocation()) {
       hash = (37 * hash) + LOCATION_FIELD_NUMBER;
       hash = (53 * hash) + getLocation().hashCode();
     }
-    hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
-    hash = (53 * hash) + getMessage().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
-  public static io.grpc.route_guide.v1.RouteNote parseFrom(
+  public static io.grpc.route_guide.v1.Feature parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static io.grpc.route_guide.v1.RouteNote parseFrom(
+  public static io.grpc.route_guide.v1.Feature parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static io.grpc.route_guide.v1.RouteNote parseFrom(
+  public static io.grpc.route_guide.v1.Feature parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static io.grpc.route_guide.v1.RouteNote parseFrom(
+  public static io.grpc.route_guide.v1.Feature parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static io.grpc.route_guide.v1.RouteNote parseFrom(byte[] data)
+  public static io.grpc.route_guide.v1.Feature parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static io.grpc.route_guide.v1.RouteNote parseFrom(
+  public static io.grpc.route_guide.v1.Feature parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static io.grpc.route_guide.v1.RouteNote parseFrom(java.io.InputStream input)
+  public static io.grpc.route_guide.v1.Feature parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static io.grpc.route_guide.v1.RouteNote parseFrom(
+  public static io.grpc.route_guide.v1.Feature parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static io.grpc.route_guide.v1.RouteNote parseDelimitedFrom(java.io.InputStream input)
+  public static io.grpc.route_guide.v1.Feature parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static io.grpc.route_guide.v1.RouteNote parseDelimitedFrom(
+  public static io.grpc.route_guide.v1.Feature parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static io.grpc.route_guide.v1.RouteNote parseFrom(
+  public static io.grpc.route_guide.v1.Feature parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static io.grpc.route_guide.v1.RouteNote parseFrom(
+  public static io.grpc.route_guide.v1.Feature parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -343,7 +344,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(io.grpc.route_guide.v1.RouteNote prototype) {
+  public static Builder newBuilder(io.grpc.route_guide.v1.Feature prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -360,29 +361,30 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * A RouteNote is a message sent while at a given point.
+   * A feature names something at a given point.
+   * If a feature could not be named, the name is empty.
    * </pre>
    *
-   * Protobuf type {@code route_guide.v1.RouteNote}
+   * Protobuf type {@code route_guide.v1.Feature}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:route_guide.v1.RouteNote)
-      io.grpc.route_guide.v1.RouteNoteOrBuilder {
+      // @@protoc_insertion_point(builder_implements:route_guide.v1.Feature)
+      io.grpc.route_guide.v1.FeatureOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_RouteNote_descriptor;
+      return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_Feature_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_RouteNote_fieldAccessorTable
+      return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_Feature_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              io.grpc.route_guide.v1.RouteNote.class, io.grpc.route_guide.v1.RouteNote.Builder.class);
+              io.grpc.route_guide.v1.Feature.class, io.grpc.route_guide.v1.Feature.Builder.class);
     }
 
-    // Construct using io.grpc.route_guide.v1.RouteNote.newBuilder()
+    // Construct using io.grpc.route_guide.v1.Feature.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -400,31 +402,31 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      name_ = "";
+
       if (locationBuilder_ == null) {
         location_ = null;
       } else {
         location_ = null;
         locationBuilder_ = null;
       }
-      message_ = "";
-
       return this;
     }
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_RouteNote_descriptor;
+      return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_Feature_descriptor;
     }
 
     @java.lang.Override
-    public io.grpc.route_guide.v1.RouteNote getDefaultInstanceForType() {
-      return io.grpc.route_guide.v1.RouteNote.getDefaultInstance();
+    public io.grpc.route_guide.v1.Feature getDefaultInstanceForType() {
+      return io.grpc.route_guide.v1.Feature.getDefaultInstance();
     }
 
     @java.lang.Override
-    public io.grpc.route_guide.v1.RouteNote build() {
-      io.grpc.route_guide.v1.RouteNote result = buildPartial();
+    public io.grpc.route_guide.v1.Feature build() {
+      io.grpc.route_guide.v1.Feature result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -432,14 +434,14 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public io.grpc.route_guide.v1.RouteNote buildPartial() {
-      io.grpc.route_guide.v1.RouteNote result = new io.grpc.route_guide.v1.RouteNote(this);
+    public io.grpc.route_guide.v1.Feature buildPartial() {
+      io.grpc.route_guide.v1.Feature result = new io.grpc.route_guide.v1.Feature(this);
+      result.name_ = name_;
       if (locationBuilder_ == null) {
         result.location_ = location_;
       } else {
         result.location_ = locationBuilder_.build();
       }
-      result.message_ = message_;
       onBuilt();
       return result;
     }
@@ -478,22 +480,22 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof io.grpc.route_guide.v1.RouteNote) {
-        return mergeFrom((io.grpc.route_guide.v1.RouteNote)other);
+      if (other instanceof io.grpc.route_guide.v1.Feature) {
+        return mergeFrom((io.grpc.route_guide.v1.Feature)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(io.grpc.route_guide.v1.RouteNote other) {
-      if (other == io.grpc.route_guide.v1.RouteNote.getDefaultInstance()) return this;
+    public Builder mergeFrom(io.grpc.route_guide.v1.Feature other) {
+      if (other == io.grpc.route_guide.v1.Feature.getDefaultInstance()) return this;
+      if (!other.getName().isEmpty()) {
+        name_ = other.name_;
+        onChanged();
+      }
       if (other.hasLocation()) {
         mergeLocation(other.getLocation());
-      }
-      if (!other.getMessage().isEmpty()) {
-        message_ = other.message_;
-        onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -510,11 +512,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      io.grpc.route_guide.v1.RouteNote parsedMessage = null;
+      io.grpc.route_guide.v1.Feature parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (io.grpc.route_guide.v1.RouteNote) e.getUnfinishedMessage();
+        parsedMessage = (io.grpc.route_guide.v1.Feature) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -524,15 +526,111 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private java.lang.Object name_ = "";
+    /**
+     * <pre>
+     * The name of the feature.
+     * </pre>
+     *
+     * <code>string name = 1 [json_name = "name"];</code>
+     * @return The name.
+     */
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        name_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <pre>
+     * The name of the feature.
+     * </pre>
+     *
+     * <code>string name = 1 [json_name = "name"];</code>
+     * @return The bytes for name.
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <pre>
+     * The name of the feature.
+     * </pre>
+     *
+     * <code>string name = 1 [json_name = "name"];</code>
+     * @param value The name to set.
+     * @return This builder for chaining.
+     */
+    public Builder setName(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+
+      name_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * The name of the feature.
+     * </pre>
+     *
+     * <code>string name = 1 [json_name = "name"];</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearName() {
+
+      name_ = getDefaultInstance().getName();
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * The name of the feature.
+     * </pre>
+     *
+     * <code>string name = 1 [json_name = "name"];</code>
+     * @param value The bytes for name to set.
+     * @return This builder for chaining.
+     */
+    public Builder setNameBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+
+      name_ = value;
+      onChanged();
+      return this;
+    }
+
     private io.grpc.route_guide.v1.Point location_;
     private com.google.protobuf.SingleFieldBuilderV3<
         io.grpc.route_guide.v1.Point, io.grpc.route_guide.v1.Point.Builder, io.grpc.route_guide.v1.PointOrBuilder> locationBuilder_;
     /**
      * <pre>
-     * The location from which the message is sent.
+     * The point where the feature is detected.
      * </pre>
      *
-     * <code>.route_guide.v1.Point location = 1 [json_name = "location"];</code>
+     * <code>.route_guide.v1.Point location = 2 [json_name = "location"];</code>
      * @return Whether the location field is set.
      */
     public boolean hasLocation() {
@@ -540,10 +638,10 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The location from which the message is sent.
+     * The point where the feature is detected.
      * </pre>
      *
-     * <code>.route_guide.v1.Point location = 1 [json_name = "location"];</code>
+     * <code>.route_guide.v1.Point location = 2 [json_name = "location"];</code>
      * @return The location.
      */
     public io.grpc.route_guide.v1.Point getLocation() {
@@ -555,10 +653,10 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The location from which the message is sent.
+     * The point where the feature is detected.
      * </pre>
      *
-     * <code>.route_guide.v1.Point location = 1 [json_name = "location"];</code>
+     * <code>.route_guide.v1.Point location = 2 [json_name = "location"];</code>
      */
     public Builder setLocation(io.grpc.route_guide.v1.Point value) {
       if (locationBuilder_ == null) {
@@ -575,10 +673,10 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The location from which the message is sent.
+     * The point where the feature is detected.
      * </pre>
      *
-     * <code>.route_guide.v1.Point location = 1 [json_name = "location"];</code>
+     * <code>.route_guide.v1.Point location = 2 [json_name = "location"];</code>
      */
     public Builder setLocation(
         io.grpc.route_guide.v1.Point.Builder builderForValue) {
@@ -593,10 +691,10 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The location from which the message is sent.
+     * The point where the feature is detected.
      * </pre>
      *
-     * <code>.route_guide.v1.Point location = 1 [json_name = "location"];</code>
+     * <code>.route_guide.v1.Point location = 2 [json_name = "location"];</code>
      */
     public Builder mergeLocation(io.grpc.route_guide.v1.Point value) {
       if (locationBuilder_ == null) {
@@ -615,10 +713,10 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The location from which the message is sent.
+     * The point where the feature is detected.
      * </pre>
      *
-     * <code>.route_guide.v1.Point location = 1 [json_name = "location"];</code>
+     * <code>.route_guide.v1.Point location = 2 [json_name = "location"];</code>
      */
     public Builder clearLocation() {
       if (locationBuilder_ == null) {
@@ -633,22 +731,22 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The location from which the message is sent.
+     * The point where the feature is detected.
      * </pre>
      *
-     * <code>.route_guide.v1.Point location = 1 [json_name = "location"];</code>
+     * <code>.route_guide.v1.Point location = 2 [json_name = "location"];</code>
      */
     public io.grpc.route_guide.v1.Point.Builder getLocationBuilder() {
-      
+
       onChanged();
       return getLocationFieldBuilder().getBuilder();
     }
     /**
      * <pre>
-     * The location from which the message is sent.
+     * The point where the feature is detected.
      * </pre>
      *
-     * <code>.route_guide.v1.Point location = 1 [json_name = "location"];</code>
+     * <code>.route_guide.v1.Point location = 2 [json_name = "location"];</code>
      */
     public io.grpc.route_guide.v1.PointOrBuilder getLocationOrBuilder() {
       if (locationBuilder_ != null) {
@@ -660,13 +758,13 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The location from which the message is sent.
+     * The point where the feature is detected.
      * </pre>
      *
-     * <code>.route_guide.v1.Point location = 1 [json_name = "location"];</code>
+     * <code>.route_guide.v1.Point location = 2 [json_name = "location"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        io.grpc.route_guide.v1.Point, io.grpc.route_guide.v1.Point.Builder, io.grpc.route_guide.v1.PointOrBuilder> 
+        io.grpc.route_guide.v1.Point, io.grpc.route_guide.v1.Point.Builder, io.grpc.route_guide.v1.PointOrBuilder>
         getLocationFieldBuilder() {
       if (locationBuilder_ == null) {
         locationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -677,102 +775,6 @@ private static final long serialVersionUID = 0L;
         location_ = null;
       }
       return locationBuilder_;
-    }
-
-    private java.lang.Object message_ = "";
-    /**
-     * <pre>
-     * The message to be sent.
-     * </pre>
-     *
-     * <code>string message = 2 [json_name = "message"];</code>
-     * @return The message.
-     */
-    public java.lang.String getMessage() {
-      java.lang.Object ref = message_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        message_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The message to be sent.
-     * </pre>
-     *
-     * <code>string message = 2 [json_name = "message"];</code>
-     * @return The bytes for message.
-     */
-    public com.google.protobuf.ByteString
-        getMessageBytes() {
-      java.lang.Object ref = message_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        message_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The message to be sent.
-     * </pre>
-     *
-     * <code>string message = 2 [json_name = "message"];</code>
-     * @param value The message to set.
-     * @return This builder for chaining.
-     */
-    public Builder setMessage(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      message_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The message to be sent.
-     * </pre>
-     *
-     * <code>string message = 2 [json_name = "message"];</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearMessage() {
-      
-      message_ = getDefaultInstance().getMessage();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The message to be sent.
-     * </pre>
-     *
-     * <code>string message = 2 [json_name = "message"];</code>
-     * @param value The bytes for message to set.
-     * @return This builder for chaining.
-     */
-    public Builder setMessageBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      message_ = value;
-      onChanged();
-      return this;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
@@ -787,43 +789,42 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:route_guide.v1.RouteNote)
+    // @@protoc_insertion_point(builder_scope:route_guide.v1.Feature)
   }
 
-  // @@protoc_insertion_point(class_scope:route_guide.v1.RouteNote)
-  private static final io.grpc.route_guide.v1.RouteNote DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:route_guide.v1.Feature)
+  private static final io.grpc.route_guide.v1.Feature DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new io.grpc.route_guide.v1.RouteNote();
+    DEFAULT_INSTANCE = new io.grpc.route_guide.v1.Feature();
   }
 
-  public static io.grpc.route_guide.v1.RouteNote getDefaultInstance() {
+  public static io.grpc.route_guide.v1.Feature getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<RouteNote>
-      PARSER = new com.google.protobuf.AbstractParser<RouteNote>() {
+  private static final com.google.protobuf.Parser<Feature>
+      PARSER = new com.google.protobuf.AbstractParser<Feature>() {
     @java.lang.Override
-    public RouteNote parsePartialFrom(
+    public Feature parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new RouteNote(input, extensionRegistry);
+      return new Feature(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<RouteNote> parser() {
+  public static com.google.protobuf.Parser<Feature> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<RouteNote> getParserForType() {
+  public com.google.protobuf.Parser<Feature> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public io.grpc.route_guide.v1.RouteNote getDefaultInstanceForType() {
+  public io.grpc.route_guide.v1.Feature getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 
 }
-

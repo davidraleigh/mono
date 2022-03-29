@@ -4,25 +4,25 @@
 package io.grpc.route_guide.v1;
 
 /**
- * Protobuf type {@code route_guide.v1.GetFeatureRequest}
+ * Protobuf type {@code route_guide.v1.RecordRouteRequest}
  */
-public final class GetFeatureRequest extends
+public final class RecordRouteRequest extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:route_guide.v1.GetFeatureRequest)
-    GetFeatureRequestOrBuilder {
+    // @@protoc_insertion_point(message_implements:route_guide.v1.RecordRouteRequest)
+    RecordRouteRequestOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use GetFeatureRequest.newBuilder() to construct.
-  private GetFeatureRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use RecordRouteRequest.newBuilder() to construct.
+  private RecordRouteRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private GetFeatureRequest() {
+  private RecordRouteRequest() {
   }
 
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new GetFeatureRequest();
+    return new RecordRouteRequest();
   }
 
   @java.lang.Override
@@ -30,7 +30,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private GetFeatureRequest(
+  private RecordRouteRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -82,15 +82,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_GetFeatureRequest_descriptor;
+    return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_RecordRouteRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_GetFeatureRequest_fieldAccessorTable
+    return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_RecordRouteRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            io.grpc.route_guide.v1.GetFeatureRequest.class, io.grpc.route_guide.v1.GetFeatureRequest.Builder.class);
+            io.grpc.route_guide.v1.RecordRouteRequest.class, io.grpc.route_guide.v1.RecordRouteRequest.Builder.class);
   }
 
   public static final int POINT_FIELD_NUMBER = 1;
@@ -159,10 +159,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof io.grpc.route_guide.v1.GetFeatureRequest)) {
+    if (!(obj instanceof io.grpc.route_guide.v1.RecordRouteRequest)) {
       return super.equals(obj);
     }
-    io.grpc.route_guide.v1.GetFeatureRequest other = (io.grpc.route_guide.v1.GetFeatureRequest) obj;
+    io.grpc.route_guide.v1.RecordRouteRequest other = (io.grpc.route_guide.v1.RecordRouteRequest) obj;
 
     if (hasPoint() != other.hasPoint()) return false;
     if (hasPoint()) {
@@ -189,69 +189,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static io.grpc.route_guide.v1.GetFeatureRequest parseFrom(
+  public static io.grpc.route_guide.v1.RecordRouteRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static io.grpc.route_guide.v1.GetFeatureRequest parseFrom(
+  public static io.grpc.route_guide.v1.RecordRouteRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static io.grpc.route_guide.v1.GetFeatureRequest parseFrom(
+  public static io.grpc.route_guide.v1.RecordRouteRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static io.grpc.route_guide.v1.GetFeatureRequest parseFrom(
+  public static io.grpc.route_guide.v1.RecordRouteRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static io.grpc.route_guide.v1.GetFeatureRequest parseFrom(byte[] data)
+  public static io.grpc.route_guide.v1.RecordRouteRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static io.grpc.route_guide.v1.GetFeatureRequest parseFrom(
+  public static io.grpc.route_guide.v1.RecordRouteRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static io.grpc.route_guide.v1.GetFeatureRequest parseFrom(java.io.InputStream input)
+  public static io.grpc.route_guide.v1.RecordRouteRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static io.grpc.route_guide.v1.GetFeatureRequest parseFrom(
+  public static io.grpc.route_guide.v1.RecordRouteRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static io.grpc.route_guide.v1.GetFeatureRequest parseDelimitedFrom(java.io.InputStream input)
+  public static io.grpc.route_guide.v1.RecordRouteRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static io.grpc.route_guide.v1.GetFeatureRequest parseDelimitedFrom(
+  public static io.grpc.route_guide.v1.RecordRouteRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static io.grpc.route_guide.v1.GetFeatureRequest parseFrom(
+  public static io.grpc.route_guide.v1.RecordRouteRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static io.grpc.route_guide.v1.GetFeatureRequest parseFrom(
+  public static io.grpc.route_guide.v1.RecordRouteRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -264,7 +264,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(io.grpc.route_guide.v1.GetFeatureRequest prototype) {
+  public static Builder newBuilder(io.grpc.route_guide.v1.RecordRouteRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -280,26 +280,26 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code route_guide.v1.GetFeatureRequest}
+   * Protobuf type {@code route_guide.v1.RecordRouteRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:route_guide.v1.GetFeatureRequest)
-      io.grpc.route_guide.v1.GetFeatureRequestOrBuilder {
+      // @@protoc_insertion_point(builder_implements:route_guide.v1.RecordRouteRequest)
+      io.grpc.route_guide.v1.RecordRouteRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_GetFeatureRequest_descriptor;
+      return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_RecordRouteRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_GetFeatureRequest_fieldAccessorTable
+      return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_RecordRouteRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              io.grpc.route_guide.v1.GetFeatureRequest.class, io.grpc.route_guide.v1.GetFeatureRequest.Builder.class);
+              io.grpc.route_guide.v1.RecordRouteRequest.class, io.grpc.route_guide.v1.RecordRouteRequest.Builder.class);
     }
 
-    // Construct using io.grpc.route_guide.v1.GetFeatureRequest.newBuilder()
+    // Construct using io.grpc.route_guide.v1.RecordRouteRequest.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -329,17 +329,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_GetFeatureRequest_descriptor;
+      return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_RecordRouteRequest_descriptor;
     }
 
     @java.lang.Override
-    public io.grpc.route_guide.v1.GetFeatureRequest getDefaultInstanceForType() {
-      return io.grpc.route_guide.v1.GetFeatureRequest.getDefaultInstance();
+    public io.grpc.route_guide.v1.RecordRouteRequest getDefaultInstanceForType() {
+      return io.grpc.route_guide.v1.RecordRouteRequest.getDefaultInstance();
     }
 
     @java.lang.Override
-    public io.grpc.route_guide.v1.GetFeatureRequest build() {
-      io.grpc.route_guide.v1.GetFeatureRequest result = buildPartial();
+    public io.grpc.route_guide.v1.RecordRouteRequest build() {
+      io.grpc.route_guide.v1.RecordRouteRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -347,8 +347,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public io.grpc.route_guide.v1.GetFeatureRequest buildPartial() {
-      io.grpc.route_guide.v1.GetFeatureRequest result = new io.grpc.route_guide.v1.GetFeatureRequest(this);
+    public io.grpc.route_guide.v1.RecordRouteRequest buildPartial() {
+      io.grpc.route_guide.v1.RecordRouteRequest result = new io.grpc.route_guide.v1.RecordRouteRequest(this);
       if (pointBuilder_ == null) {
         result.point_ = point_;
       } else {
@@ -392,16 +392,16 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof io.grpc.route_guide.v1.GetFeatureRequest) {
-        return mergeFrom((io.grpc.route_guide.v1.GetFeatureRequest)other);
+      if (other instanceof io.grpc.route_guide.v1.RecordRouteRequest) {
+        return mergeFrom((io.grpc.route_guide.v1.RecordRouteRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(io.grpc.route_guide.v1.GetFeatureRequest other) {
-      if (other == io.grpc.route_guide.v1.GetFeatureRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(io.grpc.route_guide.v1.RecordRouteRequest other) {
+      if (other == io.grpc.route_guide.v1.RecordRouteRequest.getDefaultInstance()) return this;
       if (other.hasPoint()) {
         mergePoint(other.getPoint());
       }
@@ -420,11 +420,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      io.grpc.route_guide.v1.GetFeatureRequest parsedMessage = null;
+      io.grpc.route_guide.v1.RecordRouteRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (io.grpc.route_guide.v1.GetFeatureRequest) e.getUnfinishedMessage();
+        parsedMessage = (io.grpc.route_guide.v1.RecordRouteRequest) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -521,7 +521,7 @@ private static final long serialVersionUID = 0L;
      * <code>.route_guide.v1.Point point = 1 [json_name = "point"];</code>
      */
     public io.grpc.route_guide.v1.Point.Builder getPointBuilder() {
-      
+
       onChanged();
       return getPointFieldBuilder().getBuilder();
     }
@@ -540,7 +540,7 @@ private static final long serialVersionUID = 0L;
      * <code>.route_guide.v1.Point point = 1 [json_name = "point"];</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        io.grpc.route_guide.v1.Point, io.grpc.route_guide.v1.Point.Builder, io.grpc.route_guide.v1.PointOrBuilder> 
+        io.grpc.route_guide.v1.Point, io.grpc.route_guide.v1.Point.Builder, io.grpc.route_guide.v1.PointOrBuilder>
         getPointFieldBuilder() {
       if (pointBuilder_ == null) {
         pointBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -565,43 +565,42 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:route_guide.v1.GetFeatureRequest)
+    // @@protoc_insertion_point(builder_scope:route_guide.v1.RecordRouteRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:route_guide.v1.GetFeatureRequest)
-  private static final io.grpc.route_guide.v1.GetFeatureRequest DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:route_guide.v1.RecordRouteRequest)
+  private static final io.grpc.route_guide.v1.RecordRouteRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new io.grpc.route_guide.v1.GetFeatureRequest();
+    DEFAULT_INSTANCE = new io.grpc.route_guide.v1.RecordRouteRequest();
   }
 
-  public static io.grpc.route_guide.v1.GetFeatureRequest getDefaultInstance() {
+  public static io.grpc.route_guide.v1.RecordRouteRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<GetFeatureRequest>
-      PARSER = new com.google.protobuf.AbstractParser<GetFeatureRequest>() {
+  private static final com.google.protobuf.Parser<RecordRouteRequest>
+      PARSER = new com.google.protobuf.AbstractParser<RecordRouteRequest>() {
     @java.lang.Override
-    public GetFeatureRequest parsePartialFrom(
+    public RecordRouteRequest parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new GetFeatureRequest(input, extensionRegistry);
+      return new RecordRouteRequest(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<GetFeatureRequest> parser() {
+  public static com.google.protobuf.Parser<RecordRouteRequest> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<GetFeatureRequest> getParserForType() {
+  public com.google.protobuf.Parser<RecordRouteRequest> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public io.grpc.route_guide.v1.GetFeatureRequest getDefaultInstanceForType() {
+  public io.grpc.route_guide.v1.RecordRouteRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 
 }
-

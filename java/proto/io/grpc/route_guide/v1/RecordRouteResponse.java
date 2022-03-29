@@ -550,7 +550,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPointCount(int value) {
-      
+
       pointCount_ = value;
       onChanged();
       return this;
@@ -564,7 +564,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPointCount() {
-      
+
       pointCount_ = 0;
       onChanged();
       return this;
@@ -593,7 +593,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setFeatureCount(int value) {
-      
+
       featureCount_ = value;
       onChanged();
       return this;
@@ -607,7 +607,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearFeatureCount() {
-      
+
       featureCount_ = 0;
       onChanged();
       return this;
@@ -636,7 +636,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDistance(int value) {
-      
+
       distance_ = value;
       onChanged();
       return this;
@@ -650,7 +650,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearDistance() {
-      
+
       distance_ = 0;
       onChanged();
       return this;
@@ -679,7 +679,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setElapsedTime(int value) {
-      
+
       elapsedTime_ = value;
       onChanged();
       return this;
@@ -693,7 +693,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearElapsedTime() {
-      
+
       elapsedTime_ = 0;
       onChanged();
       return this;
@@ -750,4 +750,3 @@ private static final long serialVersionUID = 0L;
   }
 
 }
-
