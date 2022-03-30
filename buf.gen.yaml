@@ -4,7 +4,7 @@ plugins:
   - remote: buf.build/protocolbuffers/plugins/cpp:v3.19.3-1
     out: cpp
   - remote: buf.build/protocolbuffers/plugins/java:v3.19.3-1
-    out: java/proto
+    out: java/proto/src/main/java
   - remote: buf.build/protocolbuffers/plugins/python:v3.19.3-1
     out: python
   - remote: buf.build/protocolbuffers/plugins/csharp:v3.19.3-1
@@ -23,7 +23,7 @@ plugins:
   - remote: buf.build/grpc/plugins/cpp:v1.45.0-1
     out: cpp
   - remote: buf.build/grpc/plugins/java:v1.45.0-1
-    out: java/proto
+    out: java/proto/src/main/java
   - remote: buf.build/grpc/plugins/python:v1.45.0-1
     out: python
   - remote: buf.build/grpc/plugins/csharp:v1.45.0-1
