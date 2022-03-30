@@ -1,4 +1,5 @@
 rootProject.name = 'geometry-chain'
 include 'epl-geometry-api'
+include 'proto'
 // include 'epl-geometry-api-ex'
 // include 'epl-geometry-service'
