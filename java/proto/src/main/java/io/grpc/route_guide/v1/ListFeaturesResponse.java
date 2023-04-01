@@ -25,11 +25,6 @@ private static final long serialVersionUID = 0L;
     return new ListFeaturesResponse();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_ListFeaturesResponse_descriptor;
@@ -66,7 +61,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public io.grpc.route_guide.v1.FeatureOrBuilder getFeatureOrBuilder() {
-    return getFeature();
+    return feature_ == null ? io.grpc.route_guide.v1.Feature.getDefaultInstance() : feature_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -262,10 +257,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (featureBuilder_ == null) {
-        feature_ = null;
-      } else {
-        feature_ = null;
+      bitField0_ = 0;
+      feature_ = null;
+      if (featureBuilder_ != null) {
+        featureBuilder_.dispose();
         featureBuilder_ = null;
       }
       return this;
@@ -294,47 +289,20 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public io.grpc.route_guide.v1.ListFeaturesResponse buildPartial() {
       io.grpc.route_guide.v1.ListFeaturesResponse result = new io.grpc.route_guide.v1.ListFeaturesResponse(this);
-      if (featureBuilder_ == null) {
-        result.feature_ = feature_;
-      } else {
-        result.feature_ = featureBuilder_.build();
-      }
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
+    private void buildPartial0(io.grpc.route_guide.v1.ListFeaturesResponse result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.feature_ = featureBuilder_ == null
+            ? feature_
+            : featureBuilder_.build();
+      }
     }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
+
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof io.grpc.route_guide.v1.ListFeaturesResponse) {
@@ -380,7 +348,7 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getFeatureFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             default: {
@@ -398,6 +366,7 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
     private io.grpc.route_guide.v1.Feature feature_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -407,7 +376,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the feature field is set.
      */
     public boolean hasFeature() {
-      return featureBuilder_ != null || feature_ != null;
+      return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>.route_guide.v1.Feature feature = 1 [json_name = "feature"];</code>
@@ -429,11 +398,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         feature_ = value;
-        onChanged();
       } else {
         featureBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -443,11 +412,11 @@ private static final long serialVersionUID = 0L;
         io.grpc.route_guide.v1.Feature.Builder builderForValue) {
       if (featureBuilder_ == null) {
         feature_ = builderForValue.build();
-        onChanged();
       } else {
         featureBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -455,38 +424,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeFeature(io.grpc.route_guide.v1.Feature value) {
       if (featureBuilder_ == null) {
-        if (feature_ != null) {
-          feature_ =
-            io.grpc.route_guide.v1.Feature.newBuilder(feature_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000001) != 0) &&
+          feature_ != null &&
+          feature_ != io.grpc.route_guide.v1.Feature.getDefaultInstance()) {
+          getFeatureBuilder().mergeFrom(value);
         } else {
           feature_ = value;
         }
-        onChanged();
       } else {
         featureBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.route_guide.v1.Feature feature = 1 [json_name = "feature"];</code>
      */
     public Builder clearFeature() {
-      if (featureBuilder_ == null) {
-        feature_ = null;
-        onChanged();
-      } else {
-        feature_ = null;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      feature_ = null;
+      if (featureBuilder_ != null) {
+        featureBuilder_.dispose();
         featureBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.route_guide.v1.Feature feature = 1 [json_name = "feature"];</code>
      */
     public io.grpc.route_guide.v1.Feature.Builder getFeatureBuilder() {
-      
+      bitField0_ |= 0x00000001;
       onChanged();
       return getFeatureFieldBuilder().getBuilder();
     }

@@ -4,22 +4,20 @@
 #include "route_guide/v1/stuff.pb.h"
 
 #include <algorithm>
-
-#include <google/protobuf/io/coded_stream.h>
-#include <google/protobuf/extension_set.h>
-#include <google/protobuf/wire_format_lite.h>
-#include <google/protobuf/descriptor.h>
-#include <google/protobuf/generated_message_reflection.h>
-#include <google/protobuf/reflection_ops.h>
-#include <google/protobuf/wire_format.h>
+#include "google/protobuf/io/coded_stream.h"
+#include "google/protobuf/extension_set.h"
+#include "google/protobuf/wire_format_lite.h"
+#include "google/protobuf/descriptor.h"
+#include "google/protobuf/generated_message_reflection.h"
+#include "google/protobuf/reflection_ops.h"
+#include "google/protobuf/wire_format.h"
 // @@protoc_insertion_point(includes)
-#include <google/protobuf/port_def.inc>
 
+// Must be included last.
+#include "google/protobuf/port_def.inc"
 PROTOBUF_PRAGMA_INIT_SEG
-
 namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+namespace _pbi = ::PROTOBUF_NAMESPACE_ID::internal;
 namespace route_guide {
 namespace v1 {
 PROTOBUF_CONSTEXPR RoutePointTest::RoutePointTest(
@@ -27,67 +25,94 @@ PROTOBUF_CONSTEXPR RoutePointTest::RoutePointTest(
     /*decltype(_impl_.point_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct RoutePointTestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR RoutePointTestDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR RoutePointTestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~RoutePointTestDefaultTypeInternal() {}
   union {
     RoutePointTest _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RoutePointTestDefaultTypeInternal _RoutePointTest_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RoutePointTestDefaultTypeInternal _RoutePointTest_default_instance_;
 }  // namespace v1
 }  // namespace route_guide
 static ::_pb::Metadata file_level_metadata_route_5fguide_2fv1_2fstuff_2eproto[1];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_route_5fguide_2fv1_2fstuff_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_route_5fguide_2fv1_2fstuff_2eproto = nullptr;
-
-const uint32_t TableStruct_route_5fguide_2fv1_2fstuff_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RoutePointTest, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RoutePointTest, _impl_.point_),
+static constexpr const ::_pb::EnumDescriptor**
+    file_level_enum_descriptors_route_5fguide_2fv1_2fstuff_2eproto = nullptr;
+static constexpr const ::_pb::ServiceDescriptor**
+    file_level_service_descriptors_route_5fguide_2fv1_2fstuff_2eproto = nullptr;
+const ::uint32_t TableStruct_route_5fguide_2fv1_2fstuff_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(
+    protodesc_cold) = {
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RoutePointTest, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RoutePointTest, _impl_.point_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::route_guide::v1::RoutePointTest)},
+
+static const ::_pbi::MigrationSchema
+    schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+        { 0, -1, -1, sizeof(::route_guide::v1::RoutePointTest)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
-  &::route_guide::v1::_RoutePointTest_default_instance_._instance,
+    &::route_guide::v1::_RoutePointTest_default_instance_._instance,
 };
-
-const char descriptor_table_protodef_route_5fguide_2fv1_2fstuff_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\032route_guide/v1/stuff.proto\022\016route_guid"
-  "e.v1\032 route_guide/v1/route_guide.proto\"="
-  "\n\016RoutePointTest\022+\n\005point\030\001 \001(\0132\025.route_"
-  "guide.v1.PointR\005pointBy\n\026io.grpc.route_g"
-  "uide.v1B\nStuffProtoP\001Z2github.com/davidr"
-  "aleigh/mono/golang/route_guide/v1\242\002\003RTG\252"
-  "\002\026io.grpc.route_guide.v1b\006proto3"
-  ;
-static const ::_pbi::DescriptorTable* const descriptor_table_route_5fguide_2fv1_2fstuff_2eproto_deps[1] = {
-  &::descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto,
+const char descriptor_table_protodef_route_5fguide_2fv1_2fstuff_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+    "\n\032route_guide/v1/stuff.proto\022\016route_guid"
+    "e.v1\032 route_guide/v1/route_guide.proto\"="
+    "\n\016RoutePointTest\022+\n\005point\030\001 \001(\0132\025.route_"
+    "guide.v1.PointR\005pointBy\n\026io.grpc.route_g"
+    "uide.v1B\nStuffProtoP\001Z2github.com/davidr"
+    "aleigh/mono/golang/route_guide/v1\242\002\003RTG\252"
+    "\002\026io.grpc.route_guide.v1b\006proto3"
 };
-static ::_pbi::once_flag descriptor_table_route_5fguide_2fv1_2fstuff_2eproto_once;
+static const ::_pbi::DescriptorTable* const descriptor_table_route_5fguide_2fv1_2fstuff_2eproto_deps[1] =
+    {
+        &::descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto,
+};
+static ::absl::once_flag descriptor_table_route_5fguide_2fv1_2fstuff_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_route_5fguide_2fv1_2fstuff_2eproto = {
-    false, false, 272, descriptor_table_protodef_route_5fguide_2fv1_2fstuff_2eproto,
+    false,
+    false,
+    272,
+    descriptor_table_protodef_route_5fguide_2fv1_2fstuff_2eproto,
     "route_guide/v1/stuff.proto",
-    &descriptor_table_route_5fguide_2fv1_2fstuff_2eproto_once, descriptor_table_route_5fguide_2fv1_2fstuff_2eproto_deps, 1, 1,
-    schemas, file_default_instances, TableStruct_route_5fguide_2fv1_2fstuff_2eproto::offsets,
-    file_level_metadata_route_5fguide_2fv1_2fstuff_2eproto, file_level_enum_descriptors_route_5fguide_2fv1_2fstuff_2eproto,
+    &descriptor_table_route_5fguide_2fv1_2fstuff_2eproto_once,
+    descriptor_table_route_5fguide_2fv1_2fstuff_2eproto_deps,
+    1,
+    1,
+    schemas,
+    file_default_instances,
+    TableStruct_route_5fguide_2fv1_2fstuff_2eproto::offsets,
+    file_level_metadata_route_5fguide_2fv1_2fstuff_2eproto,
+    file_level_enum_descriptors_route_5fguide_2fv1_2fstuff_2eproto,
     file_level_service_descriptors_route_5fguide_2fv1_2fstuff_2eproto,
 };
+
+// This function exists to be marked as weak.
+// It can significantly speed up compilation by breaking up LLVM's SCC
+// in the .pb.cc translation units. Large translation units see a
+// reduction of more than 35% of walltime for optimized builds. Without
+// the weak attribute all the messages in the file, including all the
+// vtables and everything they use become part of the same SCC through
+// a cycle like:
+// GetMetadata -> descriptor table -> default instances ->
+//   vtables -> GetMetadata
+// By adding a weak function here we break the connection from the
+// individual vtables back into the descriptor table.
 PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_route_5fguide_2fv1_2fstuff_2eproto_getter() {
   return &descriptor_table_route_5fguide_2fv1_2fstuff_2eproto;
 }
-
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_route_5fguide_2fv1_2fstuff_2eproto(&descriptor_table_route_5fguide_2fv1_2fstuff_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2
+static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_route_5fguide_2fv1_2fstuff_2eproto(&descriptor_table_route_5fguide_2fv1_2fstuff_2eproto);
 namespace route_guide {
 namespace v1 {
-
 // ===================================================================
 
 class RoutePointTest::_Internal {
@@ -105,10 +130,9 @@ void RoutePointTest::clear_point() {
   }
   _impl_.point_ = nullptr;
 }
-RoutePointTest::RoutePointTest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+RoutePointTest::RoutePointTest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:route_guide.v1.RoutePointTest)
 }
 RoutePointTest::RoutePointTest(const RoutePointTest& from)
@@ -125,10 +149,8 @@ RoutePointTest::RoutePointTest(const RoutePointTest& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.RoutePointTest)
 }
 
-inline void RoutePointTest::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void RoutePointTest::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.point_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}
@@ -145,7 +167,7 @@ RoutePointTest::~RoutePointTest() {
 }
 
 inline void RoutePointTest::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.point_;
 }
 
@@ -155,7 +177,7 @@ void RoutePointTest::SetCachedSize(int size) const {
 
 void RoutePointTest::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.RoutePointTest)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -169,16 +191,17 @@ void RoutePointTest::Clear() {
 const char* RoutePointTest::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
+    ::uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.Point point = 1 [json_name = "point"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_point(), ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       default:
         goto handle_unusual;
@@ -203,10 +226,10 @@ failure:
 #undef CHK_
 }
 
-uint8_t* RoutePointTest::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::uint8_t* RoutePointTest::_InternalSerialize(
+    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.RoutePointTest)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.Point point = 1 [json_name = "point"];
@@ -224,11 +247,11 @@ uint8_t* RoutePointTest::_InternalSerialize(
   return target;
 }
 
-size_t RoutePointTest::ByteSizeLong() const {
+::size_t RoutePointTest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.RoutePointTest)
-  size_t total_size = 0;
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -253,8 +276,8 @@ void RoutePointTest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const :
   auto* const _this = static_cast<RoutePointTest*>(&to_msg);
   auto& from = static_cast<const RoutePointTest&>(from_msg);
   // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.RoutePointTest)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_point()) {
@@ -286,7 +309,6 @@ void RoutePointTest::InternalSwap(RoutePointTest* other) {
       &descriptor_table_route_5fguide_2fv1_2fstuff_2eproto_getter, &descriptor_table_route_5fguide_2fv1_2fstuff_2eproto_once,
       file_level_metadata_route_5fguide_2fv1_2fstuff_2eproto[0]);
 }
-
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace v1
 }  // namespace route_guide
@@ -296,6 +318,5 @@ Arena::CreateMaybeMessage< ::route_guide::v1::RoutePointTest >(Arena* arena) {
   return Arena::CreateMessageInternal< ::route_guide::v1::RoutePointTest >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
-
 // @@protoc_insertion_point(global_scope)
-#include <google/protobuf/port_undef.inc>
+#include "google/protobuf/port_undef.inc"

@@ -4,410 +4,470 @@
 #include "route_guide/v1/route_guide.pb.h"
 
 #include <algorithm>
-
-#include <google/protobuf/io/coded_stream.h>
-#include <google/protobuf/extension_set.h>
-#include <google/protobuf/wire_format_lite.h>
-#include <google/protobuf/descriptor.h>
-#include <google/protobuf/generated_message_reflection.h>
-#include <google/protobuf/reflection_ops.h>
-#include <google/protobuf/wire_format.h>
+#include "google/protobuf/io/coded_stream.h"
+#include "google/protobuf/extension_set.h"
+#include "google/protobuf/wire_format_lite.h"
+#include "google/protobuf/descriptor.h"
+#include "google/protobuf/generated_message_reflection.h"
+#include "google/protobuf/reflection_ops.h"
+#include "google/protobuf/wire_format.h"
 // @@protoc_insertion_point(includes)
-#include <google/protobuf/port_def.inc>
 
+// Must be included last.
+#include "google/protobuf/port_def.inc"
 PROTOBUF_PRAGMA_INIT_SEG
-
 namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = _pb::internal;
-
+namespace _pbi = ::PROTOBUF_NAMESPACE_ID::internal;
 namespace route_guide {
 namespace v1 {
 PROTOBUF_CONSTEXPR Point::Point(
     ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.latitude_)*/0
-  , /*decltype(_impl_.longitude_)*/0
+    /*decltype(_impl_.latitude_)*/ 0
+
+  , /*decltype(_impl_.longitude_)*/ 0
+
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct PointDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR PointDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR PointDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~PointDefaultTypeInternal() {}
   union {
     Point _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PointDefaultTypeInternal _Point_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PointDefaultTypeInternal _Point_default_instance_;
 PROTOBUF_CONSTEXPR ListFeaturesRequest::ListFeaturesRequest(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.lo_)*/nullptr
   , /*decltype(_impl_.hi_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct ListFeaturesRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR ListFeaturesRequestDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ListFeaturesRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~ListFeaturesRequestDefaultTypeInternal() {}
   union {
     ListFeaturesRequest _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ListFeaturesRequestDefaultTypeInternal _ListFeaturesRequest_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ListFeaturesRequestDefaultTypeInternal _ListFeaturesRequest_default_instance_;
 PROTOBUF_CONSTEXPR GetFeatureResponse::GetFeatureResponse(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.feature_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct GetFeatureResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR GetFeatureResponseDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GetFeatureResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~GetFeatureResponseDefaultTypeInternal() {}
   union {
     GetFeatureResponse _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetFeatureResponseDefaultTypeInternal _GetFeatureResponse_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetFeatureResponseDefaultTypeInternal _GetFeatureResponse_default_instance_;
 PROTOBUF_CONSTEXPR GetFeatureRequest::GetFeatureRequest(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.point_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct GetFeatureRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR GetFeatureRequestDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GetFeatureRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~GetFeatureRequestDefaultTypeInternal() {}
   union {
     GetFeatureRequest _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetFeatureRequestDefaultTypeInternal _GetFeatureRequest_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetFeatureRequestDefaultTypeInternal _GetFeatureRequest_default_instance_;
 PROTOBUF_CONSTEXPR ListFeaturesResponse::ListFeaturesResponse(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.feature_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct ListFeaturesResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR ListFeaturesResponseDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ListFeaturesResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~ListFeaturesResponseDefaultTypeInternal() {}
   union {
     ListFeaturesResponse _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ListFeaturesResponseDefaultTypeInternal _ListFeaturesResponse_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ListFeaturesResponseDefaultTypeInternal _ListFeaturesResponse_default_instance_;
 PROTOBUF_CONSTEXPR RecordRouteRequest::RecordRouteRequest(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.point_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct RecordRouteRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR RecordRouteRequestDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR RecordRouteRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~RecordRouteRequestDefaultTypeInternal() {}
   union {
     RecordRouteRequest _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RecordRouteRequestDefaultTypeInternal _RecordRouteRequest_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RecordRouteRequestDefaultTypeInternal _RecordRouteRequest_default_instance_;
 PROTOBUF_CONSTEXPR RouteChatRequest::RouteChatRequest(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.route_note_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct RouteChatRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR RouteChatRequestDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR RouteChatRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~RouteChatRequestDefaultTypeInternal() {}
   union {
     RouteChatRequest _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RouteChatRequestDefaultTypeInternal _RouteChatRequest_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RouteChatRequestDefaultTypeInternal _RouteChatRequest_default_instance_;
 PROTOBUF_CONSTEXPR RouteChatResponse::RouteChatResponse(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.route_note_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct RouteChatResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR RouteChatResponseDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR RouteChatResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~RouteChatResponseDefaultTypeInternal() {}
   union {
     RouteChatResponse _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RouteChatResponseDefaultTypeInternal _RouteChatResponse_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RouteChatResponseDefaultTypeInternal _RouteChatResponse_default_instance_;
 PROTOBUF_CONSTEXPR Feature::Feature(
     ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+    /*decltype(_impl_.name_)*/ {
+    &::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized {}
+  }
+
   , /*decltype(_impl_.location_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct FeatureDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR FeatureDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR FeatureDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~FeatureDefaultTypeInternal() {}
   union {
     Feature _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FeatureDefaultTypeInternal _Feature_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FeatureDefaultTypeInternal _Feature_default_instance_;
 PROTOBUF_CONSTEXPR FeatureDatabase::FeatureDatabase(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.feature_)*/{}
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct FeatureDatabaseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR FeatureDatabaseDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR FeatureDatabaseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~FeatureDatabaseDefaultTypeInternal() {}
   union {
     FeatureDatabase _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FeatureDatabaseDefaultTypeInternal _FeatureDatabase_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FeatureDatabaseDefaultTypeInternal _FeatureDatabase_default_instance_;
 PROTOBUF_CONSTEXPR RouteNote::RouteNote(
     ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.message_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+    /*decltype(_impl_.message_)*/ {
+    &::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized {}
+  }
+
   , /*decltype(_impl_.location_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct RouteNoteDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR RouteNoteDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR RouteNoteDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~RouteNoteDefaultTypeInternal() {}
   union {
     RouteNote _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RouteNoteDefaultTypeInternal _RouteNote_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RouteNoteDefaultTypeInternal _RouteNote_default_instance_;
 PROTOBUF_CONSTEXPR RecordRouteResponse::RecordRouteResponse(
     ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.point_count_)*/0
-  , /*decltype(_impl_.feature_count_)*/0
-  , /*decltype(_impl_.distance_)*/0
-  , /*decltype(_impl_.elapsed_time_)*/0
+    /*decltype(_impl_.point_count_)*/ 0
+
+  , /*decltype(_impl_.feature_count_)*/ 0
+
+  , /*decltype(_impl_.distance_)*/ 0
+
+  , /*decltype(_impl_.elapsed_time_)*/ 0
+
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct RecordRouteResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR RecordRouteResponseDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR RecordRouteResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~RecordRouteResponseDefaultTypeInternal() {}
   union {
     RecordRouteResponse _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RecordRouteResponseDefaultTypeInternal _RecordRouteResponse_default_instance_;
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RecordRouteResponseDefaultTypeInternal _RecordRouteResponse_default_instance_;
 }  // namespace v1
 }  // namespace route_guide
 static ::_pb::Metadata file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto[12];
-static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_route_5fguide_2fv1_2froute_5fguide_2eproto = nullptr;
-static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_route_5fguide_2fv1_2froute_5fguide_2eproto = nullptr;
-
-const uint32_t TableStruct_route_5fguide_2fv1_2froute_5fguide_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::Point, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::Point, _impl_.latitude_),
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::Point, _impl_.longitude_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::ListFeaturesRequest, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::ListFeaturesRequest, _impl_.lo_),
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::ListFeaturesRequest, _impl_.hi_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::GetFeatureResponse, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::GetFeatureResponse, _impl_.feature_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::GetFeatureRequest, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::GetFeatureRequest, _impl_.point_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::ListFeaturesResponse, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::ListFeaturesResponse, _impl_.feature_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteRequest, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteRequest, _impl_.point_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteChatRequest, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteChatRequest, _impl_.route_note_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteChatResponse, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteChatResponse, _impl_.route_note_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::Feature, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::Feature, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::Feature, _impl_.location_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::FeatureDatabase, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::FeatureDatabase, _impl_.feature_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteNote, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteNote, _impl_.location_),
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteNote, _impl_.message_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteResponse, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteResponse, _impl_.point_count_),
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteResponse, _impl_.feature_count_),
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteResponse, _impl_.distance_),
-  PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteResponse, _impl_.elapsed_time_),
+static constexpr const ::_pb::EnumDescriptor**
+    file_level_enum_descriptors_route_5fguide_2fv1_2froute_5fguide_2eproto = nullptr;
+static constexpr const ::_pb::ServiceDescriptor**
+    file_level_service_descriptors_route_5fguide_2fv1_2froute_5fguide_2eproto = nullptr;
+const ::uint32_t TableStruct_route_5fguide_2fv1_2froute_5fguide_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(
+    protodesc_cold) = {
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::Point, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::Point, _impl_.latitude_),
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::Point, _impl_.longitude_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::ListFeaturesRequest, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::ListFeaturesRequest, _impl_.lo_),
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::ListFeaturesRequest, _impl_.hi_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::GetFeatureResponse, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::GetFeatureResponse, _impl_.feature_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::GetFeatureRequest, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::GetFeatureRequest, _impl_.point_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::ListFeaturesResponse, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::ListFeaturesResponse, _impl_.feature_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteRequest, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteRequest, _impl_.point_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteChatRequest, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteChatRequest, _impl_.route_note_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteChatResponse, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteChatResponse, _impl_.route_note_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::Feature, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::Feature, _impl_.name_),
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::Feature, _impl_.location_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::FeatureDatabase, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::FeatureDatabase, _impl_.feature_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteNote, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteNote, _impl_.location_),
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RouteNote, _impl_.message_),
+    ~0u,  // no _has_bits_
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteResponse, _internal_metadata_),
+    ~0u,  // no _extensions_
+    ~0u,  // no _oneof_case_
+    ~0u,  // no _weak_field_map_
+    ~0u,  // no _inlined_string_donated_
+    ~0u,  // no _split_
+    ~0u,  // no sizeof(Split)
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteResponse, _impl_.point_count_),
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteResponse, _impl_.feature_count_),
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteResponse, _impl_.distance_),
+    PROTOBUF_FIELD_OFFSET(::route_guide::v1::RecordRouteResponse, _impl_.elapsed_time_),
 };
-static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::route_guide::v1::Point)},
-  { 8, -1, -1, sizeof(::route_guide::v1::ListFeaturesRequest)},
-  { 16, -1, -1, sizeof(::route_guide::v1::GetFeatureResponse)},
-  { 23, -1, -1, sizeof(::route_guide::v1::GetFeatureRequest)},
-  { 30, -1, -1, sizeof(::route_guide::v1::ListFeaturesResponse)},
-  { 37, -1, -1, sizeof(::route_guide::v1::RecordRouteRequest)},
-  { 44, -1, -1, sizeof(::route_guide::v1::RouteChatRequest)},
-  { 51, -1, -1, sizeof(::route_guide::v1::RouteChatResponse)},
-  { 58, -1, -1, sizeof(::route_guide::v1::Feature)},
-  { 66, -1, -1, sizeof(::route_guide::v1::FeatureDatabase)},
-  { 73, -1, -1, sizeof(::route_guide::v1::RouteNote)},
-  { 81, -1, -1, sizeof(::route_guide::v1::RecordRouteResponse)},
+
+static const ::_pbi::MigrationSchema
+    schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+        { 0, -1, -1, sizeof(::route_guide::v1::Point)},
+        { 10, -1, -1, sizeof(::route_guide::v1::ListFeaturesRequest)},
+        { 20, -1, -1, sizeof(::route_guide::v1::GetFeatureResponse)},
+        { 29, -1, -1, sizeof(::route_guide::v1::GetFeatureRequest)},
+        { 38, -1, -1, sizeof(::route_guide::v1::ListFeaturesResponse)},
+        { 47, -1, -1, sizeof(::route_guide::v1::RecordRouteRequest)},
+        { 56, -1, -1, sizeof(::route_guide::v1::RouteChatRequest)},
+        { 65, -1, -1, sizeof(::route_guide::v1::RouteChatResponse)},
+        { 74, -1, -1, sizeof(::route_guide::v1::Feature)},
+        { 84, -1, -1, sizeof(::route_guide::v1::FeatureDatabase)},
+        { 93, -1, -1, sizeof(::route_guide::v1::RouteNote)},
+        { 103, -1, -1, sizeof(::route_guide::v1::RecordRouteResponse)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
-  &::route_guide::v1::_Point_default_instance_._instance,
-  &::route_guide::v1::_ListFeaturesRequest_default_instance_._instance,
-  &::route_guide::v1::_GetFeatureResponse_default_instance_._instance,
-  &::route_guide::v1::_GetFeatureRequest_default_instance_._instance,
-  &::route_guide::v1::_ListFeaturesResponse_default_instance_._instance,
-  &::route_guide::v1::_RecordRouteRequest_default_instance_._instance,
-  &::route_guide::v1::_RouteChatRequest_default_instance_._instance,
-  &::route_guide::v1::_RouteChatResponse_default_instance_._instance,
-  &::route_guide::v1::_Feature_default_instance_._instance,
-  &::route_guide::v1::_FeatureDatabase_default_instance_._instance,
-  &::route_guide::v1::_RouteNote_default_instance_._instance,
-  &::route_guide::v1::_RecordRouteResponse_default_instance_._instance,
+    &::route_guide::v1::_Point_default_instance_._instance,
+    &::route_guide::v1::_ListFeaturesRequest_default_instance_._instance,
+    &::route_guide::v1::_GetFeatureResponse_default_instance_._instance,
+    &::route_guide::v1::_GetFeatureRequest_default_instance_._instance,
+    &::route_guide::v1::_ListFeaturesResponse_default_instance_._instance,
+    &::route_guide::v1::_RecordRouteRequest_default_instance_._instance,
+    &::route_guide::v1::_RouteChatRequest_default_instance_._instance,
+    &::route_guide::v1::_RouteChatResponse_default_instance_._instance,
+    &::route_guide::v1::_Feature_default_instance_._instance,
+    &::route_guide::v1::_FeatureDatabase_default_instance_._instance,
+    &::route_guide::v1::_RouteNote_default_instance_._instance,
+    &::route_guide::v1::_RecordRouteResponse_default_instance_._instance,
 };
-
-const char descriptor_table_protodef_route_5fguide_2fv1_2froute_5fguide_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n route_guide/v1/route_guide.proto\022\016rout"
-  "e_guide.v1\"A\n\005Point\022\032\n\010latitude\030\001 \001(\005R\010l"
-  "atitude\022\034\n\tlongitude\030\002 \001(\005R\tlongitude\"c\n"
-  "\023ListFeaturesRequest\022%\n\002lo\030\001 \001(\0132\025.route"
-  "_guide.v1.PointR\002lo\022%\n\002hi\030\002 \001(\0132\025.route_"
-  "guide.v1.PointR\002hi\"G\n\022GetFeatureResponse"
-  "\0221\n\007feature\030\001 \001(\0132\027.route_guide.v1.Featu"
-  "reR\007feature\"@\n\021GetFeatureRequest\022+\n\005poin"
-  "t\030\001 \001(\0132\025.route_guide.v1.PointR\005point\"I\n"
-  "\024ListFeaturesResponse\0221\n\007feature\030\001 \001(\0132\027"
-  ".route_guide.v1.FeatureR\007feature\"A\n\022Reco"
-  "rdRouteRequest\022+\n\005point\030\001 \001(\0132\025.route_gu"
-  "ide.v1.PointR\005point\"L\n\020RouteChatRequest\022"
-  "8\n\nroute_note\030\001 \001(\0132\031.route_guide.v1.Rou"
-  "teNoteR\trouteNote\"M\n\021RouteChatResponse\0228"
-  "\n\nroute_note\030\001 \001(\0132\031.route_guide.v1.Rout"
-  "eNoteR\trouteNote\"P\n\007Feature\022\022\n\004name\030\001 \001("
-  "\tR\004name\0221\n\010location\030\002 \001(\0132\025.route_guide."
-  "v1.PointR\010location\"D\n\017FeatureDatabase\0221\n"
-  "\007feature\030\001 \003(\0132\027.route_guide.v1.FeatureR"
-  "\007feature\"X\n\tRouteNote\0221\n\010location\030\001 \001(\0132"
-  "\025.route_guide.v1.PointR\010location\022\030\n\007mess"
-  "age\030\002 \001(\tR\007message\"\232\001\n\023RecordRouteRespon"
-  "se\022\037\n\013point_count\030\001 \001(\005R\npointCount\022#\n\rf"
-  "eature_count\030\002 \001(\005R\014featureCount\022\032\n\010dist"
-  "ance\030\003 \001(\005R\010distance\022!\n\014elapsed_time\030\004 \001"
-  "(\005R\013elapsedTime2\375\002\n\021RouteGuideService\022U\n"
-  "\nGetFeature\022!.route_guide.v1.GetFeatureR"
-  "equest\032\".route_guide.v1.GetFeatureRespon"
-  "se\"\000\022]\n\014ListFeatures\022#.route_guide.v1.Li"
-  "stFeaturesRequest\032$.route_guide.v1.ListF"
-  "eaturesResponse\"\0000\001\022Z\n\013RecordRoute\022\".rou"
-  "te_guide.v1.RecordRouteRequest\032#.route_g"
-  "uide.v1.RecordRouteResponse\"\000(\001\022V\n\tRoute"
-  "Chat\022 .route_guide.v1.RouteChatRequest\032!"
-  ".route_guide.v1.RouteChatResponse\"\000(\0010\001B"
-  "~\n\026io.grpc.route_guide.v1B\017RouteGuidePro"
-  "toP\001Z2github.com/davidraleigh/mono/golan"
-  "g/route_guide/v1\242\002\003RTG\252\002\026io.grpc.route_g"
-  "uide.v1b\006proto3"
-  ;
-static ::_pbi::once_flag descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once;
+const char descriptor_table_protodef_route_5fguide_2fv1_2froute_5fguide_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+    "\n route_guide/v1/route_guide.proto\022\016rout"
+    "e_guide.v1\"A\n\005Point\022\032\n\010latitude\030\001 \001(\005R\010l"
+    "atitude\022\034\n\tlongitude\030\002 \001(\005R\tlongitude\"c\n"
+    "\023ListFeaturesRequest\022%\n\002lo\030\001 \001(\0132\025.route"
+    "_guide.v1.PointR\002lo\022%\n\002hi\030\002 \001(\0132\025.route_"
+    "guide.v1.PointR\002hi\"G\n\022GetFeatureResponse"
+    "\0221\n\007feature\030\001 \001(\0132\027.route_guide.v1.Featu"
+    "reR\007feature\"@\n\021GetFeatureRequest\022+\n\005poin"
+    "t\030\001 \001(\0132\025.route_guide.v1.PointR\005point\"I\n"
+    "\024ListFeaturesResponse\0221\n\007feature\030\001 \001(\0132\027"
+    ".route_guide.v1.FeatureR\007feature\"A\n\022Reco"
+    "rdRouteRequest\022+\n\005point\030\001 \001(\0132\025.route_gu"
+    "ide.v1.PointR\005point\"L\n\020RouteChatRequest\022"
+    "8\n\nroute_note\030\001 \001(\0132\031.route_guide.v1.Rou"
+    "teNoteR\trouteNote\"M\n\021RouteChatResponse\0228"
+    "\n\nroute_note\030\001 \001(\0132\031.route_guide.v1.Rout"
+    "eNoteR\trouteNote\"P\n\007Feature\022\022\n\004name\030\001 \001("
+    "\tR\004name\0221\n\010location\030\002 \001(\0132\025.route_guide."
+    "v1.PointR\010location\"D\n\017FeatureDatabase\0221\n"
+    "\007feature\030\001 \003(\0132\027.route_guide.v1.FeatureR"
+    "\007feature\"X\n\tRouteNote\0221\n\010location\030\001 \001(\0132"
+    "\025.route_guide.v1.PointR\010location\022\030\n\007mess"
+    "age\030\002 \001(\tR\007message\"\232\001\n\023RecordRouteRespon"
+    "se\022\037\n\013point_count\030\001 \001(\005R\npointCount\022#\n\rf"
+    "eature_count\030\002 \001(\005R\014featureCount\022\032\n\010dist"
+    "ance\030\003 \001(\005R\010distance\022!\n\014elapsed_time\030\004 \001"
+    "(\005R\013elapsedTime2\375\002\n\021RouteGuideService\022U\n"
+    "\nGetFeature\022!.route_guide.v1.GetFeatureR"
+    "equest\032\".route_guide.v1.GetFeatureRespon"
+    "se\"\000\022]\n\014ListFeatures\022#.route_guide.v1.Li"
+    "stFeaturesRequest\032$.route_guide.v1.ListF"
+    "eaturesResponse\"\0000\001\022Z\n\013RecordRoute\022\".rou"
+    "te_guide.v1.RecordRouteRequest\032#.route_g"
+    "uide.v1.RecordRouteResponse\"\000(\001\022V\n\tRoute"
+    "Chat\022 .route_guide.v1.RouteChatRequest\032!"
+    ".route_guide.v1.RouteChatResponse\"\000(\0010\001B"
+    "~\n\026io.grpc.route_guide.v1B\017RouteGuidePro"
+    "toP\001Z2github.com/davidraleigh/mono/golan"
+    "g/route_guide/v1\242\002\003RTG\252\002\026io.grpc.route_g"
+    "uide.v1b\006proto3"
+};
+static ::absl::once_flag descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto = {
-    false, false, 1575, descriptor_table_protodef_route_5fguide_2fv1_2froute_5fguide_2eproto,
+    false,
+    false,
+    1575,
+    descriptor_table_protodef_route_5fguide_2fv1_2froute_5fguide_2eproto,
     "route_guide/v1/route_guide.proto",
-    &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once, nullptr, 0, 12,
-    schemas, file_default_instances, TableStruct_route_5fguide_2fv1_2froute_5fguide_2eproto::offsets,
-    file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto, file_level_enum_descriptors_route_5fguide_2fv1_2froute_5fguide_2eproto,
+    &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once,
+    nullptr,
+    0,
+    12,
+    schemas,
+    file_default_instances,
+    TableStruct_route_5fguide_2fv1_2froute_5fguide_2eproto::offsets,
+    file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto,
+    file_level_enum_descriptors_route_5fguide_2fv1_2froute_5fguide_2eproto,
     file_level_service_descriptors_route_5fguide_2fv1_2froute_5fguide_2eproto,
 };
+
+// This function exists to be marked as weak.
+// It can significantly speed up compilation by breaking up LLVM's SCC
+// in the .pb.cc translation units. Large translation units see a
+// reduction of more than 35% of walltime for optimized builds. Without
+// the weak attribute all the messages in the file, including all the
+// vtables and everything they use become part of the same SCC through
+// a cycle like:
+// GetMetadata -> descriptor table -> default instances ->
+//   vtables -> GetMetadata
+// By adding a weak function here we break the connection from the
+// individual vtables back into the descriptor table.
 PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_getter() {
   return &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto;
 }
-
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_route_5fguide_2fv1_2froute_5fguide_2eproto(&descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2
+static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_route_5fguide_2fv1_2froute_5fguide_2eproto(&descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto);
 namespace route_guide {
 namespace v1 {
-
 // ===================================================================
 
 class Point::_Internal {
  public:
 };
 
-Point::Point(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+Point::Point(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:route_guide.v1.Point)
 }
 Point::Point(const Point& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Point* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.latitude_){}
-    , decltype(_impl_.longitude_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&_impl_.latitude_, &from._impl_.latitude_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.longitude_) -
-    reinterpret_cast<char*>(&_impl_.latitude_)) + sizeof(_impl_.longitude_));
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _impl_(from._impl_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(
+      from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.Point)
 }
 
-inline void Point::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void Point::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.latitude_){0}
-    , decltype(_impl_.longitude_){0}
+      decltype(_impl_.latitude_) { 0 }
+
+    , decltype(_impl_.longitude_) { 0 }
+
     , /*decltype(_impl_._cached_size_)*/{}
   };
 }
@@ -422,7 +482,7 @@ Point::~Point() {
 }
 
 inline void Point::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void Point::SetCachedSize(int size) const {
@@ -431,11 +491,11 @@ void Point::SetCachedSize(int size) const {
 
 void Point::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.Point)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&_impl_.latitude_, 0, static_cast<size_t>(
+  ::memset(&_impl_.latitude_, 0, static_cast<::size_t>(
       reinterpret_cast<char*>(&_impl_.longitude_) -
       reinterpret_cast<char*>(&_impl_.latitude_)) + sizeof(_impl_.longitude_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -444,24 +504,26 @@ void Point::Clear() {
 const char* Point::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
+    ::uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int32 latitude = 1 [json_name = "latitude"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 8)) {
           _impl_.latitude_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       // int32 longitude = 2 [json_name = "longitude"];
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 16)) {
           _impl_.longitude_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       default:
         goto handle_unusual;
@@ -486,22 +548,24 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Point::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::uint8_t* Point::_InternalSerialize(
+    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.Point)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 latitude = 1 [json_name = "latitude"];
   if (this->_internal_latitude() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_latitude(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
+        1, this->_internal_latitude(), target);
   }
 
   // int32 longitude = 2 [json_name = "longitude"];
   if (this->_internal_longitude() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(2, this->_internal_longitude(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
+        2, this->_internal_longitude(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -512,22 +576,24 @@ uint8_t* Point::_InternalSerialize(
   return target;
 }
 
-size_t Point::ByteSizeLong() const {
+::size_t Point::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.Point)
-  size_t total_size = 0;
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 latitude = 1 [json_name = "latitude"];
   if (this->_internal_latitude() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_latitude());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_latitude());
   }
 
   // int32 longitude = 2 [json_name = "longitude"];
   if (this->_internal_longitude() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_longitude());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_longitude());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -544,8 +610,8 @@ void Point::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF
   auto* const _this = static_cast<Point*>(&to_msg);
   auto& from = static_cast<const Point&>(from_msg);
   // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.Point)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_latitude() != 0) {
@@ -584,7 +650,6 @@ void Point::InternalSwap(Point* other) {
       &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_getter, &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once,
       file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto[0]);
 }
-
 // ===================================================================
 
 class ListFeaturesRequest::_Internal {
@@ -601,10 +666,9 @@ const ::route_guide::v1::Point&
 ListFeaturesRequest::_Internal::hi(const ListFeaturesRequest* msg) {
   return *msg->_impl_.hi_;
 }
-ListFeaturesRequest::ListFeaturesRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+ListFeaturesRequest::ListFeaturesRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:route_guide.v1.ListFeaturesRequest)
 }
 ListFeaturesRequest::ListFeaturesRequest(const ListFeaturesRequest& from)
@@ -625,10 +689,8 @@ ListFeaturesRequest::ListFeaturesRequest(const ListFeaturesRequest& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.ListFeaturesRequest)
 }
 
-inline void ListFeaturesRequest::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void ListFeaturesRequest::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.lo_){nullptr}
     , decltype(_impl_.hi_){nullptr}
@@ -646,7 +708,7 @@ ListFeaturesRequest::~ListFeaturesRequest() {
 }
 
 inline void ListFeaturesRequest::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.lo_;
   if (this != internal_default_instance()) delete _impl_.hi_;
 }
@@ -657,7 +719,7 @@ void ListFeaturesRequest::SetCachedSize(int size) const {
 
 void ListFeaturesRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.ListFeaturesRequest)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -675,24 +737,26 @@ void ListFeaturesRequest::Clear() {
 const char* ListFeaturesRequest::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
+    ::uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.Point lo = 1 [json_name = "lo"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_lo(), ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       // .route_guide.v1.Point hi = 2 [json_name = "hi"];
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_hi(), ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       default:
         goto handle_unusual;
@@ -717,10 +781,10 @@ failure:
 #undef CHK_
 }
 
-uint8_t* ListFeaturesRequest::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::uint8_t* ListFeaturesRequest::_InternalSerialize(
+    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.ListFeaturesRequest)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.Point lo = 1 [json_name = "lo"];
@@ -745,11 +809,11 @@ uint8_t* ListFeaturesRequest::_InternalSerialize(
   return target;
 }
 
-size_t ListFeaturesRequest::ByteSizeLong() const {
+::size_t ListFeaturesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.ListFeaturesRequest)
-  size_t total_size = 0;
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -781,8 +845,8 @@ void ListFeaturesRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, co
   auto* const _this = static_cast<ListFeaturesRequest*>(&to_msg);
   auto& from = static_cast<const ListFeaturesRequest&>(from_msg);
   // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.ListFeaturesRequest)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_lo()) {
@@ -823,7 +887,6 @@ void ListFeaturesRequest::InternalSwap(ListFeaturesRequest* other) {
       &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_getter, &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once,
       file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto[1]);
 }
-
 // ===================================================================
 
 class GetFeatureResponse::_Internal {
@@ -835,10 +898,9 @@ const ::route_guide::v1::Feature&
 GetFeatureResponse::_Internal::feature(const GetFeatureResponse* msg) {
   return *msg->_impl_.feature_;
 }
-GetFeatureResponse::GetFeatureResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+GetFeatureResponse::GetFeatureResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:route_guide.v1.GetFeatureResponse)
 }
 GetFeatureResponse::GetFeatureResponse(const GetFeatureResponse& from)
@@ -855,10 +917,8 @@ GetFeatureResponse::GetFeatureResponse(const GetFeatureResponse& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.GetFeatureResponse)
 }
 
-inline void GetFeatureResponse::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void GetFeatureResponse::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.feature_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}
@@ -875,7 +935,7 @@ GetFeatureResponse::~GetFeatureResponse() {
 }
 
 inline void GetFeatureResponse::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.feature_;
 }
 
@@ -885,7 +945,7 @@ void GetFeatureResponse::SetCachedSize(int size) const {
 
 void GetFeatureResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.GetFeatureResponse)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -899,16 +959,17 @@ void GetFeatureResponse::Clear() {
 const char* GetFeatureResponse::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
+    ::uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.Feature feature = 1 [json_name = "feature"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_feature(), ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       default:
         goto handle_unusual;
@@ -933,10 +994,10 @@ failure:
 #undef CHK_
 }
 
-uint8_t* GetFeatureResponse::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::uint8_t* GetFeatureResponse::_InternalSerialize(
+    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.GetFeatureResponse)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.Feature feature = 1 [json_name = "feature"];
@@ -954,11 +1015,11 @@ uint8_t* GetFeatureResponse::_InternalSerialize(
   return target;
 }
 
-size_t GetFeatureResponse::ByteSizeLong() const {
+::size_t GetFeatureResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.GetFeatureResponse)
-  size_t total_size = 0;
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -983,8 +1044,8 @@ void GetFeatureResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, con
   auto* const _this = static_cast<GetFeatureResponse*>(&to_msg);
   auto& from = static_cast<const GetFeatureResponse&>(from_msg);
   // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.GetFeatureResponse)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_feature()) {
@@ -1016,7 +1077,6 @@ void GetFeatureResponse::InternalSwap(GetFeatureResponse* other) {
       &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_getter, &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once,
       file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto[2]);
 }
-
 // ===================================================================
 
 class GetFeatureRequest::_Internal {
@@ -1028,10 +1088,9 @@ const ::route_guide::v1::Point&
 GetFeatureRequest::_Internal::point(const GetFeatureRequest* msg) {
   return *msg->_impl_.point_;
 }
-GetFeatureRequest::GetFeatureRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+GetFeatureRequest::GetFeatureRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:route_guide.v1.GetFeatureRequest)
 }
 GetFeatureRequest::GetFeatureRequest(const GetFeatureRequest& from)
@@ -1048,10 +1107,8 @@ GetFeatureRequest::GetFeatureRequest(const GetFeatureRequest& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.GetFeatureRequest)
 }
 
-inline void GetFeatureRequest::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void GetFeatureRequest::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.point_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}
@@ -1068,7 +1125,7 @@ GetFeatureRequest::~GetFeatureRequest() {
 }
 
 inline void GetFeatureRequest::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.point_;
 }
 
@@ -1078,7 +1135,7 @@ void GetFeatureRequest::SetCachedSize(int size) const {
 
 void GetFeatureRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.GetFeatureRequest)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1092,16 +1149,17 @@ void GetFeatureRequest::Clear() {
 const char* GetFeatureRequest::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
+    ::uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.Point point = 1 [json_name = "point"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_point(), ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       default:
         goto handle_unusual;
@@ -1126,10 +1184,10 @@ failure:
 #undef CHK_
 }
 
-uint8_t* GetFeatureRequest::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::uint8_t* GetFeatureRequest::_InternalSerialize(
+    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.GetFeatureRequest)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.Point point = 1 [json_name = "point"];
@@ -1147,11 +1205,11 @@ uint8_t* GetFeatureRequest::_InternalSerialize(
   return target;
 }
 
-size_t GetFeatureRequest::ByteSizeLong() const {
+::size_t GetFeatureRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.GetFeatureRequest)
-  size_t total_size = 0;
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1176,8 +1234,8 @@ void GetFeatureRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, cons
   auto* const _this = static_cast<GetFeatureRequest*>(&to_msg);
   auto& from = static_cast<const GetFeatureRequest&>(from_msg);
   // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.GetFeatureRequest)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_point()) {
@@ -1209,7 +1267,6 @@ void GetFeatureRequest::InternalSwap(GetFeatureRequest* other) {
       &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_getter, &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once,
       file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto[3]);
 }
-
 // ===================================================================
 
 class ListFeaturesResponse::_Internal {
@@ -1221,10 +1278,9 @@ const ::route_guide::v1::Feature&
 ListFeaturesResponse::_Internal::feature(const ListFeaturesResponse* msg) {
   return *msg->_impl_.feature_;
 }
-ListFeaturesResponse::ListFeaturesResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+ListFeaturesResponse::ListFeaturesResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:route_guide.v1.ListFeaturesResponse)
 }
 ListFeaturesResponse::ListFeaturesResponse(const ListFeaturesResponse& from)
@@ -1241,10 +1297,8 @@ ListFeaturesResponse::ListFeaturesResponse(const ListFeaturesResponse& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.ListFeaturesResponse)
 }
 
-inline void ListFeaturesResponse::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void ListFeaturesResponse::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.feature_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}
@@ -1261,7 +1315,7 @@ ListFeaturesResponse::~ListFeaturesResponse() {
 }
 
 inline void ListFeaturesResponse::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.feature_;
 }
 
@@ -1271,7 +1325,7 @@ void ListFeaturesResponse::SetCachedSize(int size) const {
 
 void ListFeaturesResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.ListFeaturesResponse)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1285,16 +1339,17 @@ void ListFeaturesResponse::Clear() {
 const char* ListFeaturesResponse::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
+    ::uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.Feature feature = 1 [json_name = "feature"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_feature(), ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       default:
         goto handle_unusual;
@@ -1319,10 +1374,10 @@ failure:
 #undef CHK_
 }
 
-uint8_t* ListFeaturesResponse::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::uint8_t* ListFeaturesResponse::_InternalSerialize(
+    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.ListFeaturesResponse)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.Feature feature = 1 [json_name = "feature"];
@@ -1340,11 +1395,11 @@ uint8_t* ListFeaturesResponse::_InternalSerialize(
   return target;
 }
 
-size_t ListFeaturesResponse::ByteSizeLong() const {
+::size_t ListFeaturesResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.ListFeaturesResponse)
-  size_t total_size = 0;
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1369,8 +1424,8 @@ void ListFeaturesResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, c
   auto* const _this = static_cast<ListFeaturesResponse*>(&to_msg);
   auto& from = static_cast<const ListFeaturesResponse&>(from_msg);
   // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.ListFeaturesResponse)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_feature()) {
@@ -1402,7 +1457,6 @@ void ListFeaturesResponse::InternalSwap(ListFeaturesResponse* other) {
       &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_getter, &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once,
       file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto[4]);
 }
-
 // ===================================================================
 
 class RecordRouteRequest::_Internal {
@@ -1414,10 +1468,9 @@ const ::route_guide::v1::Point&
 RecordRouteRequest::_Internal::point(const RecordRouteRequest* msg) {
   return *msg->_impl_.point_;
 }
-RecordRouteRequest::RecordRouteRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+RecordRouteRequest::RecordRouteRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:route_guide.v1.RecordRouteRequest)
 }
 RecordRouteRequest::RecordRouteRequest(const RecordRouteRequest& from)
@@ -1434,10 +1487,8 @@ RecordRouteRequest::RecordRouteRequest(const RecordRouteRequest& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.RecordRouteRequest)
 }
 
-inline void RecordRouteRequest::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void RecordRouteRequest::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.point_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}
@@ -1454,7 +1505,7 @@ RecordRouteRequest::~RecordRouteRequest() {
 }
 
 inline void RecordRouteRequest::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.point_;
 }
 
@@ -1464,7 +1515,7 @@ void RecordRouteRequest::SetCachedSize(int size) const {
 
 void RecordRouteRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.RecordRouteRequest)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1478,16 +1529,17 @@ void RecordRouteRequest::Clear() {
 const char* RecordRouteRequest::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
+    ::uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.Point point = 1 [json_name = "point"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_point(), ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       default:
         goto handle_unusual;
@@ -1512,10 +1564,10 @@ failure:
 #undef CHK_
 }
 
-uint8_t* RecordRouteRequest::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::uint8_t* RecordRouteRequest::_InternalSerialize(
+    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.RecordRouteRequest)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.Point point = 1 [json_name = "point"];
@@ -1533,11 +1585,11 @@ uint8_t* RecordRouteRequest::_InternalSerialize(
   return target;
 }
 
-size_t RecordRouteRequest::ByteSizeLong() const {
+::size_t RecordRouteRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.RecordRouteRequest)
-  size_t total_size = 0;
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1562,8 +1614,8 @@ void RecordRouteRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, con
   auto* const _this = static_cast<RecordRouteRequest*>(&to_msg);
   auto& from = static_cast<const RecordRouteRequest&>(from_msg);
   // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.RecordRouteRequest)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_point()) {
@@ -1595,7 +1647,6 @@ void RecordRouteRequest::InternalSwap(RecordRouteRequest* other) {
       &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_getter, &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once,
       file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto[5]);
 }
-
 // ===================================================================
 
 class RouteChatRequest::_Internal {
@@ -1607,10 +1658,9 @@ const ::route_guide::v1::RouteNote&
 RouteChatRequest::_Internal::route_note(const RouteChatRequest* msg) {
   return *msg->_impl_.route_note_;
 }
-RouteChatRequest::RouteChatRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+RouteChatRequest::RouteChatRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:route_guide.v1.RouteChatRequest)
 }
 RouteChatRequest::RouteChatRequest(const RouteChatRequest& from)
@@ -1627,10 +1677,8 @@ RouteChatRequest::RouteChatRequest(const RouteChatRequest& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.RouteChatRequest)
 }
 
-inline void RouteChatRequest::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void RouteChatRequest::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.route_note_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}
@@ -1647,7 +1695,7 @@ RouteChatRequest::~RouteChatRequest() {
 }
 
 inline void RouteChatRequest::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.route_note_;
 }
 
@@ -1657,7 +1705,7 @@ void RouteChatRequest::SetCachedSize(int size) const {
 
 void RouteChatRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.RouteChatRequest)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1671,16 +1719,17 @@ void RouteChatRequest::Clear() {
 const char* RouteChatRequest::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
+    ::uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.RouteNote route_note = 1 [json_name = "routeNote"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_route_note(), ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       default:
         goto handle_unusual;
@@ -1705,10 +1754,10 @@ failure:
 #undef CHK_
 }
 
-uint8_t* RouteChatRequest::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::uint8_t* RouteChatRequest::_InternalSerialize(
+    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.RouteChatRequest)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.RouteNote route_note = 1 [json_name = "routeNote"];
@@ -1726,11 +1775,11 @@ uint8_t* RouteChatRequest::_InternalSerialize(
   return target;
 }
 
-size_t RouteChatRequest::ByteSizeLong() const {
+::size_t RouteChatRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.RouteChatRequest)
-  size_t total_size = 0;
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1755,8 +1804,8 @@ void RouteChatRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const
   auto* const _this = static_cast<RouteChatRequest*>(&to_msg);
   auto& from = static_cast<const RouteChatRequest&>(from_msg);
   // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.RouteChatRequest)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_route_note()) {
@@ -1788,7 +1837,6 @@ void RouteChatRequest::InternalSwap(RouteChatRequest* other) {
       &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_getter, &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once,
       file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto[6]);
 }
-
 // ===================================================================
 
 class RouteChatResponse::_Internal {
@@ -1800,10 +1848,9 @@ const ::route_guide::v1::RouteNote&
 RouteChatResponse::_Internal::route_note(const RouteChatResponse* msg) {
   return *msg->_impl_.route_note_;
 }
-RouteChatResponse::RouteChatResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+RouteChatResponse::RouteChatResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:route_guide.v1.RouteChatResponse)
 }
 RouteChatResponse::RouteChatResponse(const RouteChatResponse& from)
@@ -1820,10 +1867,8 @@ RouteChatResponse::RouteChatResponse(const RouteChatResponse& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.RouteChatResponse)
 }
 
-inline void RouteChatResponse::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void RouteChatResponse::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.route_note_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}
@@ -1840,7 +1885,7 @@ RouteChatResponse::~RouteChatResponse() {
 }
 
 inline void RouteChatResponse::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.route_note_;
 }
 
@@ -1850,7 +1895,7 @@ void RouteChatResponse::SetCachedSize(int size) const {
 
 void RouteChatResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.RouteChatResponse)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1864,16 +1909,17 @@ void RouteChatResponse::Clear() {
 const char* RouteChatResponse::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
+    ::uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.RouteNote route_note = 1 [json_name = "routeNote"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_route_note(), ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       default:
         goto handle_unusual;
@@ -1898,10 +1944,10 @@ failure:
 #undef CHK_
 }
 
-uint8_t* RouteChatResponse::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::uint8_t* RouteChatResponse::_InternalSerialize(
+    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.RouteChatResponse)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.RouteNote route_note = 1 [json_name = "routeNote"];
@@ -1919,11 +1965,11 @@ uint8_t* RouteChatResponse::_InternalSerialize(
   return target;
 }
 
-size_t RouteChatResponse::ByteSizeLong() const {
+::size_t RouteChatResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.RouteChatResponse)
-  size_t total_size = 0;
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1948,8 +1994,8 @@ void RouteChatResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, cons
   auto* const _this = static_cast<RouteChatResponse*>(&to_msg);
   auto& from = static_cast<const RouteChatResponse&>(from_msg);
   // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.RouteChatResponse)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_route_note()) {
@@ -1981,7 +2027,6 @@ void RouteChatResponse::InternalSwap(RouteChatResponse* other) {
       &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_getter, &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once,
       file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto[7]);
 }
-
 // ===================================================================
 
 class Feature::_Internal {
@@ -1993,28 +2038,27 @@ const ::route_guide::v1::Point&
 Feature::_Internal::location(const Feature* msg) {
   return *msg->_impl_.location_;
 }
-Feature::Feature(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+Feature::Feature(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:route_guide.v1.Feature)
 }
 Feature::Feature(const Feature& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   Feature* const _this = this; (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.name_){}
+      decltype(_impl_.name_) {}
+
     , decltype(_impl_.location_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   _impl_.name_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.name_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_name().empty()) {
-    _this->_impl_.name_.Set(from._internal_name(), 
-      _this->GetArenaForAllocation());
+    _this->_impl_.name_.Set(from._internal_name(), _this->GetArenaForAllocation());
   }
   if (from._internal_has_location()) {
     _this->_impl_.location_ = new ::route_guide::v1::Point(*from._impl_.location_);
@@ -2022,19 +2066,18 @@ Feature::Feature(const Feature& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.Feature)
 }
 
-inline void Feature::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void Feature::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.name_){}
+      decltype(_impl_.name_) {}
+
     , decltype(_impl_.location_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}
   };
   _impl_.name_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.name_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.name_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 Feature::~Feature() {
@@ -2047,7 +2090,7 @@ Feature::~Feature() {
 }
 
 inline void Feature::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.name_.Destroy();
   if (this != internal_default_instance()) delete _impl_.location_;
 }
@@ -2058,7 +2101,7 @@ void Feature::SetCachedSize(int size) const {
 
 void Feature::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.Feature)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2073,26 +2116,28 @@ void Feature::Clear() {
 const char* Feature::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
+    ::uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // string name = 1 [json_name = "name"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
           CHK_(::_pbi::VerifyUTF8(str, "route_guide.v1.Feature.name"));
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       // .route_guide.v1.Point location = 2 [json_name = "location"];
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_location(), ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       default:
         goto handle_unusual;
@@ -2117,20 +2162,18 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Feature::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::uint8_t* Feature::_InternalSerialize(
+    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.Feature)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string name = 1 [json_name = "name"];
   if (!this->_internal_name().empty()) {
+    const std::string& _s = this->_internal_name();
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "route_guide.v1.Feature.name");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_name(), target);
+        _s.data(), static_cast<int>(_s.length()), ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE, "route_guide.v1.Feature.name");
+    target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
   // .route_guide.v1.Point location = 2 [json_name = "location"];
@@ -2148,19 +2191,18 @@ uint8_t* Feature::_InternalSerialize(
   return target;
 }
 
-size_t Feature::ByteSizeLong() const {
+::size_t Feature::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.Feature)
-  size_t total_size = 0;
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string name = 1 [json_name = "name"];
   if (!this->_internal_name().empty()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_name());
+    total_size += 1 + ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+                                    this->_internal_name());
   }
 
   // .route_guide.v1.Point location = 2 [json_name = "location"];
@@ -2184,8 +2226,8 @@ void Feature::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOB
   auto* const _this = static_cast<Feature*>(&to_msg);
   auto& from = static_cast<const Feature&>(from_msg);
   // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.Feature)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_name().empty()) {
@@ -2214,10 +2256,8 @@ void Feature::InternalSwap(Feature* other) {
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &_impl_.name_, lhs_arena,
-      &other->_impl_.name_, rhs_arena
-  );
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_, lhs_arena,
+                                       &other->_impl_.name_, rhs_arena);
   swap(_impl_.location_, other->_impl_.location_);
 }
 
@@ -2226,17 +2266,15 @@ void Feature::InternalSwap(Feature* other) {
       &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_getter, &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once,
       file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto[8]);
 }
-
 // ===================================================================
 
 class FeatureDatabase::_Internal {
  public:
 };
 
-FeatureDatabase::FeatureDatabase(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+FeatureDatabase::FeatureDatabase(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:route_guide.v1.FeatureDatabase)
 }
 FeatureDatabase::FeatureDatabase(const FeatureDatabase& from)
@@ -2250,10 +2288,8 @@ FeatureDatabase::FeatureDatabase(const FeatureDatabase& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.FeatureDatabase)
 }
 
-inline void FeatureDatabase::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void FeatureDatabase::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.feature_){arena}
     , /*decltype(_impl_._cached_size_)*/{}
@@ -2270,7 +2306,7 @@ FeatureDatabase::~FeatureDatabase() {
 }
 
 inline void FeatureDatabase::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.feature_.~RepeatedPtrField();
 }
 
@@ -2280,7 +2316,7 @@ void FeatureDatabase::SetCachedSize(int size) const {
 
 void FeatureDatabase::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.FeatureDatabase)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2291,12 +2327,12 @@ void FeatureDatabase::Clear() {
 const char* FeatureDatabase::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
+    ::uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated .route_guide.v1.Feature feature = 1 [json_name = "feature"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2304,8 +2340,9 @@ const char* FeatureDatabase::_InternalParse(const char* ptr, ::_pbi::ParseContex
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       default:
         goto handle_unusual;
@@ -2330,10 +2367,10 @@ failure:
 #undef CHK_
 }
 
-uint8_t* FeatureDatabase::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::uint8_t* FeatureDatabase::_InternalSerialize(
+    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.FeatureDatabase)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .route_guide.v1.Feature feature = 1 [json_name = "feature"];
@@ -2352,11 +2389,11 @@ uint8_t* FeatureDatabase::_InternalSerialize(
   return target;
 }
 
-size_t FeatureDatabase::ByteSizeLong() const {
+::size_t FeatureDatabase::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.FeatureDatabase)
-  size_t total_size = 0;
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2381,8 +2418,8 @@ void FeatureDatabase::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const 
   auto* const _this = static_cast<FeatureDatabase*>(&to_msg);
   auto& from = static_cast<const FeatureDatabase&>(from_msg);
   // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.FeatureDatabase)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   _this->_impl_.feature_.MergeFrom(from._impl_.feature_);
@@ -2411,7 +2448,6 @@ void FeatureDatabase::InternalSwap(FeatureDatabase* other) {
       &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_getter, &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once,
       file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto[9]);
 }
-
 // ===================================================================
 
 class RouteNote::_Internal {
@@ -2423,28 +2459,27 @@ const ::route_guide::v1::Point&
 RouteNote::_Internal::location(const RouteNote* msg) {
   return *msg->_impl_.location_;
 }
-RouteNote::RouteNote(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+RouteNote::RouteNote(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:route_guide.v1.RouteNote)
 }
 RouteNote::RouteNote(const RouteNote& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   RouteNote* const _this = this; (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.message_){}
+      decltype(_impl_.message_) {}
+
     , decltype(_impl_.location_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   _impl_.message_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.message_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.message_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_message().empty()) {
-    _this->_impl_.message_.Set(from._internal_message(), 
-      _this->GetArenaForAllocation());
+    _this->_impl_.message_.Set(from._internal_message(), _this->GetArenaForAllocation());
   }
   if (from._internal_has_location()) {
     _this->_impl_.location_ = new ::route_guide::v1::Point(*from._impl_.location_);
@@ -2452,19 +2487,18 @@ RouteNote::RouteNote(const RouteNote& from)
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.RouteNote)
 }
 
-inline void RouteNote::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void RouteNote::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.message_){}
+      decltype(_impl_.message_) {}
+
     , decltype(_impl_.location_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}
   };
   _impl_.message_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.message_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+        _impl_.message_.Set("", GetArenaForAllocation());
+  #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 RouteNote::~RouteNote() {
@@ -2477,7 +2511,7 @@ RouteNote::~RouteNote() {
 }
 
 inline void RouteNote::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.message_.Destroy();
   if (this != internal_default_instance()) delete _impl_.location_;
 }
@@ -2488,7 +2522,7 @@ void RouteNote::SetCachedSize(int size) const {
 
 void RouteNote::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.RouteNote)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2503,26 +2537,28 @@ void RouteNote::Clear() {
 const char* RouteNote::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
+    ::uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .route_guide.v1.Point location = 1 [json_name = "location"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_location(), ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       // string message = 2 [json_name = "message"];
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_message();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
           CHK_(::_pbi::VerifyUTF8(str, "route_guide.v1.RouteNote.message"));
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       default:
         goto handle_unusual;
@@ -2547,10 +2583,10 @@ failure:
 #undef CHK_
 }
 
-uint8_t* RouteNote::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::uint8_t* RouteNote::_InternalSerialize(
+    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.RouteNote)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .route_guide.v1.Point location = 1 [json_name = "location"];
@@ -2562,12 +2598,10 @@ uint8_t* RouteNote::_InternalSerialize(
 
   // string message = 2 [json_name = "message"];
   if (!this->_internal_message().empty()) {
+    const std::string& _s = this->_internal_message();
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_message().data(), static_cast<int>(this->_internal_message().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "route_guide.v1.RouteNote.message");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_message(), target);
+        _s.data(), static_cast<int>(_s.length()), ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE, "route_guide.v1.RouteNote.message");
+    target = stream->WriteStringMaybeAliased(2, _s, target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2578,19 +2612,18 @@ uint8_t* RouteNote::_InternalSerialize(
   return target;
 }
 
-size_t RouteNote::ByteSizeLong() const {
+::size_t RouteNote::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.RouteNote)
-  size_t total_size = 0;
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string message = 2 [json_name = "message"];
   if (!this->_internal_message().empty()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_message());
+    total_size += 1 + ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+                                    this->_internal_message());
   }
 
   // .route_guide.v1.Point location = 1 [json_name = "location"];
@@ -2614,8 +2647,8 @@ void RouteNote::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROT
   auto* const _this = static_cast<RouteNote*>(&to_msg);
   auto& from = static_cast<const RouteNote&>(from_msg);
   // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.RouteNote)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!from._internal_message().empty()) {
@@ -2644,10 +2677,8 @@ void RouteNote::InternalSwap(RouteNote* other) {
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &_impl_.message_, lhs_arena,
-      &other->_impl_.message_, rhs_arena
-  );
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.message_, lhs_arena,
+                                       &other->_impl_.message_, rhs_arena);
   swap(_impl_.location_, other->_impl_.location_);
 }
 
@@ -2656,45 +2687,35 @@ void RouteNote::InternalSwap(RouteNote* other) {
       &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_getter, &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once,
       file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto[10]);
 }
-
 // ===================================================================
 
 class RecordRouteResponse::_Internal {
  public:
 };
 
-RecordRouteResponse::RecordRouteResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor(arena, is_message_owned);
+RecordRouteResponse::RecordRouteResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:route_guide.v1.RecordRouteResponse)
 }
 RecordRouteResponse::RecordRouteResponse(const RecordRouteResponse& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  RecordRouteResponse* const _this = this; (void)_this;
-  new (&_impl_) Impl_{
-      decltype(_impl_.point_count_){}
-    , decltype(_impl_.feature_count_){}
-    , decltype(_impl_.distance_){}
-    , decltype(_impl_.elapsed_time_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
-
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&_impl_.point_count_, &from._impl_.point_count_,
-    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.elapsed_time_) -
-    reinterpret_cast<char*>(&_impl_.point_count_)) + sizeof(_impl_.elapsed_time_));
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _impl_(from._impl_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(
+      from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:route_guide.v1.RecordRouteResponse)
 }
 
-inline void RecordRouteResponse::SharedCtor(
-    ::_pb::Arena* arena, bool is_message_owned) {
+inline void RecordRouteResponse::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
-  (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.point_count_){0}
-    , decltype(_impl_.feature_count_){0}
-    , decltype(_impl_.distance_){0}
-    , decltype(_impl_.elapsed_time_){0}
+      decltype(_impl_.point_count_) { 0 }
+
+    , decltype(_impl_.feature_count_) { 0 }
+
+    , decltype(_impl_.distance_) { 0 }
+
+    , decltype(_impl_.elapsed_time_) { 0 }
+
     , /*decltype(_impl_._cached_size_)*/{}
   };
 }
@@ -2709,7 +2730,7 @@ RecordRouteResponse::~RecordRouteResponse() {
 }
 
 inline void RecordRouteResponse::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  ABSL_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void RecordRouteResponse::SetCachedSize(int size) const {
@@ -2718,11 +2739,11 @@ void RecordRouteResponse::SetCachedSize(int size) const {
 
 void RecordRouteResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:route_guide.v1.RecordRouteResponse)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&_impl_.point_count_, 0, static_cast<size_t>(
+  ::memset(&_impl_.point_count_, 0, static_cast<::size_t>(
       reinterpret_cast<char*>(&_impl_.elapsed_time_) -
       reinterpret_cast<char*>(&_impl_.point_count_)) + sizeof(_impl_.elapsed_time_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -2731,40 +2752,44 @@ void RecordRouteResponse::Clear() {
 const char* RecordRouteResponse::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    uint32_t tag;
+    ::uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int32 point_count = 1 [json_name = "pointCount"];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 8)) {
           _impl_.point_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       // int32 feature_count = 2 [json_name = "featureCount"];
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 16)) {
           _impl_.feature_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       // int32 distance = 3 [json_name = "distance"];
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 24)) {
           _impl_.distance_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       // int32 elapsed_time = 4 [json_name = "elapsedTime"];
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 32)) {
           _impl_.elapsed_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else
+        } else {
           goto handle_unusual;
+        }
         continue;
       default:
         goto handle_unusual;
@@ -2789,34 +2814,38 @@ failure:
 #undef CHK_
 }
 
-uint8_t* RecordRouteResponse::_InternalSerialize(
-    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+::uint8_t* RecordRouteResponse::_InternalSerialize(
+    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:route_guide.v1.RecordRouteResponse)
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 point_count = 1 [json_name = "pointCount"];
   if (this->_internal_point_count() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_point_count(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
+        1, this->_internal_point_count(), target);
   }
 
   // int32 feature_count = 2 [json_name = "featureCount"];
   if (this->_internal_feature_count() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(2, this->_internal_feature_count(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
+        2, this->_internal_feature_count(), target);
   }
 
   // int32 distance = 3 [json_name = "distance"];
   if (this->_internal_distance() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(3, this->_internal_distance(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
+        3, this->_internal_distance(), target);
   }
 
   // int32 elapsed_time = 4 [json_name = "elapsedTime"];
   if (this->_internal_elapsed_time() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(4, this->_internal_elapsed_time(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
+        4, this->_internal_elapsed_time(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2827,32 +2856,36 @@ uint8_t* RecordRouteResponse::_InternalSerialize(
   return target;
 }
 
-size_t RecordRouteResponse::ByteSizeLong() const {
+::size_t RecordRouteResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:route_guide.v1.RecordRouteResponse)
-  size_t total_size = 0;
+  ::size_t total_size = 0;
 
-  uint32_t cached_has_bits = 0;
+  ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 point_count = 1 [json_name = "pointCount"];
   if (this->_internal_point_count() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_point_count());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_point_count());
   }
 
   // int32 feature_count = 2 [json_name = "featureCount"];
   if (this->_internal_feature_count() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_feature_count());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_feature_count());
   }
 
   // int32 distance = 3 [json_name = "distance"];
   if (this->_internal_distance() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_distance());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_distance());
   }
 
   // int32 elapsed_time = 4 [json_name = "elapsedTime"];
   if (this->_internal_elapsed_time() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_elapsed_time());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+        this->_internal_elapsed_time());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -2869,8 +2902,8 @@ void RecordRouteResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, co
   auto* const _this = static_cast<RecordRouteResponse*>(&to_msg);
   auto& from = static_cast<const RecordRouteResponse&>(from_msg);
   // @@protoc_insertion_point(class_specific_merge_from_start:route_guide.v1.RecordRouteResponse)
-  GOOGLE_DCHECK_NE(&from, _this);
-  uint32_t cached_has_bits = 0;
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_point_count() != 0) {
@@ -2915,7 +2948,6 @@ void RecordRouteResponse::InternalSwap(RecordRouteResponse* other) {
       &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_getter, &descriptor_table_route_5fguide_2fv1_2froute_5fguide_2eproto_once,
       file_level_metadata_route_5fguide_2fv1_2froute_5fguide_2eproto[11]);
 }
-
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace v1
 }  // namespace route_guide
@@ -2969,6 +3001,5 @@ Arena::CreateMaybeMessage< ::route_guide::v1::RecordRouteResponse >(Arena* arena
   return Arena::CreateMessageInternal< ::route_guide::v1::RecordRouteResponse >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
-
 // @@protoc_insertion_point(global_scope)
-#include <google/protobuf/port_undef.inc>
+#include "google/protobuf/port_undef.inc"

@@ -32,11 +32,6 @@ private static final long serialVersionUID = 0L;
     return new Point();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_Point_descriptor;
@@ -51,7 +46,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int LATITUDE_FIELD_NUMBER = 1;
-  private int latitude_;
+  private int latitude_ = 0;
   /**
    * <code>int32 latitude = 1 [json_name = "latitude"];</code>
    * @return The latitude.
@@ -62,7 +57,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int LONGITUDE_FIELD_NUMBER = 2;
-  private int longitude_;
+  private int longitude_ = 0;
   /**
    * <code>int32 longitude = 2 [json_name = "longitude"];</code>
    * @return The longitude.
@@ -278,10 +273,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       latitude_ = 0;
-
       longitude_ = 0;
-
       return this;
     }
 
@@ -308,44 +302,21 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public io.grpc.route_guide.v1.Point buildPartial() {
       io.grpc.route_guide.v1.Point result = new io.grpc.route_guide.v1.Point(this);
-      result.latitude_ = latitude_;
-      result.longitude_ = longitude_;
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
+    private void buildPartial0(io.grpc.route_guide.v1.Point result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.latitude_ = latitude_;
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.longitude_ = longitude_;
+      }
     }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
+
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof io.grpc.route_guide.v1.Point) {
@@ -392,12 +363,12 @@ private static final long serialVersionUID = 0L;
               break;
             case 8: {
               latitude_ = input.readInt32();
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 8
             case 16: {
               longitude_ = input.readInt32();
-
+              bitField0_ |= 0x00000002;
               break;
             } // case 16
             default: {
@@ -415,6 +386,7 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
     private int latitude_ ;
     /**
@@ -431,8 +403,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setLatitude(int value) {
-      
+
       latitude_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -441,7 +414,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearLatitude() {
-      
+      bitField0_ = (bitField0_ & ~0x00000001);
       latitude_ = 0;
       onChanged();
       return this;
@@ -462,8 +435,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setLongitude(int value) {
-      
+
       longitude_ = value;
+      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -472,7 +446,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearLongitude() {
-      
+      bitField0_ = (bitField0_ & ~0x00000002);
       longitude_ = 0;
       onChanged();
       return this;

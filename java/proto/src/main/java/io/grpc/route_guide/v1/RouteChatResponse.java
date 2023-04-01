@@ -25,11 +25,6 @@ private static final long serialVersionUID = 0L;
     return new RouteChatResponse();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_RouteChatResponse_descriptor;
@@ -66,7 +61,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public io.grpc.route_guide.v1.RouteNoteOrBuilder getRouteNoteOrBuilder() {
-    return getRouteNote();
+    return routeNote_ == null ? io.grpc.route_guide.v1.RouteNote.getDefaultInstance() : routeNote_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -262,10 +257,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (routeNoteBuilder_ == null) {
-        routeNote_ = null;
-      } else {
-        routeNote_ = null;
+      bitField0_ = 0;
+      routeNote_ = null;
+      if (routeNoteBuilder_ != null) {
+        routeNoteBuilder_.dispose();
         routeNoteBuilder_ = null;
       }
       return this;
@@ -294,47 +289,20 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public io.grpc.route_guide.v1.RouteChatResponse buildPartial() {
       io.grpc.route_guide.v1.RouteChatResponse result = new io.grpc.route_guide.v1.RouteChatResponse(this);
-      if (routeNoteBuilder_ == null) {
-        result.routeNote_ = routeNote_;
-      } else {
-        result.routeNote_ = routeNoteBuilder_.build();
-      }
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
+    private void buildPartial0(io.grpc.route_guide.v1.RouteChatResponse result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.routeNote_ = routeNoteBuilder_ == null
+            ? routeNote_
+            : routeNoteBuilder_.build();
+      }
     }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
+
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof io.grpc.route_guide.v1.RouteChatResponse) {
@@ -380,7 +348,7 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getRouteNoteFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             default: {
@@ -398,6 +366,7 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
     private io.grpc.route_guide.v1.RouteNote routeNote_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -407,7 +376,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the routeNote field is set.
      */
     public boolean hasRouteNote() {
-      return routeNoteBuilder_ != null || routeNote_ != null;
+      return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>.route_guide.v1.RouteNote route_note = 1 [json_name = "routeNote"];</code>
@@ -429,11 +398,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         routeNote_ = value;
-        onChanged();
       } else {
         routeNoteBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -443,11 +412,11 @@ private static final long serialVersionUID = 0L;
         io.grpc.route_guide.v1.RouteNote.Builder builderForValue) {
       if (routeNoteBuilder_ == null) {
         routeNote_ = builderForValue.build();
-        onChanged();
       } else {
         routeNoteBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -455,38 +424,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeRouteNote(io.grpc.route_guide.v1.RouteNote value) {
       if (routeNoteBuilder_ == null) {
-        if (routeNote_ != null) {
-          routeNote_ =
-            io.grpc.route_guide.v1.RouteNote.newBuilder(routeNote_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000001) != 0) &&
+          routeNote_ != null &&
+          routeNote_ != io.grpc.route_guide.v1.RouteNote.getDefaultInstance()) {
+          getRouteNoteBuilder().mergeFrom(value);
         } else {
           routeNote_ = value;
         }
-        onChanged();
       } else {
         routeNoteBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.route_guide.v1.RouteNote route_note = 1 [json_name = "routeNote"];</code>
      */
     public Builder clearRouteNote() {
-      if (routeNoteBuilder_ == null) {
-        routeNote_ = null;
-        onChanged();
-      } else {
-        routeNote_ = null;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      routeNote_ = null;
+      if (routeNoteBuilder_ != null) {
+        routeNoteBuilder_.dispose();
         routeNoteBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.route_guide.v1.RouteNote route_note = 1 [json_name = "routeNote"];</code>
      */
     public io.grpc.route_guide.v1.RouteNote.Builder getRouteNoteBuilder() {
-      
+      bitField0_ |= 0x00000001;
       onChanged();
       return getRouteNoteFieldBuilder().getBuilder();
     }
