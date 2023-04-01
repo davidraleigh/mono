@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "io.grpc.route_guide.v1";
+option java_multiple_files = true;
+option java_package = "io.grpc.route_guide.v1";
+option java_outer_classname = "StuffProto";
+option objc_class_prefix = "RTG";
+option go_package = "github.com/davidraleigh/mono/golang/route_guide/v1";
+
+package route_guide.v1;
+
+import "route_guide/v1/route_guide.proto";
+
+message RoutePointTest {
+    Point point = 1;
+}
