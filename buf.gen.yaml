@@ -14,13 +14,13 @@ plugins:
     opt: paths=source_relative
   # grpc
   - plugin: buf.build/grpc/cpp:v1.53.0
-    out: cpp
+    out: cpp/proto
   - plugin: buf.build/grpc/java:v1.53.0
     out: java/proto/src/main/java
   - plugin: buf.build/grpc/python:v1.53.0
-    out: python
+    out: python/proto
   - plugin: buf.build/grpc/go:v1.3.0
-    out: go
+    out: go/proto
     opt:
       - paths=source_relative
       - require_unimplemented_servers=false
