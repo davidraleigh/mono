@@ -8,8 +8,8 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  * </pre>
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.45.0)",
-    comments = "Source: proto/route_guide/v1/route_guide.proto")
+    value = "by gRPC proto compiler (version 1.53.0)",
+    comments = "Source: route_guide/v1/route_guide.proto")
 @io.grpc.stub.annotations.GrpcGenerated
 public final class RouteGuideServiceGrpc {
 

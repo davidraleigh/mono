@@ -1,0 +1,20 @@
+version: v1
+plugins:
+  - plugin: buf.build/protocolbuffers/csharp:v22.2
+    out: net/proto
+  - plugin: buf.build/protocolbuffers/ruby:v22.2
+    out: ruby/proto
+  - plugin: buf.build/protocolbuffers/js:v3.21.2
+    out: js/proto
+    opt:
+      - import_style=commonjs
+      - binary
+  # grpc
+  - plugin: buf.build/grpc/csharp:v1.53.0
+    out: net/proto
+  - plugin: buf.build/grpc/ruby:v1.53.0
+    out: ruby/proto
+  - plugin: buf.build/grpc/node:v1.12.4
+    out: js/proto
+    opt:
+      - import_style=commonjs

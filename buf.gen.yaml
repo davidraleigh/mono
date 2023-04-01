@@ -9,34 +9,17 @@ plugins:
     out: python/proto
   - plugin: buf.build/protocolbuffers/pyi:v22.2
     out: python/proto
-  - plugin: buf.build/protocolbuffers/csharp:v22.2
-    out: net/proto
-  - plugin: buf.build/protocolbuffers/ruby:v22.2
-    out: ruby/proto
-  - plugin: buf.build/protocolbuffers/js:v3.21.2
-    out: js/proto
-    opt:
-      - import_style=commonjs
-      - binary
   - plugin: buf.build/protocolbuffers/go:v1.28.1
     out: go/proto
     opt: paths=source_relative
-# grpc
-  - remote: buf.build/grpc/plugins/cpp:v1.53.0
+  # grpc
+  - plugin: buf.build/grpc/cpp:v1.53.0
     out: cpp
-  - remote: buf.build/grpc/plugins/java:v1.45.0-1
+  - plugin: buf.build/grpc/java:v1.53.0
     out: java/proto/src/main/java
-  - remote: buf.build/grpc/plugins/python:v1.45.0-1
+  - plugin: buf.build/grpc/python:v1.53.0
     out: python
-  - remote: buf.build/grpc/plugins/csharp:v1.45.0-1
-    out: net/proto
-  - remote: buf.build/grpc/plugins/ruby:v1.45.0-1
-    out: ruby
-  - remote: buf.build/grpc/plugins/node:v1.11.2-1
-    out: js
-    opt:
-      - import_style=commonjs
-  - remote: buf.build/grpc/plugins/go:v1.2.0-1
+  - plugin: buf.build/grpc/go:v1.3.0
     out: go
     opt:
       - paths=source_relative
