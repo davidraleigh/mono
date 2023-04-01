@@ -2086,7 +2086,7 @@ inline int32_t Point::latitude() const {
   return _internal_latitude();
 }
 inline void Point::_internal_set_latitude(int32_t value) {
-
+  
   _impl_.latitude_ = value;
 }
 inline void Point::set_latitude(int32_t value) {
@@ -2106,7 +2106,7 @@ inline int32_t Point::longitude() const {
   return _internal_longitude();
 }
 inline void Point::_internal_set_longitude(int32_t value) {
-
+  
   _impl_.longitude_ = value;
 }
 inline void Point::set_longitude(int32_t value) {
@@ -2147,14 +2147,14 @@ inline void ListFeaturesRequest::unsafe_arena_set_allocated_lo(
   }
   _impl_.lo_ = lo;
   if (lo) {
-
+    
   } else {
-
+    
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:route_guide.v1.ListFeaturesRequest.lo)
 }
 inline ::route_guide::v1::Point* ListFeaturesRequest::release_lo() {
-
+  
   ::route_guide::v1::Point* temp = _impl_.lo_;
   _impl_.lo_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
@@ -2170,13 +2170,13 @@ inline ::route_guide::v1::Point* ListFeaturesRequest::release_lo() {
 }
 inline ::route_guide::v1::Point* ListFeaturesRequest::unsafe_arena_release_lo() {
   // @@protoc_insertion_point(field_release:route_guide.v1.ListFeaturesRequest.lo)
-
+  
   ::route_guide::v1::Point* temp = _impl_.lo_;
   _impl_.lo_ = nullptr;
   return temp;
 }
 inline ::route_guide::v1::Point* ListFeaturesRequest::_internal_mutable_lo() {
-
+  
   if (_impl_.lo_ == nullptr) {
     auto* p = CreateMaybeMessage<::route_guide::v1::Point>(GetArenaForAllocation());
     _impl_.lo_ = p;
@@ -2200,9 +2200,9 @@ inline void ListFeaturesRequest::set_allocated_lo(::route_guide::v1::Point* lo) 
       lo = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, lo, submessage_arena);
     }
-
+    
   } else {
-
+    
   }
   _impl_.lo_ = lo;
   // @@protoc_insertion_point(field_set_allocated:route_guide.v1.ListFeaturesRequest.lo)
@@ -2237,14 +2237,14 @@ inline void ListFeaturesRequest::unsafe_arena_set_allocated_hi(
   }
   _impl_.hi_ = hi;
   if (hi) {
-
+    
   } else {
-
+    
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:route_guide.v1.ListFeaturesRequest.hi)
 }
 inline ::route_guide::v1::Point* ListFeaturesRequest::release_hi() {
-
+  
   ::route_guide::v1::Point* temp = _impl_.hi_;
   _impl_.hi_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
@@ -2260,13 +2260,13 @@ inline ::route_guide::v1::Point* ListFeaturesRequest::release_hi() {
 }
 inline ::route_guide::v1::Point* ListFeaturesRequest::unsafe_arena_release_hi() {
   // @@protoc_insertion_point(field_release:route_guide.v1.ListFeaturesRequest.hi)
-
+  
   ::route_guide::v1::Point* temp = _impl_.hi_;
   _impl_.hi_ = nullptr;
   return temp;
 }
 inline ::route_guide::v1::Point* ListFeaturesRequest::_internal_mutable_hi() {
-
+  
   if (_impl_.hi_ == nullptr) {
     auto* p = CreateMaybeMessage<::route_guide::v1::Point>(GetArenaForAllocation());
     _impl_.hi_ = p;
@@ -2290,9 +2290,9 @@ inline void ListFeaturesRequest::set_allocated_hi(::route_guide::v1::Point* hi) 
       hi = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, hi, submessage_arena);
     }
-
+    
   } else {
-
+    
   }
   _impl_.hi_ = hi;
   // @@protoc_insertion_point(field_set_allocated:route_guide.v1.ListFeaturesRequest.hi)
@@ -2331,14 +2331,14 @@ inline void GetFeatureResponse::unsafe_arena_set_allocated_feature(
   }
   _impl_.feature_ = feature;
   if (feature) {
-
+    
   } else {
-
+    
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:route_guide.v1.GetFeatureResponse.feature)
 }
 inline ::route_guide::v1::Feature* GetFeatureResponse::release_feature() {
-
+  
   ::route_guide::v1::Feature* temp = _impl_.feature_;
   _impl_.feature_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
@@ -2354,13 +2354,13 @@ inline ::route_guide::v1::Feature* GetFeatureResponse::release_feature() {
 }
 inline ::route_guide::v1::Feature* GetFeatureResponse::unsafe_arena_release_feature() {
   // @@protoc_insertion_point(field_release:route_guide.v1.GetFeatureResponse.feature)
-
+  
   ::route_guide::v1::Feature* temp = _impl_.feature_;
   _impl_.feature_ = nullptr;
   return temp;
 }
 inline ::route_guide::v1::Feature* GetFeatureResponse::_internal_mutable_feature() {
-
+  
   if (_impl_.feature_ == nullptr) {
     auto* p = CreateMaybeMessage<::route_guide::v1::Feature>(GetArenaForAllocation());
     _impl_.feature_ = p;
@@ -2384,9 +2384,9 @@ inline void GetFeatureResponse::set_allocated_feature(::route_guide::v1::Feature
       feature = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, feature, submessage_arena);
     }
-
+    
   } else {
-
+    
   }
   _impl_.feature_ = feature;
   // @@protoc_insertion_point(field_set_allocated:route_guide.v1.GetFeatureResponse.feature)
@@ -2425,14 +2425,14 @@ inline void GetFeatureRequest::unsafe_arena_set_allocated_point(
   }
   _impl_.point_ = point;
   if (point) {
-
+    
   } else {
-
+    
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:route_guide.v1.GetFeatureRequest.point)
 }
 inline ::route_guide::v1::Point* GetFeatureRequest::release_point() {
-
+  
   ::route_guide::v1::Point* temp = _impl_.point_;
   _impl_.point_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
@@ -2448,13 +2448,13 @@ inline ::route_guide::v1::Point* GetFeatureRequest::release_point() {
 }
 inline ::route_guide::v1::Point* GetFeatureRequest::unsafe_arena_release_point() {
   // @@protoc_insertion_point(field_release:route_guide.v1.GetFeatureRequest.point)
-
+  
   ::route_guide::v1::Point* temp = _impl_.point_;
   _impl_.point_ = nullptr;
   return temp;
 }
 inline ::route_guide::v1::Point* GetFeatureRequest::_internal_mutable_point() {
-
+  
   if (_impl_.point_ == nullptr) {
     auto* p = CreateMaybeMessage<::route_guide::v1::Point>(GetArenaForAllocation());
     _impl_.point_ = p;
@@ -2478,9 +2478,9 @@ inline void GetFeatureRequest::set_allocated_point(::route_guide::v1::Point* poi
       point = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, point, submessage_arena);
     }
-
+    
   } else {
-
+    
   }
   _impl_.point_ = point;
   // @@protoc_insertion_point(field_set_allocated:route_guide.v1.GetFeatureRequest.point)
@@ -2519,14 +2519,14 @@ inline void ListFeaturesResponse::unsafe_arena_set_allocated_feature(
   }
   _impl_.feature_ = feature;
   if (feature) {
-
+    
   } else {
-
+    
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:route_guide.v1.ListFeaturesResponse.feature)
 }
 inline ::route_guide::v1::Feature* ListFeaturesResponse::release_feature() {
-
+  
   ::route_guide::v1::Feature* temp = _impl_.feature_;
   _impl_.feature_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
@@ -2542,13 +2542,13 @@ inline ::route_guide::v1::Feature* ListFeaturesResponse::release_feature() {
 }
 inline ::route_guide::v1::Feature* ListFeaturesResponse::unsafe_arena_release_feature() {
   // @@protoc_insertion_point(field_release:route_guide.v1.ListFeaturesResponse.feature)
-
+  
   ::route_guide::v1::Feature* temp = _impl_.feature_;
   _impl_.feature_ = nullptr;
   return temp;
 }
 inline ::route_guide::v1::Feature* ListFeaturesResponse::_internal_mutable_feature() {
-
+  
   if (_impl_.feature_ == nullptr) {
     auto* p = CreateMaybeMessage<::route_guide::v1::Feature>(GetArenaForAllocation());
     _impl_.feature_ = p;
@@ -2572,9 +2572,9 @@ inline void ListFeaturesResponse::set_allocated_feature(::route_guide::v1::Featu
       feature = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, feature, submessage_arena);
     }
-
+    
   } else {
-
+    
   }
   _impl_.feature_ = feature;
   // @@protoc_insertion_point(field_set_allocated:route_guide.v1.ListFeaturesResponse.feature)
@@ -2613,14 +2613,14 @@ inline void RecordRouteRequest::unsafe_arena_set_allocated_point(
   }
   _impl_.point_ = point;
   if (point) {
-
+    
   } else {
-
+    
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:route_guide.v1.RecordRouteRequest.point)
 }
 inline ::route_guide::v1::Point* RecordRouteRequest::release_point() {
-
+  
   ::route_guide::v1::Point* temp = _impl_.point_;
   _impl_.point_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
@@ -2636,13 +2636,13 @@ inline ::route_guide::v1::Point* RecordRouteRequest::release_point() {
 }
 inline ::route_guide::v1::Point* RecordRouteRequest::unsafe_arena_release_point() {
   // @@protoc_insertion_point(field_release:route_guide.v1.RecordRouteRequest.point)
-
+  
   ::route_guide::v1::Point* temp = _impl_.point_;
   _impl_.point_ = nullptr;
   return temp;
 }
 inline ::route_guide::v1::Point* RecordRouteRequest::_internal_mutable_point() {
-
+  
   if (_impl_.point_ == nullptr) {
     auto* p = CreateMaybeMessage<::route_guide::v1::Point>(GetArenaForAllocation());
     _impl_.point_ = p;
@@ -2666,9 +2666,9 @@ inline void RecordRouteRequest::set_allocated_point(::route_guide::v1::Point* po
       point = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, point, submessage_arena);
     }
-
+    
   } else {
-
+    
   }
   _impl_.point_ = point;
   // @@protoc_insertion_point(field_set_allocated:route_guide.v1.RecordRouteRequest.point)
@@ -2707,14 +2707,14 @@ inline void RouteChatRequest::unsafe_arena_set_allocated_route_note(
   }
   _impl_.route_note_ = route_note;
   if (route_note) {
-
+    
   } else {
-
+    
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:route_guide.v1.RouteChatRequest.route_note)
 }
 inline ::route_guide::v1::RouteNote* RouteChatRequest::release_route_note() {
-
+  
   ::route_guide::v1::RouteNote* temp = _impl_.route_note_;
   _impl_.route_note_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
@@ -2730,13 +2730,13 @@ inline ::route_guide::v1::RouteNote* RouteChatRequest::release_route_note() {
 }
 inline ::route_guide::v1::RouteNote* RouteChatRequest::unsafe_arena_release_route_note() {
   // @@protoc_insertion_point(field_release:route_guide.v1.RouteChatRequest.route_note)
-
+  
   ::route_guide::v1::RouteNote* temp = _impl_.route_note_;
   _impl_.route_note_ = nullptr;
   return temp;
 }
 inline ::route_guide::v1::RouteNote* RouteChatRequest::_internal_mutable_route_note() {
-
+  
   if (_impl_.route_note_ == nullptr) {
     auto* p = CreateMaybeMessage<::route_guide::v1::RouteNote>(GetArenaForAllocation());
     _impl_.route_note_ = p;
@@ -2760,9 +2760,9 @@ inline void RouteChatRequest::set_allocated_route_note(::route_guide::v1::RouteN
       route_note = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, route_note, submessage_arena);
     }
-
+    
   } else {
-
+    
   }
   _impl_.route_note_ = route_note;
   // @@protoc_insertion_point(field_set_allocated:route_guide.v1.RouteChatRequest.route_note)
@@ -2801,14 +2801,14 @@ inline void RouteChatResponse::unsafe_arena_set_allocated_route_note(
   }
   _impl_.route_note_ = route_note;
   if (route_note) {
-
+    
   } else {
-
+    
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:route_guide.v1.RouteChatResponse.route_note)
 }
 inline ::route_guide::v1::RouteNote* RouteChatResponse::release_route_note() {
-
+  
   ::route_guide::v1::RouteNote* temp = _impl_.route_note_;
   _impl_.route_note_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
@@ -2824,13 +2824,13 @@ inline ::route_guide::v1::RouteNote* RouteChatResponse::release_route_note() {
 }
 inline ::route_guide::v1::RouteNote* RouteChatResponse::unsafe_arena_release_route_note() {
   // @@protoc_insertion_point(field_release:route_guide.v1.RouteChatResponse.route_note)
-
+  
   ::route_guide::v1::RouteNote* temp = _impl_.route_note_;
   _impl_.route_note_ = nullptr;
   return temp;
 }
 inline ::route_guide::v1::RouteNote* RouteChatResponse::_internal_mutable_route_note() {
-
+  
   if (_impl_.route_note_ == nullptr) {
     auto* p = CreateMaybeMessage<::route_guide::v1::RouteNote>(GetArenaForAllocation());
     _impl_.route_note_ = p;
@@ -2854,9 +2854,9 @@ inline void RouteChatResponse::set_allocated_route_note(::route_guide::v1::Route
       route_note = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, route_note, submessage_arena);
     }
-
+    
   } else {
-
+    
   }
   _impl_.route_note_ = route_note;
   // @@protoc_insertion_point(field_set_allocated:route_guide.v1.RouteChatResponse.route_note)
@@ -2877,7 +2877,7 @@ inline const std::string& Feature::name() const {
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
 void Feature::set_name(ArgT0&& arg0, ArgT... args) {
-
+ 
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
   // @@protoc_insertion_point(field_set:route_guide.v1.Feature.name)
 }
@@ -2890,11 +2890,11 @@ inline const std::string& Feature::_internal_name() const {
   return _impl_.name_.Get();
 }
 inline void Feature::_internal_set_name(const std::string& value) {
-
+  
   _impl_.name_.Set(value, GetArenaForAllocation());
 }
 inline std::string* Feature::_internal_mutable_name() {
-
+  
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
 inline std::string* Feature::release_name() {
@@ -2903,9 +2903,9 @@ inline std::string* Feature::release_name() {
 }
 inline void Feature::set_allocated_name(std::string* name) {
   if (name != nullptr) {
-
+    
   } else {
-
+    
   }
   _impl_.name_.SetAllocated(name, GetArenaForAllocation());
 #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
@@ -2945,14 +2945,14 @@ inline void Feature::unsafe_arena_set_allocated_location(
   }
   _impl_.location_ = location;
   if (location) {
-
+    
   } else {
-
+    
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:route_guide.v1.Feature.location)
 }
 inline ::route_guide::v1::Point* Feature::release_location() {
-
+  
   ::route_guide::v1::Point* temp = _impl_.location_;
   _impl_.location_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
@@ -2968,13 +2968,13 @@ inline ::route_guide::v1::Point* Feature::release_location() {
 }
 inline ::route_guide::v1::Point* Feature::unsafe_arena_release_location() {
   // @@protoc_insertion_point(field_release:route_guide.v1.Feature.location)
-
+  
   ::route_guide::v1::Point* temp = _impl_.location_;
   _impl_.location_ = nullptr;
   return temp;
 }
 inline ::route_guide::v1::Point* Feature::_internal_mutable_location() {
-
+  
   if (_impl_.location_ == nullptr) {
     auto* p = CreateMaybeMessage<::route_guide::v1::Point>(GetArenaForAllocation());
     _impl_.location_ = p;
@@ -2998,9 +2998,9 @@ inline void Feature::set_allocated_location(::route_guide::v1::Point* location) 
       location = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, location, submessage_arena);
     }
-
+    
   } else {
-
+    
   }
   _impl_.location_ = location;
   // @@protoc_insertion_point(field_set_allocated:route_guide.v1.Feature.location)
@@ -3083,14 +3083,14 @@ inline void RouteNote::unsafe_arena_set_allocated_location(
   }
   _impl_.location_ = location;
   if (location) {
-
+    
   } else {
-
+    
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:route_guide.v1.RouteNote.location)
 }
 inline ::route_guide::v1::Point* RouteNote::release_location() {
-
+  
   ::route_guide::v1::Point* temp = _impl_.location_;
   _impl_.location_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
@@ -3106,13 +3106,13 @@ inline ::route_guide::v1::Point* RouteNote::release_location() {
 }
 inline ::route_guide::v1::Point* RouteNote::unsafe_arena_release_location() {
   // @@protoc_insertion_point(field_release:route_guide.v1.RouteNote.location)
-
+  
   ::route_guide::v1::Point* temp = _impl_.location_;
   _impl_.location_ = nullptr;
   return temp;
 }
 inline ::route_guide::v1::Point* RouteNote::_internal_mutable_location() {
-
+  
   if (_impl_.location_ == nullptr) {
     auto* p = CreateMaybeMessage<::route_guide::v1::Point>(GetArenaForAllocation());
     _impl_.location_ = p;
@@ -3136,9 +3136,9 @@ inline void RouteNote::set_allocated_location(::route_guide::v1::Point* location
       location = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, location, submessage_arena);
     }
-
+    
   } else {
-
+    
   }
   _impl_.location_ = location;
   // @@protoc_insertion_point(field_set_allocated:route_guide.v1.RouteNote.location)
@@ -3155,7 +3155,7 @@ inline const std::string& RouteNote::message() const {
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
 void RouteNote::set_message(ArgT0&& arg0, ArgT... args) {
-
+ 
  _impl_.message_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
   // @@protoc_insertion_point(field_set:route_guide.v1.RouteNote.message)
 }
@@ -3168,11 +3168,11 @@ inline const std::string& RouteNote::_internal_message() const {
   return _impl_.message_.Get();
 }
 inline void RouteNote::_internal_set_message(const std::string& value) {
-
+  
   _impl_.message_.Set(value, GetArenaForAllocation());
 }
 inline std::string* RouteNote::_internal_mutable_message() {
-
+  
   return _impl_.message_.Mutable(GetArenaForAllocation());
 }
 inline std::string* RouteNote::release_message() {
@@ -3181,9 +3181,9 @@ inline std::string* RouteNote::release_message() {
 }
 inline void RouteNote::set_allocated_message(std::string* message) {
   if (message != nullptr) {
-
+    
   } else {
-
+    
   }
   _impl_.message_.SetAllocated(message, GetArenaForAllocation());
 #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
@@ -3210,7 +3210,7 @@ inline int32_t RecordRouteResponse::point_count() const {
   return _internal_point_count();
 }
 inline void RecordRouteResponse::_internal_set_point_count(int32_t value) {
-
+  
   _impl_.point_count_ = value;
 }
 inline void RecordRouteResponse::set_point_count(int32_t value) {
@@ -3230,7 +3230,7 @@ inline int32_t RecordRouteResponse::feature_count() const {
   return _internal_feature_count();
 }
 inline void RecordRouteResponse::_internal_set_feature_count(int32_t value) {
-
+  
   _impl_.feature_count_ = value;
 }
 inline void RecordRouteResponse::set_feature_count(int32_t value) {
@@ -3250,7 +3250,7 @@ inline int32_t RecordRouteResponse::distance() const {
   return _internal_distance();
 }
 inline void RecordRouteResponse::_internal_set_distance(int32_t value) {
-
+  
   _impl_.distance_ = value;
 }
 inline void RecordRouteResponse::set_distance(int32_t value) {
@@ -3270,7 +3270,7 @@ inline int32_t RecordRouteResponse::elapsed_time() const {
   return _internal_elapsed_time();
 }
 inline void RecordRouteResponse::_internal_set_elapsed_time(int32_t value) {
-
+  
   _impl_.elapsed_time_ = value;
 }
 inline void RecordRouteResponse::set_elapsed_time(int32_t value) {

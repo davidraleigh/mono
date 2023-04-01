@@ -249,14 +249,14 @@ inline void RoutePointTest::unsafe_arena_set_allocated_point(
   }
   _impl_.point_ = point;
   if (point) {
-
+    
   } else {
-
+    
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:route_guide.v1.RoutePointTest.point)
 }
 inline ::route_guide::v1::Point* RoutePointTest::release_point() {
-
+  
   ::route_guide::v1::Point* temp = _impl_.point_;
   _impl_.point_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
@@ -272,13 +272,13 @@ inline ::route_guide::v1::Point* RoutePointTest::release_point() {
 }
 inline ::route_guide::v1::Point* RoutePointTest::unsafe_arena_release_point() {
   // @@protoc_insertion_point(field_release:route_guide.v1.RoutePointTest.point)
-
+  
   ::route_guide::v1::Point* temp = _impl_.point_;
   _impl_.point_ = nullptr;
   return temp;
 }
 inline ::route_guide::v1::Point* RoutePointTest::_internal_mutable_point() {
-
+  
   if (_impl_.point_ == nullptr) {
     auto* p = CreateMaybeMessage<::route_guide::v1::Point>(GetArenaForAllocation());
     _impl_.point_ = p;
@@ -303,9 +303,9 @@ inline void RoutePointTest::set_allocated_point(::route_guide::v1::Point* point)
       point = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, point, submessage_arena);
     }
-
+    
   } else {
-
+    
   }
   _impl_.point_ = point;
   // @@protoc_insertion_point(field_set_allocated:route_guide.v1.RoutePointTest.point)
