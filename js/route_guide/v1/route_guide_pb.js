@@ -1,4 +1,4 @@
-// source: proto/route_guide/v1/route_guide.proto
+// source: route_guide/v1/route_guide.proto
 /**
  * @fileoverview
  * @enhanceable

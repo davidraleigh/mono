@@ -6,6 +6,6 @@ source .venv/bin/activate
 pip install pre-commit
 pre-commit install
 
-docker pull bufbuild/buf:1.3.0
+docker pull bufbuild/buf:1.16.0
 
-docker build -t bufbuild/buf:1.3.0-fix -f ./dockerfiles/Dockerfile.buf .
+docker build -t bufbuild/buf:1.16.0-fix -f ./dockerfiles/Dockerfile.buf .
