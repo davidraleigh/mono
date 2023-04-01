@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from proto.route_guide.v1 import route_guide_pb2 as proto_dot_route__guide_dot_v1_dot_route__guide__pb2
+from route_guide.v1 import route_guide_pb2 as route__guide_dot_v1_dot_route__guide__pb2
 
 
 class RouteGuideServiceStub(object):
@@ -17,23 +17,23 @@ class RouteGuideServiceStub(object):
         """
         self.GetFeature = channel.unary_unary(
                 '/route_guide.v1.RouteGuideService/GetFeature',
-                request_serializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.GetFeatureRequest.SerializeToString,
-                response_deserializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.GetFeatureResponse.FromString,
+                request_serializer=route__guide_dot_v1_dot_route__guide__pb2.GetFeatureRequest.SerializeToString,
+                response_deserializer=route__guide_dot_v1_dot_route__guide__pb2.GetFeatureResponse.FromString,
                 )
         self.ListFeatures = channel.unary_stream(
                 '/route_guide.v1.RouteGuideService/ListFeatures',
-                request_serializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.ListFeaturesRequest.SerializeToString,
-                response_deserializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.ListFeaturesResponse.FromString,
+                request_serializer=route__guide_dot_v1_dot_route__guide__pb2.ListFeaturesRequest.SerializeToString,
+                response_deserializer=route__guide_dot_v1_dot_route__guide__pb2.ListFeaturesResponse.FromString,
                 )
         self.RecordRoute = channel.stream_unary(
                 '/route_guide.v1.RouteGuideService/RecordRoute',
-                request_serializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.RecordRouteRequest.SerializeToString,
-                response_deserializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.RecordRouteResponse.FromString,
+                request_serializer=route__guide_dot_v1_dot_route__guide__pb2.RecordRouteRequest.SerializeToString,
+                response_deserializer=route__guide_dot_v1_dot_route__guide__pb2.RecordRouteResponse.FromString,
                 )
         self.RouteChat = channel.stream_stream(
                 '/route_guide.v1.RouteGuideService/RouteChat',
-                request_serializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.RouteChatRequest.SerializeToString,
-                response_deserializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.RouteChatResponse.FromString,
+                request_serializer=route__guide_dot_v1_dot_route__guide__pb2.RouteChatRequest.SerializeToString,
+                response_deserializer=route__guide_dot_v1_dot_route__guide__pb2.RouteChatResponse.FromString,
                 )
 
 
@@ -90,23 +90,23 @@ def add_RouteGuideServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
             'GetFeature': grpc.unary_unary_rpc_method_handler(
                     servicer.GetFeature,
-                    request_deserializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.GetFeatureRequest.FromString,
-                    response_serializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.GetFeatureResponse.SerializeToString,
+                    request_deserializer=route__guide_dot_v1_dot_route__guide__pb2.GetFeatureRequest.FromString,
+                    response_serializer=route__guide_dot_v1_dot_route__guide__pb2.GetFeatureResponse.SerializeToString,
             ),
             'ListFeatures': grpc.unary_stream_rpc_method_handler(
                     servicer.ListFeatures,
-                    request_deserializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.ListFeaturesRequest.FromString,
-                    response_serializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.ListFeaturesResponse.SerializeToString,
+                    request_deserializer=route__guide_dot_v1_dot_route__guide__pb2.ListFeaturesRequest.FromString,
+                    response_serializer=route__guide_dot_v1_dot_route__guide__pb2.ListFeaturesResponse.SerializeToString,
             ),
             'RecordRoute': grpc.stream_unary_rpc_method_handler(
                     servicer.RecordRoute,
-                    request_deserializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.RecordRouteRequest.FromString,
-                    response_serializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.RecordRouteResponse.SerializeToString,
+                    request_deserializer=route__guide_dot_v1_dot_route__guide__pb2.RecordRouteRequest.FromString,
+                    response_serializer=route__guide_dot_v1_dot_route__guide__pb2.RecordRouteResponse.SerializeToString,
             ),
             'RouteChat': grpc.stream_stream_rpc_method_handler(
                     servicer.RouteChat,
-                    request_deserializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.RouteChatRequest.FromString,
-                    response_serializer=proto_dot_route__guide_dot_v1_dot_route__guide__pb2.RouteChatResponse.SerializeToString,
+                    request_deserializer=route__guide_dot_v1_dot_route__guide__pb2.RouteChatRequest.FromString,
+                    response_serializer=route__guide_dot_v1_dot_route__guide__pb2.RouteChatResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -131,8 +131,8 @@ class RouteGuideService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/route_guide.v1.RouteGuideService/GetFeature',
-            proto_dot_route__guide_dot_v1_dot_route__guide__pb2.GetFeatureRequest.SerializeToString,
-            proto_dot_route__guide_dot_v1_dot_route__guide__pb2.GetFeatureResponse.FromString,
+            route__guide_dot_v1_dot_route__guide__pb2.GetFeatureRequest.SerializeToString,
+            route__guide_dot_v1_dot_route__guide__pb2.GetFeatureResponse.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -148,8 +148,8 @@ class RouteGuideService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_stream(request, target, '/route_guide.v1.RouteGuideService/ListFeatures',
-            proto_dot_route__guide_dot_v1_dot_route__guide__pb2.ListFeaturesRequest.SerializeToString,
-            proto_dot_route__guide_dot_v1_dot_route__guide__pb2.ListFeaturesResponse.FromString,
+            route__guide_dot_v1_dot_route__guide__pb2.ListFeaturesRequest.SerializeToString,
+            route__guide_dot_v1_dot_route__guide__pb2.ListFeaturesResponse.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -165,8 +165,8 @@ class RouteGuideService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.stream_unary(request_iterator, target, '/route_guide.v1.RouteGuideService/RecordRoute',
-            proto_dot_route__guide_dot_v1_dot_route__guide__pb2.RecordRouteRequest.SerializeToString,
-            proto_dot_route__guide_dot_v1_dot_route__guide__pb2.RecordRouteResponse.FromString,
+            route__guide_dot_v1_dot_route__guide__pb2.RecordRouteRequest.SerializeToString,
+            route__guide_dot_v1_dot_route__guide__pb2.RecordRouteResponse.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -182,7 +182,7 @@ class RouteGuideService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.stream_stream(request_iterator, target, '/route_guide.v1.RouteGuideService/RouteChat',
-            proto_dot_route__guide_dot_v1_dot_route__guide__pb2.RouteChatRequest.SerializeToString,
-            proto_dot_route__guide_dot_v1_dot_route__guide__pb2.RouteChatResponse.FromString,
+            route__guide_dot_v1_dot_route__guide__pb2.RouteChatRequest.SerializeToString,
+            route__guide_dot_v1_dot_route__guide__pb2.RouteChatResponse.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

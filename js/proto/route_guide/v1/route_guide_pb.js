@@ -1,4 +1,4 @@
-// source: proto/route_guide/v1/route_guide.proto
+// source: route_guide/v1/route_guide.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -13,13 +13,13 @@
 
 var jspb = require('google-protobuf');
 var goog = jspb;
-var global = (function() {
-  if (this) { return this; }
-  if (typeof window !== 'undefined') { return window; }
-  if (typeof global !== 'undefined') { return global; }
-  if (typeof self !== 'undefined') { return self; }
-  return Function('return this')();
-}.call(null));
+var global =
+    (typeof globalThis !== 'undefined' && globalThis) ||
+    (typeof window !== 'undefined' && window) ||
+    (typeof global !== 'undefined' && global) ||
+    (typeof self !== 'undefined' && self) ||
+    (function () { return this; }).call(null) ||
+    Function('return this')();
 
 goog.exportSymbol('proto.route_guide.v1.Feature', null, global);
 goog.exportSymbol('proto.route_guide.v1.FeatureDatabase', null, global);

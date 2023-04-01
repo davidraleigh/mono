@@ -17,94 +17,94 @@
 //
 'use strict';
 var grpc = require('grpc');
-var proto_route_guide_v1_route_guide_pb = require('../../../proto/route_guide/v1/route_guide_pb.js');
+var route_guide_v1_route_guide_pb = require('../../route_guide/v1/route_guide_pb.js');
 
 function serialize_route_guide_v1_GetFeatureRequest(arg) {
-  if (!(arg instanceof proto_route_guide_v1_route_guide_pb.GetFeatureRequest)) {
+  if (!(arg instanceof route_guide_v1_route_guide_pb.GetFeatureRequest)) {
     throw new Error('Expected argument of type route_guide.v1.GetFeatureRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_route_guide_v1_GetFeatureRequest(buffer_arg) {
-  return proto_route_guide_v1_route_guide_pb.GetFeatureRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return route_guide_v1_route_guide_pb.GetFeatureRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_route_guide_v1_GetFeatureResponse(arg) {
-  if (!(arg instanceof proto_route_guide_v1_route_guide_pb.GetFeatureResponse)) {
+  if (!(arg instanceof route_guide_v1_route_guide_pb.GetFeatureResponse)) {
     throw new Error('Expected argument of type route_guide.v1.GetFeatureResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_route_guide_v1_GetFeatureResponse(buffer_arg) {
-  return proto_route_guide_v1_route_guide_pb.GetFeatureResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return route_guide_v1_route_guide_pb.GetFeatureResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_route_guide_v1_ListFeaturesRequest(arg) {
-  if (!(arg instanceof proto_route_guide_v1_route_guide_pb.ListFeaturesRequest)) {
+  if (!(arg instanceof route_guide_v1_route_guide_pb.ListFeaturesRequest)) {
     throw new Error('Expected argument of type route_guide.v1.ListFeaturesRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_route_guide_v1_ListFeaturesRequest(buffer_arg) {
-  return proto_route_guide_v1_route_guide_pb.ListFeaturesRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return route_guide_v1_route_guide_pb.ListFeaturesRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_route_guide_v1_ListFeaturesResponse(arg) {
-  if (!(arg instanceof proto_route_guide_v1_route_guide_pb.ListFeaturesResponse)) {
+  if (!(arg instanceof route_guide_v1_route_guide_pb.ListFeaturesResponse)) {
     throw new Error('Expected argument of type route_guide.v1.ListFeaturesResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_route_guide_v1_ListFeaturesResponse(buffer_arg) {
-  return proto_route_guide_v1_route_guide_pb.ListFeaturesResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return route_guide_v1_route_guide_pb.ListFeaturesResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_route_guide_v1_RecordRouteRequest(arg) {
-  if (!(arg instanceof proto_route_guide_v1_route_guide_pb.RecordRouteRequest)) {
+  if (!(arg instanceof route_guide_v1_route_guide_pb.RecordRouteRequest)) {
     throw new Error('Expected argument of type route_guide.v1.RecordRouteRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_route_guide_v1_RecordRouteRequest(buffer_arg) {
-  return proto_route_guide_v1_route_guide_pb.RecordRouteRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return route_guide_v1_route_guide_pb.RecordRouteRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_route_guide_v1_RecordRouteResponse(arg) {
-  if (!(arg instanceof proto_route_guide_v1_route_guide_pb.RecordRouteResponse)) {
+  if (!(arg instanceof route_guide_v1_route_guide_pb.RecordRouteResponse)) {
     throw new Error('Expected argument of type route_guide.v1.RecordRouteResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_route_guide_v1_RecordRouteResponse(buffer_arg) {
-  return proto_route_guide_v1_route_guide_pb.RecordRouteResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return route_guide_v1_route_guide_pb.RecordRouteResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_route_guide_v1_RouteChatRequest(arg) {
-  if (!(arg instanceof proto_route_guide_v1_route_guide_pb.RouteChatRequest)) {
+  if (!(arg instanceof route_guide_v1_route_guide_pb.RouteChatRequest)) {
     throw new Error('Expected argument of type route_guide.v1.RouteChatRequest');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_route_guide_v1_RouteChatRequest(buffer_arg) {
-  return proto_route_guide_v1_route_guide_pb.RouteChatRequest.deserializeBinary(new Uint8Array(buffer_arg));
+  return route_guide_v1_route_guide_pb.RouteChatRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_route_guide_v1_RouteChatResponse(arg) {
-  if (!(arg instanceof proto_route_guide_v1_route_guide_pb.RouteChatResponse)) {
+  if (!(arg instanceof route_guide_v1_route_guide_pb.RouteChatResponse)) {
     throw new Error('Expected argument of type route_guide.v1.RouteChatResponse');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
 function deserialize_route_guide_v1_RouteChatResponse(buffer_arg) {
-  return proto_route_guide_v1_route_guide_pb.RouteChatResponse.deserializeBinary(new Uint8Array(buffer_arg));
+  return route_guide_v1_route_guide_pb.RouteChatResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 
@@ -120,8 +120,8 @@ getFeature: {
     path: '/route_guide.v1.RouteGuideService/GetFeature',
     requestStream: false,
     responseStream: false,
-    requestType: proto_route_guide_v1_route_guide_pb.GetFeatureRequest,
-    responseType: proto_route_guide_v1_route_guide_pb.GetFeatureResponse,
+    requestType: route_guide_v1_route_guide_pb.GetFeatureRequest,
+    responseType: route_guide_v1_route_guide_pb.GetFeatureResponse,
     requestSerialize: serialize_route_guide_v1_GetFeatureRequest,
     requestDeserialize: deserialize_route_guide_v1_GetFeatureRequest,
     responseSerialize: serialize_route_guide_v1_GetFeatureResponse,
@@ -137,8 +137,8 @@ listFeatures: {
     path: '/route_guide.v1.RouteGuideService/ListFeatures',
     requestStream: false,
     responseStream: true,
-    requestType: proto_route_guide_v1_route_guide_pb.ListFeaturesRequest,
-    responseType: proto_route_guide_v1_route_guide_pb.ListFeaturesResponse,
+    requestType: route_guide_v1_route_guide_pb.ListFeaturesRequest,
+    responseType: route_guide_v1_route_guide_pb.ListFeaturesResponse,
     requestSerialize: serialize_route_guide_v1_ListFeaturesRequest,
     requestDeserialize: deserialize_route_guide_v1_ListFeaturesRequest,
     responseSerialize: serialize_route_guide_v1_ListFeaturesResponse,
@@ -152,8 +152,8 @@ recordRoute: {
     path: '/route_guide.v1.RouteGuideService/RecordRoute',
     requestStream: true,
     responseStream: false,
-    requestType: proto_route_guide_v1_route_guide_pb.RecordRouteRequest,
-    responseType: proto_route_guide_v1_route_guide_pb.RecordRouteResponse,
+    requestType: route_guide_v1_route_guide_pb.RecordRouteRequest,
+    responseType: route_guide_v1_route_guide_pb.RecordRouteResponse,
     requestSerialize: serialize_route_guide_v1_RecordRouteRequest,
     requestDeserialize: deserialize_route_guide_v1_RecordRouteRequest,
     responseSerialize: serialize_route_guide_v1_RecordRouteResponse,
@@ -167,8 +167,8 @@ routeChat: {
     path: '/route_guide.v1.RouteGuideService/RouteChat',
     requestStream: true,
     responseStream: true,
-    requestType: proto_route_guide_v1_route_guide_pb.RouteChatRequest,
-    responseType: proto_route_guide_v1_route_guide_pb.RouteChatResponse,
+    requestType: route_guide_v1_route_guide_pb.RouteChatRequest,
+    responseType: route_guide_v1_route_guide_pb.RouteChatResponse,
     requestSerialize: serialize_route_guide_v1_RouteChatRequest,
     requestDeserialize: deserialize_route_guide_v1_RouteChatRequest,
     responseSerialize: serialize_route_guide_v1_RouteChatResponse,
