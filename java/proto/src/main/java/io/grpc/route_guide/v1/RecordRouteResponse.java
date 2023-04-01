@@ -6,6 +6,7 @@ package io.grpc.route_guide.v1;
 /**
  * <pre>
  * A RouteSummary is received in response to a RecordRoute rpc.
+ *
  * It contains the number of individual points received, the number of
  * detected features, and the total distance covered as the cumulative sum of
  * the distance between each point.
@@ -32,11 +33,6 @@ private static final long serialVersionUID = 0L;
     return new RecordRouteResponse();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_RecordRouteResponse_descriptor;
@@ -51,7 +47,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int POINT_COUNT_FIELD_NUMBER = 1;
-  private int pointCount_;
+  private int pointCount_ = 0;
   /**
    * <pre>
    * The number of points received.
@@ -66,7 +62,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FEATURE_COUNT_FIELD_NUMBER = 2;
-  private int featureCount_;
+  private int featureCount_ = 0;
   /**
    * <pre>
    * The number of known features passed while traversing the route.
@@ -81,7 +77,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int DISTANCE_FIELD_NUMBER = 3;
-  private int distance_;
+  private int distance_ = 0;
   /**
    * <pre>
    * The distance covered in metres.
@@ -96,7 +92,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ELAPSED_TIME_FIELD_NUMBER = 4;
-  private int elapsedTime_;
+  private int elapsedTime_ = 0;
   /**
    * <pre>
    * The duration of the traversal in seconds.
@@ -301,6 +297,7 @@ private static final long serialVersionUID = 0L;
   /**
    * <pre>
    * A RouteSummary is received in response to a RecordRoute rpc.
+   *
    * It contains the number of individual points received, the number of
    * detected features, and the total distance covered as the cumulative sum of
    * the distance between each point.
@@ -338,14 +335,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       pointCount_ = 0;
-
       featureCount_ = 0;
-
       distance_ = 0;
-
       elapsedTime_ = 0;
-
       return this;
     }
 
@@ -372,46 +366,27 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public io.grpc.route_guide.v1.RecordRouteResponse buildPartial() {
       io.grpc.route_guide.v1.RecordRouteResponse result = new io.grpc.route_guide.v1.RecordRouteResponse(this);
-      result.pointCount_ = pointCount_;
-      result.featureCount_ = featureCount_;
-      result.distance_ = distance_;
-      result.elapsedTime_ = elapsedTime_;
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
+    private void buildPartial0(io.grpc.route_guide.v1.RecordRouteResponse result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.pointCount_ = pointCount_;
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.featureCount_ = featureCount_;
+      }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.distance_ = distance_;
+      }
+      if (((from_bitField0_ & 0x00000008) != 0)) {
+        result.elapsedTime_ = elapsedTime_;
+      }
     }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
+
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof io.grpc.route_guide.v1.RecordRouteResponse) {
@@ -464,22 +439,22 @@ private static final long serialVersionUID = 0L;
               break;
             case 8: {
               pointCount_ = input.readInt32();
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 8
             case 16: {
               featureCount_ = input.readInt32();
-
+              bitField0_ |= 0x00000002;
               break;
             } // case 16
             case 24: {
               distance_ = input.readInt32();
-
+              bitField0_ |= 0x00000004;
               break;
             } // case 24
             case 32: {
               elapsedTime_ = input.readInt32();
-
+              bitField0_ |= 0x00000008;
               break;
             } // case 32
             default: {
@@ -497,6 +472,7 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
     private int pointCount_ ;
     /**
@@ -521,8 +497,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPointCount(int value) {
-      
+
       pointCount_ = value;
+      bitField0_ |= 0x00000001;
       onChanged();
       return this;
     }
@@ -535,7 +512,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPointCount() {
-      
+      bitField0_ = (bitField0_ & ~0x00000001);
       pointCount_ = 0;
       onChanged();
       return this;
@@ -564,8 +541,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setFeatureCount(int value) {
-      
+
       featureCount_ = value;
+      bitField0_ |= 0x00000002;
       onChanged();
       return this;
     }
@@ -578,7 +556,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearFeatureCount() {
-      
+      bitField0_ = (bitField0_ & ~0x00000002);
       featureCount_ = 0;
       onChanged();
       return this;
@@ -607,8 +585,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDistance(int value) {
-      
+
       distance_ = value;
+      bitField0_ |= 0x00000004;
       onChanged();
       return this;
     }
@@ -621,7 +600,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearDistance() {
-      
+      bitField0_ = (bitField0_ & ~0x00000004);
       distance_ = 0;
       onChanged();
       return this;
@@ -650,8 +629,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setElapsedTime(int value) {
-      
+
       elapsedTime_ = value;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -664,7 +644,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearElapsedTime() {
-      
+      bitField0_ = (bitField0_ & ~0x00000008);
       elapsedTime_ = 0;
       onChanged();
       return this;

@@ -25,11 +25,6 @@ private static final long serialVersionUID = 0L;
     return new RecordRouteRequest();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_RecordRouteRequest_descriptor;
@@ -66,7 +61,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public io.grpc.route_guide.v1.PointOrBuilder getPointOrBuilder() {
-    return getPoint();
+    return point_ == null ? io.grpc.route_guide.v1.Point.getDefaultInstance() : point_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -262,10 +257,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (pointBuilder_ == null) {
-        point_ = null;
-      } else {
-        point_ = null;
+      bitField0_ = 0;
+      point_ = null;
+      if (pointBuilder_ != null) {
+        pointBuilder_.dispose();
         pointBuilder_ = null;
       }
       return this;
@@ -294,47 +289,20 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public io.grpc.route_guide.v1.RecordRouteRequest buildPartial() {
       io.grpc.route_guide.v1.RecordRouteRequest result = new io.grpc.route_guide.v1.RecordRouteRequest(this);
-      if (pointBuilder_ == null) {
-        result.point_ = point_;
-      } else {
-        result.point_ = pointBuilder_.build();
-      }
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
+    private void buildPartial0(io.grpc.route_guide.v1.RecordRouteRequest result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.point_ = pointBuilder_ == null
+            ? point_
+            : pointBuilder_.build();
+      }
     }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
+
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof io.grpc.route_guide.v1.RecordRouteRequest) {
@@ -380,7 +348,7 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getPointFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             default: {
@@ -398,6 +366,7 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
     private io.grpc.route_guide.v1.Point point_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -407,7 +376,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the point field is set.
      */
     public boolean hasPoint() {
-      return pointBuilder_ != null || point_ != null;
+      return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>.route_guide.v1.Point point = 1 [json_name = "point"];</code>
@@ -429,11 +398,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         point_ = value;
-        onChanged();
       } else {
         pointBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -443,11 +412,11 @@ private static final long serialVersionUID = 0L;
         io.grpc.route_guide.v1.Point.Builder builderForValue) {
       if (pointBuilder_ == null) {
         point_ = builderForValue.build();
-        onChanged();
       } else {
         pointBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -455,38 +424,38 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePoint(io.grpc.route_guide.v1.Point value) {
       if (pointBuilder_ == null) {
-        if (point_ != null) {
-          point_ =
-            io.grpc.route_guide.v1.Point.newBuilder(point_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000001) != 0) &&
+          point_ != null &&
+          point_ != io.grpc.route_guide.v1.Point.getDefaultInstance()) {
+          getPointBuilder().mergeFrom(value);
         } else {
           point_ = value;
         }
-        onChanged();
       } else {
         pointBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
      * <code>.route_guide.v1.Point point = 1 [json_name = "point"];</code>
      */
     public Builder clearPoint() {
-      if (pointBuilder_ == null) {
-        point_ = null;
-        onChanged();
-      } else {
-        point_ = null;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      point_ = null;
+      if (pointBuilder_ != null) {
+        pointBuilder_.dispose();
         pointBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
      * <code>.route_guide.v1.Point point = 1 [json_name = "point"];</code>
      */
     public io.grpc.route_guide.v1.Point.Builder getPointBuilder() {
-      
+      bitField0_ |= 0x00000001;
       onChanged();
       return getPointFieldBuilder().getBuilder();
     }

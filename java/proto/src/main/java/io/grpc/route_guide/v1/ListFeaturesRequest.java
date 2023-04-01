@@ -30,11 +30,6 @@ private static final long serialVersionUID = 0L;
     return new ListFeaturesRequest();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_ListFeaturesRequest_descriptor;
@@ -83,7 +78,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public io.grpc.route_guide.v1.PointOrBuilder getLoOrBuilder() {
-    return getLo();
+    return lo_ == null ? io.grpc.route_guide.v1.Point.getDefaultInstance() : lo_;
   }
 
   public static final int HI_FIELD_NUMBER = 2;
@@ -121,7 +116,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public io.grpc.route_guide.v1.PointOrBuilder getHiOrBuilder() {
-    return getHi();
+    return hi_ == null ? io.grpc.route_guide.v1.Point.getDefaultInstance() : hi_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -338,16 +333,15 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (loBuilder_ == null) {
-        lo_ = null;
-      } else {
-        lo_ = null;
+      bitField0_ = 0;
+      lo_ = null;
+      if (loBuilder_ != null) {
+        loBuilder_.dispose();
         loBuilder_ = null;
       }
-      if (hiBuilder_ == null) {
-        hi_ = null;
-      } else {
-        hi_ = null;
+      hi_ = null;
+      if (hiBuilder_ != null) {
+        hiBuilder_.dispose();
         hiBuilder_ = null;
       }
       return this;
@@ -376,52 +370,25 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public io.grpc.route_guide.v1.ListFeaturesRequest buildPartial() {
       io.grpc.route_guide.v1.ListFeaturesRequest result = new io.grpc.route_guide.v1.ListFeaturesRequest(this);
-      if (loBuilder_ == null) {
-        result.lo_ = lo_;
-      } else {
-        result.lo_ = loBuilder_.build();
-      }
-      if (hiBuilder_ == null) {
-        result.hi_ = hi_;
-      } else {
-        result.hi_ = hiBuilder_.build();
-      }
+      if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
+    private void buildPartial0(io.grpc.route_guide.v1.ListFeaturesRequest result) {
+      int from_bitField0_ = bitField0_;
+      if (((from_bitField0_ & 0x00000001) != 0)) {
+        result.lo_ = loBuilder_ == null
+            ? lo_
+            : loBuilder_.build();
+      }
+      if (((from_bitField0_ & 0x00000002) != 0)) {
+        result.hi_ = hiBuilder_ == null
+            ? hi_
+            : hiBuilder_.build();
+      }
     }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
+
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof io.grpc.route_guide.v1.ListFeaturesRequest) {
@@ -470,14 +437,14 @@ private static final long serialVersionUID = 0L;
               input.readMessage(
                   getLoFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000001;
               break;
             } // case 10
             case 18: {
               input.readMessage(
                   getHiFieldBuilder().getBuilder(),
                   extensionRegistry);
-
+              bitField0_ |= 0x00000002;
               break;
             } // case 18
             default: {
@@ -495,6 +462,7 @@ private static final long serialVersionUID = 0L;
       } // finally
       return this;
     }
+    private int bitField0_;
 
     private io.grpc.route_guide.v1.Point lo_;
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -508,7 +476,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the lo field is set.
      */
     public boolean hasLo() {
-      return loBuilder_ != null || lo_ != null;
+      return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <pre>
@@ -538,11 +506,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         lo_ = value;
-        onChanged();
       } else {
         loBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -556,11 +524,11 @@ private static final long serialVersionUID = 0L;
         io.grpc.route_guide.v1.Point.Builder builderForValue) {
       if (loBuilder_ == null) {
         lo_ = builderForValue.build();
-        onChanged();
       } else {
         loBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -572,17 +540,18 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeLo(io.grpc.route_guide.v1.Point value) {
       if (loBuilder_ == null) {
-        if (lo_ != null) {
-          lo_ =
-            io.grpc.route_guide.v1.Point.newBuilder(lo_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000001) != 0) &&
+          lo_ != null &&
+          lo_ != io.grpc.route_guide.v1.Point.getDefaultInstance()) {
+          getLoBuilder().mergeFrom(value);
         } else {
           lo_ = value;
         }
-        onChanged();
       } else {
         loBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000001;
+      onChanged();
       return this;
     }
     /**
@@ -593,14 +562,13 @@ private static final long serialVersionUID = 0L;
      * <code>.route_guide.v1.Point lo = 1 [json_name = "lo"];</code>
      */
     public Builder clearLo() {
-      if (loBuilder_ == null) {
-        lo_ = null;
-        onChanged();
-      } else {
-        lo_ = null;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      lo_ = null;
+      if (loBuilder_ != null) {
+        loBuilder_.dispose();
         loBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
@@ -611,7 +579,7 @@ private static final long serialVersionUID = 0L;
      * <code>.route_guide.v1.Point lo = 1 [json_name = "lo"];</code>
      */
     public io.grpc.route_guide.v1.Point.Builder getLoBuilder() {
-      
+      bitField0_ |= 0x00000001;
       onChanged();
       return getLoFieldBuilder().getBuilder();
     }
@@ -663,7 +631,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the hi field is set.
      */
     public boolean hasHi() {
-      return hiBuilder_ != null || hi_ != null;
+      return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <pre>
@@ -693,11 +661,11 @@ private static final long serialVersionUID = 0L;
           throw new NullPointerException();
         }
         hi_ = value;
-        onChanged();
       } else {
         hiBuilder_.setMessage(value);
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
@@ -711,11 +679,11 @@ private static final long serialVersionUID = 0L;
         io.grpc.route_guide.v1.Point.Builder builderForValue) {
       if (hiBuilder_ == null) {
         hi_ = builderForValue.build();
-        onChanged();
       } else {
         hiBuilder_.setMessage(builderForValue.build());
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
@@ -727,17 +695,18 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeHi(io.grpc.route_guide.v1.Point value) {
       if (hiBuilder_ == null) {
-        if (hi_ != null) {
-          hi_ =
-            io.grpc.route_guide.v1.Point.newBuilder(hi_).mergeFrom(value).buildPartial();
+        if (((bitField0_ & 0x00000002) != 0) &&
+          hi_ != null &&
+          hi_ != io.grpc.route_guide.v1.Point.getDefaultInstance()) {
+          getHiBuilder().mergeFrom(value);
         } else {
           hi_ = value;
         }
-        onChanged();
       } else {
         hiBuilder_.mergeFrom(value);
       }
-
+      bitField0_ |= 0x00000002;
+      onChanged();
       return this;
     }
     /**
@@ -748,14 +717,13 @@ private static final long serialVersionUID = 0L;
      * <code>.route_guide.v1.Point hi = 2 [json_name = "hi"];</code>
      */
     public Builder clearHi() {
-      if (hiBuilder_ == null) {
-        hi_ = null;
-        onChanged();
-      } else {
-        hi_ = null;
+      bitField0_ = (bitField0_ & ~0x00000002);
+      hi_ = null;
+      if (hiBuilder_ != null) {
+        hiBuilder_.dispose();
         hiBuilder_ = null;
       }
-
+      onChanged();
       return this;
     }
     /**
@@ -766,7 +734,7 @@ private static final long serialVersionUID = 0L;
      * <code>.route_guide.v1.Point hi = 2 [json_name = "hi"];</code>
      */
     public io.grpc.route_guide.v1.Point.Builder getHiBuilder() {
-      
+      bitField0_ |= 0x00000002;
       onChanged();
       return getHiFieldBuilder().getBuilder();
     }

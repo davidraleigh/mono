@@ -30,11 +30,6 @@ private static final long serialVersionUID = 0L;
     return new FeatureDatabase();
   }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
     return io.grpc.route_guide.v1.RouteGuideProto.internal_static_route_guide_v1_FeatureDatabase_descriptor;
@@ -49,6 +44,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FEATURE_FIELD_NUMBER = 1;
+  @SuppressWarnings("serial")
   private java.util.List<io.grpc.route_guide.v1.Feature> feature_;
   /**
    * <code>repeated .route_guide.v1.Feature feature = 1 [json_name = "feature"];</code>
@@ -282,6 +278,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      bitField0_ = 0;
       if (featureBuilder_ == null) {
         feature_ = java.util.Collections.emptyList();
       } else {
@@ -315,7 +312,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public io.grpc.route_guide.v1.FeatureDatabase buildPartial() {
       io.grpc.route_guide.v1.FeatureDatabase result = new io.grpc.route_guide.v1.FeatureDatabase(this);
-      int from_bitField0_ = bitField0_;
+      buildPartialRepeatedFields(result);
+      if (bitField0_ != 0) { buildPartial0(result); }
+      onBuilt();
+      return result;
+    }
+
+    private void buildPartialRepeatedFields(io.grpc.route_guide.v1.FeatureDatabase result) {
       if (featureBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           feature_ = java.util.Collections.unmodifiableList(feature_);
@@ -325,42 +328,12 @@ private static final long serialVersionUID = 0L;
       } else {
         result.feature_ = featureBuilder_.build();
       }
-      onBuilt();
-      return result;
     }
 
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
+    private void buildPartial0(io.grpc.route_guide.v1.FeatureDatabase result) {
+      int from_bitField0_ = bitField0_;
     }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
+
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof io.grpc.route_guide.v1.FeatureDatabase) {

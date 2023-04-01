@@ -16,12 +16,13 @@ from route_guide.v1 import route_guide_pb2 as route__guide_dot_v1_dot_route__gui
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x1aroute_guide/v1/stuff.proto\x12\x0eroute_guide.v1\x1a route_guide/v1/route_guide.proto\"=\n\x0eRoutePointTest\x12+\n\x05point\x18\x01 \x01(\x0b\x32\x15.route_guide.v1.PointR\x05pointBy\n\x16io.grpc.route_guide.v1B\nStuffProtoP\x01Z2github.com/davidraleigh/mono/golang/route_guide/v1\xa2\x02\x03RTG\xaa\x02\x16io.grpc.route_guide.v1b\x06proto3')
 
-_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
-_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'route_guide.v1.stuff_pb2', globals())
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'route_guide.v1.stuff_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   DESCRIPTOR._serialized_options = b'\n\026io.grpc.route_guide.v1B\nStuffProtoP\001Z2github.com/davidraleigh/mono/golang/route_guide/v1\242\002\003RTG\252\002\026io.grpc.route_guide.v1'
-  _ROUTEPOINTTEST._serialized_start=80
-  _ROUTEPOINTTEST._serialized_end=141
+  _globals['_ROUTEPOINTTEST']._serialized_start=80
+  _globals['_ROUTEPOINTTEST']._serialized_end=141
 # @@protoc_insertion_point(module_scope)

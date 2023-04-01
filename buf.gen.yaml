@@ -1,20 +1,22 @@
 version: v1
 plugins:
-  - name: cpp
+  - plugin: buf.build/protocolbuffers/cpp:v22.2
     out: cpp/proto
-  - name: java
+  - plugin: buf.build/protocolbuffers/java:v22.2
     out: java/proto/src/main/java
-  - name: python
+  - plugin: buf.build/protocolbuffers/python:v22.2
     out: python/proto
-  - name: csharp
+  - plugin: buf.build/protocolbuffers/pyi:v22.2
+    out: python/proto
+  - plugin: buf.build/protocolbuffers/csharp:v22.2
     out: net/proto
-  - remote: buf.build/protocolbuffers/plugins/ruby:v3.19.1-1
+  - plugin: buf.build/protocolbuffers/ruby:v22.2
     out: ruby/proto
-  - remote: buf.build/protocolbuffers/plugins/js:v3.19.1-1
+  - plugin: buf.build/protocolbuffers/js:v3.21.2
     out: js/proto
     opt:
       - import_style=commonjs
       - binary
-  - remote: buf.build/protocolbuffers/plugins/go:v1.27.1-1
+  - plugin: buf.build/protocolbuffers/go:v1.28.1
     out: go/proto
     opt: paths=source_relative
